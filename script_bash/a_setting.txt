@@ -1,0 +1,2 @@
+to remove or add the autofill:
+@id:editor.inlineSuggest.enabled @id:github.copilot.enable 

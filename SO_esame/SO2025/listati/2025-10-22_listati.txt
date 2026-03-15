@@ -1,0 +1,855 @@
+xzdiff (1)           - compare compressed files
+xzegrep (1)          - search compressed files for a regular expression
+xzfgrep (1)          - search compressed files for a regular expression
+xzgrep (1)           - search compressed files for a regular expression
+xzless (1)           - view xz or lzma compressed (text) files
+xzmore (1)           - view xz or lzma compressed (text) files
+zcat (1)             - compress or expand files
+zcmp (1)             - compare compressed files
+zdiff (1)            - compare compressed files
+zegrep (1)           - search possibly compressed files for a regular expression
+zfgrep (1)           - search possibly compressed files for a regular expression
+zforce (1)           - force a '.gz' extension on all gzip files
+zgrep (1)            - search possibly compressed files for a regular expression
+zip (1)              - package and compress (archive) files
+zipdetails (1)       - display the internal structure of zip files
+zipgrep (1)          - search files in a ZIP archive for lines matching a pattern
+zipnote (1)          - write the comments in zipfile to stdout, edit comments and rename files in...
+zipsplit (1)         - split a zipfile into smaller zipfiles
+znew (1)             - recompress .Z files to .gz files
+andrea11@DESKTOP-HSTPJN3:~/scripting$ apropos directory
+alphasort (3)        - scan a directory for matching entries
+basename (1)         - strip directory and suffix from filenames
+bindtextdomain (3)   - set directory containing message catalogs
+chdir (2)            - change working directory
+chroot (2)           - change root directory
+chroot (8)           - run command or interactive shell with special root directory
+closedir (3)         - close a directory
+dbus-cleanup-sockets (1) - clean up leftover sockets in a directory
+depmod.d (5)         - Configuration directory for depmod
+dir (1)              - list directory contents
+dirfd (3)            - get directory stream file descriptor
+docker-plugin-create (1) - Create a plugin from a rootfs and configuration. Plugin data directory...
+execveat (2)         - execute program relative to a directory file descriptor
+fchdir (2)           - change working directory
+fdopendir (3)        - open a directory
+File::BaseDir (3pm)  - Use the Freedesktop.org base directory specification
+File::Listing (3pm)  - Parse directory listing
+find (1)             - search for files in a directory hierarchy
+futimesat (2)        - change timestamps of a file relative to a directory file descriptor
+get_current_dir_name (3) - get current working directory
+getcwd (2)           - get current working directory
+getcwd (3)           - get current working directory
+getdents (2)         - get directory entries
+getdents64 (2)       - get directory entries
+getdirentries (3)    - get directory entries in a filesystem-independent format
+getwd (3)            - get current working directory
+git-clone (1)        - Clone a repository into a new directory
+git-mv (1)           - Move or rename a file, a directory, or a symlink
+git-stash (1)        - Stash the changes in a dirty working directory away
+gspath (1)           - Utility to display standard directory/path information
+helpztags (1)        - generate the help tags file for directory
+lookup_dcookie (2)   - return a directory entry's path
+ls (1)               - list directory contents
+mkdir (2)            - create a directory
+mkdirat (2)          - create a directory
+mkdtemp (3)          - create a unique temporary directory
+mkfontdir (1)        - create an index of X font files in a directory
+mklost+found (8)     - create a lost+found directory on a mounted Linux second extended file system 
+mktemp (1)           - create a temporary file or directory
+modprobe.d (5)       - Configuration directory for modprobe
+mountpoint (1)       - see if a directory or file is a mountpoint
+ntfsls (8)           - list directory contents on an NTFS filesystem
+opendir (3)          - open a directory
+pam_mkhomedir (8)    - PAM module to create users home directory
+pwd (1)              - print name of current/working directory
+pwdx (1)             - report current working directory of a process
+readdir (2)          - read directory entry
+readdir (3)          - read a directory
+readdir (3am)        - directory input parser for gawk
+readdir_r (3)        - read a directory
+remove (3)           - remove a file or directory
+rewinddir (3)        - reset directory stream
+
+
+
+
+
+
+
+
+
+
+
+
+
+TEE(1)                                    User Commands                                    TEE(1)
+
+NAME
+       tee - read from standard input and write to standard output and files
+
+SYNOPSIS
+       tee [OPTION]... [FILE]...
+
+DESCRIPTION
+       Copy standard input to each FILE, and also to standard output.
+
+       -a, --append
+              append to the given FILEs, do not overwrite
+       tee - read from standard input and write to standard output and files
+
+SYNOPSIS
+       tee [OPTION]... [FILE]...
+
+DESCRIPTION
+       Copy standard input to each FILE, and also to standard output.
+
+       -a, --append
+              append to the given FILEs, do not overwrite
+
+       -i, --ignore-interrupts
+              ignore interrupt signals
+       tee [OPTION]... [FILE]...
+
+DESCRIPTION
+       Copy standard input to each FILE, and also to standard output.
+
+       -a, --append
+              append to the given FILEs, do not overwrite
+rmdir (2)            - delete a directory
+run-parts (8)        - run scripts or programs in a directory
+scandir (3)          - scan a directory for matching entries
+scandirat (3)        - scan a directory for matching entries
+seekdir (3)          - set the position of the next readdir() call in the directory stream.
+telldir (3)          - return current location in directory stream
+update-info-dir (8)  - update or create index file from all installed info files in directory       
+vdir (1)             - list directory contents
+versionsort (3)      - scan a directory for matching entries
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ man tee
+andrea11@DESKTOP-HSTPJN3:~/scripting$ array=(10 20 30)
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo ${array[0]}
+10
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo ${array[2]}
+30
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (ls)
+a.sh            filea.txt            s.sh        script4.1.sh  t.txt    testo.txt
+altroscript.sh  fileb.txt            script.sh   script4.sh    t2.txt   testo_nascosto.txt
+arit.sh         logging2.txt         script2.sh  script5.sh    t3.txt   vade
+elenco.csv      logging_comando.txt  script3.sh  script6.sh    test.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo ${array[3]}
+
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (ls)
+a.sh            filea.txt            s.sh        script4.1.sh  t.txt    testo.txt
+altroscript.sh  fileb.txt            script.sh   script4.sh    t2.txt   testo_nascosto.txt
+arit.sh         logging2.txt         script2.sh  script5.sh    t3.txt   vade
+elenco.csv      logging_comando.txt  script3.sh  script6.sh    test.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (ls; echo ciao; stat .)
+a.sh            filea.txt            s.sh        script4.1.sh  t.txt    testo.txt
+altroscript.sh  fileb.txt            script.sh   script4.sh    t2.txt   testo_nascosto.txt
+arit.sh         logging2.txt         script2.sh  script5.sh    t3.txt   vade
+elenco.csv      logging_comando.txt  script3.sh  script6.sh    test.sh
+ciao
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-22 12:04:13.833405337 +0200
+Modify: 2025-10-22 12:04:00.687962257 +0200
+Change: 2025-10-22 12:04:00.687962257 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ls; echo ciao; stat .
+a.sh            filea.txt            s.sh        script4.1.sh  t.txt    testo.txt
+altroscript.sh  fileb.txt            script.sh   script4.sh    t2.txt   testo_nascosto.txt
+arit.sh         logging2.txt         script2.sh  script5.sh    t3.txt   vade
+elenco.csv      logging_comando.txt  script3.sh  script6.sh    test.sh
+ciao
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-22 12:04:13.833405337 +0200
+Modify: 2025-10-22 12:04:00.687962257 +0200
+Change: 2025-10-22 12:04:00.687962257 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ls; echo ciao; stat .
+a.sh            filea.txt            s.sh        script4.1.sh  t.txt    testo.txt
+altroscript.sh  fileb.txt            script.sh   script4.sh    t2.txt   testo_nascosto.txt
+arit.sh         logging2.txt         script2.sh  script5.sh    t3.txt   vade
+elenco.csv      logging_comando.txt  script3.sh  script6.sh    test.sh
+ciao
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-22 12:04:13.833405337 +0200
+Modify: 2025-10-22 12:04:00.687962257 +0200
+Change: 2025-10-22 12:04:00.687962257 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (ls; echo ciao; stat .)
+a.sh            filea.txt            s.sh        script4.1.sh  t.txt    testo.txt
+altroscript.sh  fileb.txt            script.sh   script4.sh    t2.txt   testo_nascosto.txt
+arit.sh         logging2.txt         script2.sh  script5.sh    t3.txt   vade
+elenco.csv      logging_comando.txt  script3.sh  script6.sh    test.sh
+ciao
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-22 12:04:13.833405337 +0200
+Modify: 2025-10-22 12:04:00.687962257 +0200
+Change: 2025-10-22 12:04:00.687962257 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^Cs; echo ciao; stat .)
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=dichiarata
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (ls; echo ciao; stat .; ((a++)))
+a.sh            filea.txt            s.sh        script4.1.sh  t.txt    testo.txt
+altroscript.sh  fileb.txt            script.sh   script4.sh    t2.txt   testo_nascosto.txt
+arit.sh         logging2.txt         script2.sh  script5.sh    t3.txt   vade
+elenco.csv      logging_comando.txt  script3.sh  script6.sh    test.sh
+ciao
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-22 12:04:13.833405337 +0200
+Modify: 2025-10-22 12:04:00.687962257 +0200
+Change: 2025-10-22 12:04:00.687962257 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $a
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (ls; echo ciao; stat .;^Ca++)))
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ((a++))
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $a
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ((a++))
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $a
+2
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (echo nuova shell;  ((a++)) )
+nuova shell
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $a
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (stat .; echo nuova shell; )
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-22 12:04:13.833405337 +0200
+Modify: 2025-10-22 12:04:00.687962257 +0200
+Change: 2025-10-22 12:04:00.687962257 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+nuova shell
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (stat .; echo nuova shell; ) > x.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat x.txt 
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-22 12:04:13.833405337 +0200
+Modify: 2025-10-22 12:14:21.929159886 +0200
+Change: 2025-10-22 12:14:21.929159886 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+nuova shell
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (a=0^Cecho nuova shell;  ((a++)) )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (((a++)); echo $a )
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (((a++)); echo $a )
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (((a++)); echo $a )
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (((a++)); echo $a )
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=2
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (((a++)); echo $a )
+3
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (((a++)); echo $a )
+3
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (echo $a )
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (echo $a )
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (echo $a)
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ a=67
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (echo $a)
+andrea11@DESKTOP-HSTPJN3:~/scripting$ (echo 67)
+
+67
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C       
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C       
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C       
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pwd      
+/home/andrea11/scripting
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( cd ..; pwd)
+/home/andrea11
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pwd      
+/home/andrea11/scripting
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 )
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( tty;^Ce
+ep 300 )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ tty
+/dev/pts/25
+andrea11@DESKTOP-HSTPJN3:~/scripting$ tty
+/dev/pts/25
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( tty; sl
+eep 300 )
+/dev/pts/25
+00 & )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 & )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 & )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 & )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 & )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 & )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 & )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ( sleep 300 & )^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ { ls; cd .. }
+> ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ { ls; cd .. ; }
+a.sh                 s.sh          t.txt
+altroscript.sh       script.sh     t2.txt
+arit.sh              script2.sh    t3.txt
+elenco.csv           script3.sh    test.sh
+filea.txt            script4.1.sh  testo.txt
+fileb.txt            script4.sh    testo_nascosto.txt
+logging2.txt         script5.sh    vade
+logging_comando.txt  script6.sh    x.txt
+andrea11@DESKTOP-HSTPJN3:~$ { ls; cd .. ; }^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ { ls; cd .. ; }
+GNUstep                 creato_sul_server_arrivato_da_noi.txt        
+a                       elaborato.txt
+a.txt                   ff.txt
+aaa.txt                 miofile.txt
+b.txt                   oggi
+bbb                     scripting
+byte_casuali.byte       spec
+byte_casuali2.byte      sticky
+c.txt                   test
+cartella_compressa.zip  testo.txt
+compito
+andrea11@DESKTOP-HSTPJN3:/home$ cd andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ cd scripting/
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ seq 1 5
+1
+2
+3
+4
+5
+andrea11@DESKTOP-HSTPJN3:~/scripting$ seq 1 10 2
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ seq 1 2 10
+1
+3
+5
+7
+9
+andrea11@DESKTOP-HSTPJN3:~/scripting$ seq 1 5
+1
+2
+3
+4
+5
+andrea11@DESKTOP-HSTPJN3:~/scripting$ seq 1 2 10
+1
+3
+5
+7
+9
+andrea11@DESKTOP-HSTPJN3:~/scripting$ seq 0 100
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+andrea11@DESKTOP-HSTPJN3:~/scripting$ seq 1 2 100
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+21
+23
+25
+27
+29
+31
+33
+35
+37
+39
+41
+43
+45
+47
+49
+51
+53
+55
+57
+59
+61
+63
+65
+67
+69
+71
+73
+75
+77
+79
+81
+83
+85
+87
+77
+79
+81
+83
+85
+87
+85
+87
+87
+89
+91
+93
+95
+91
+93
+95
+93
+95
+95
+97
+99
+andrea11@DESKTOP-HSTPJN3:~/scripting$ saluta() {
+    echo "Ciao dal mondo Bash!"
+}
+[1]+  Done                    ( sleep 300 )
+andrea11@DESKTOP-HSTPJN3:~/scripting$ saluta
+Ciao dal mondo Bash!
+andrea11@DESKTOP-HSTPJN3:~/scripting$ saluta() {     echo "Ciao dal mondo Bash!"; }
+andrea11@DESKTOP-HSTPJN3:~/scripting$ saluta
+Ciao dal mondo Bash!
+andrea11@DESKTOP-HSTPJN3:~/scripting$ saluta
+Ciao dal mondo Bash!
+andrea11@DESKTOP-HSTPJN3:~/scripting$ chmod 700 script7.sh 
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh a
+Nome:
+Cognome:
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh aaa bbb
+Nome:
+Cognome:
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh aaa bbb
+Nome: luca
+Cognome: catanzaro
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh aaa bbb
+Nome: luca
+Cognome: catanzaro
+Nome: aaa
+Cognome: bbb
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh aaa bbb^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+verifica_file ./t.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+1
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+1
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script7.sh
+1
+il dollaro interrogativo dà: 0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t2.txt 
+aehtej
+ethr
+39-10-2025
+30-09-2025
+hduyj 17-10-2025
+15-10-2025
+21-11-2025
+jset
+jksryksry
+Lorem Ipsum is simply dummy text of the
+printing and typesetting industry.
+Lorem Ipsum printing has been the industry's
+standard dummysince the
+1500s, when an unknown printer took a
+galley of type and scrambled it to make
+a type specimen book. It has survived
+not only five centuries, but also the
+leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the
+release of Letraset sheets containing
+Lorem Ipsum passages, and more recently
+with desktop publishing software like
+Aldus PageMaker including versions of
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t2.txt | paste -s -d "+"
+aehtej+ethr+39-10-2025+30-09-2025+hduyj 17-10-2025+15-10-2025+21-11-2025+jset+jksryksry+Lorem Ipsum is simply dummy text of the +printing and typesetting industry. +Lorem Ipsum printing has been the industry's +standard dummysince the +1500s, when an unknown printer took a +galley of type and scrambled it to make +a type specimen book. It has survived +not only five centuries, but also the +leap into electronic typesetting, +remaining essentially unchanged. It was +popularised in the 1960s with the +release of Letraset sheets containing +Lorem Ipsum passages, and more recently +with desktop publishing software like +Aldus PageMaker including versions of +Lorem Ipsum.     
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo ciao | paste -d "+"
+ciao
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo ciao | paste -s -d "+"
+ciao
+andrea11@DESKTOP-HSTPJN3:~/scripting$ saluta() {     echo "Ciao dal mondo Bash!"; }^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t2.txt | paste -s 
+aehtej  ethr    39-10-2025      30-09-2025      hduyj 17-10-2025        15-10-2025  21-11-2025       jset    jksryksry       Lorem Ipsum is simply dummy text of the     printing and typesetting industry.       Lorem Ipsum printing has been the industry'sstandard dummysince the  1500s, when an unknown printer took a   galley of type and scrambled it to make      a type specimen book. It has survived   not only five centuries, but also the        leap into electronic typesetting,       remaining essentially unchanged. It was      popularised in the 1960s with the       release of Letraset sheets containing        Lorem Ipsum passages, and more recently         with desktop publishing software like        Aldus PageMaker including versions of   Lorem Ipsum. 
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t2.txt | paste -s -d ":"
+aehtej:ethr:39-10-2025:30-09-2025:hduyj 17-10-2025:15-10-2025:21-11-2025:jset:jksryksry:Lorem Ipsum is simply dummy text of the :printing and typesetting industry. :Lorem Ipsum printing has been the industry's :standard dummysince the :1500s, when an unknown printer took a :galley of type and scrambled it to make :a type specimen book. It has survived :not only five centuries, but also the :leap into electronic typesetting, :remaining essentially unchanged. It was :popularised in the 1960s with the :release of Letraset sheets containing :Lorem Ipsum passages, and more recently :with desktop publishing software like :Aldus PageMaker including versions of :Lorem Ipsum.     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t3.txt
+3
+4
+5
+6andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t3.txt
+3
+4
+5
+6
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t3.txt | paste -s -d "+"
+3+4+5+6
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t3.txt | paste -s -d "+" | bc
+18
+andrea11@DESKTOP-HSTPJN3:~/scripting$ man bc
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t2.txt t3.txt
+aehtej
+ethr
+39-10-2025
+30-09-2025
+hduyj 17-10-2025
+15-10-2025
+21-11-2025
+jset
+jksryksry
+Lorem Ipsum is simply dummy text of the
+printing and typesetting industry.
+Lorem Ipsum printing has been the industry's
+standard dummysince the
+1500s, when an unknown printer took a
+galley of type and scrambled it to make
+a type specimen book. It has survived
+not only five centuries, but also the
+leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the
+release of Letraset sheets containing
+Lorem Ipsum passages, and more recently
+with desktop publishing software like
+Aldus PageMaker including versions of
+Lorem Ipsum.3
+4
+5
+6
+andrea11@DESKTOP-HSTPJN3:~/scripting$ nano f1.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ nano f1.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ nano f2.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste f1.txt f2.txt 
+a       1
+b       2
+c       3
+d       4
+
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt
+a+1
+b+2
+c+3
+d+4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TAIL(1)                            User Commands                           TAIL(1)
+
+NAME
+       tail - output the last part of files
+
+SYNOPSIS
+       tail [OPTION]... [FILE]...
+
+DESCRIPTION
+       Print  the  last  10 lines of each FILE to standard output.  With more than   
+       one FILE, precede each with a header giving the file name.
+
+       With no FILE, or when FILE is -, read standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.      
+
+       -c, --bytes=[+]NUM
+              output the last NUM bytes; or use -c +NUM to  output  starting  with   
+              byte NUM of each file
+
+       -f, --follow[={name|descriptor}]
+              output appended data as the file grows;
+
+              an absent option argument means 'descriptor'
+
+       -F     same as --follow=name --retry
+
+       -n, --lines=[+]NUM
+              output the last NUM lines, instead of the last 10; or use -n +NUM to   
+              output starting with line NUM
+NAME
++
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt
+a+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HEAD(1)                            User Commands                           HEAD(1)
+
+NAME
+       head - output the first part of files
+
+SYNOPSIS
+       head [OPTION]... [FILE]...
+
+DESCRIPTION
+       Print  the  first 10 lines of each FILE to standard output.  With more than   
+       one FILE, precede each with a header giving the file name.
+
+       With no FILE, or when FILE is -, read standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.      
+b+2
+c+3
+d+4
++
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt | head -4
+a+1
+b+2
+c+3
+d+4
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt |^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ man tail
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt | hea^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ man head
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt | head -c -1
+a+1
+b+2
+c+3
+d+4
++andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt | head -c -2       
+a+1
+b+2
+c+3
+d+4
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt | head -^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+b+2
+c+3
+d+4
+andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt | head -c -1
+a+1
+b+2
+c+3
+d+4
++andrea11@DESKTOP-HSTPJN3:~/scripting$ paste -d "+" f1.txt f2.txt | head -c -2        
+a+1
+b+2
+c+3
+d+4
+andrea11@DESKTOP-HSTPJN3:~/scripting$

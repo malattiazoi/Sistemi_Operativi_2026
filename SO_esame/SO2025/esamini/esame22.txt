@@ -1,0 +1,24 @@
+Creare nella propria home di hplinux2.unile.it una directory 
+denominata proprioaccount.esame22 (es.franco.esame22).
+Svolgere l'esercizio in tale directory (oppure svolgerlo in una directory con lo stesso nome
+nella propria home Mac OS X e poi trasferirla nella propria home su hplinux2.unile.it).
+Nella directory si DEVE anche creare un file di nome "leggimi" contenente commenti e o osservazioni.
+Si fa presente che la presenza di tale file aiuta a comprendere cose talvolta incomprensibili 
+e, perci˜, non valutate o valutate negativamente.
+
+Alla fine usare i comandi:
+
+cd
+tar cvf proprioaccount.esame22.tar proprioaccount.esame22
+gzip proprioaccount.esame22.tar
+
+Esercizio
+
+Creare uno script chiamato "elimina", che elimini dal sistema i file regolari passati ad esso 
+come argomento e tutti i link (hard e soft) a tali file.
+
+
+
+
+
+

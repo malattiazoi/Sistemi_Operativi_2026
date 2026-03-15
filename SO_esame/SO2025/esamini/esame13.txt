@@ -1,0 +1,18 @@
+Creare nella propria home sulla macchina hplinux2.unile.it una cartella 
+denominata proprionomeaccount.esame12 (es.franco.esame12).
+Svolgere l'esercizio nella cartella.
+Nella cartella si DEVE porre un file di nome leggimi contenente la spiegazione
+del metodo seguito, commenti e/o osservazioni.
+Alla fine usare nella propria home i comandi:
+
+tar cvf proprionomeaccount.esame13.tar proprionomeaccount.esame13
+gzip proprionomeaccount.esame13.tar
+
+Esercizio
+
+1) Scrivere uno script bash di nome "pscmd" che prenda come argomento il nome
+di un comando e che restituisca la somma delle percentuali di CPU 
+utilizzate da tutte le istanze di tale comando in esecuzione 
+nel sistema da parte di qualsiasi utente al momento del lancio dello script.
+
+

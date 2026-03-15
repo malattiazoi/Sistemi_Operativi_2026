@@ -1,0 +1,65 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tutti i diritti riservati.
+
+Installa la versione più recente di PowerShell per nuove funzionalità e miglioramenti. https://aka.ms/PSWindows
+
+PS C:\Users\Andrea> wsl
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ cd /
+andrea11@DESKTOP-HSTPJN3:/$ stat /
+  File: /
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 2           Links: 24
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-09-25 16:31:18.158482804 +0200
+Modify: 2025-09-18 15:50:48.570786967 +0200
+Change: 2025-09-18 15:50:48.570786967 +0200
+ Birth: 2023-03-06 11:08:57.000000000 +0100
+andrea11@DESKTOP-HSTPJN3:/$ stat /mnt/c
+  File: /mnt/c
+  Size: 4096            Blocks: 0          IO Block: 4096   directory
+Device: 43h/67d Inode: 1407374883553287  Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-09-25 17:12:46.306941600 +0200
+Modify: 2025-09-25 15:28:33.587320400 +0200
+Change: 2025-09-25 15:28:33.587320400 +0200
+ Birth: -
+andrea11@DESKTOP-HSTPJN3:/$ stat /mnt/c/
+  File: /mnt/c/
+  Size: 4096            Blocks: 0          IO Block: 4096   directory
+Device: 43h/67d Inode: 1407374883553287  Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-09-25 17:12:46.306941600 +0200
+Modify: 2025-09-25 15:28:33.587320400 +0200
+Change: 2025-09-25 15:28:33.587320400 +0200
+ Birth: -
+andrea11@DESKTOP-HSTPJN3:/$ stat /mnt
+  File: /mnt
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 24578       Links: 5
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-09-25 16:31:19.174482565 +0200
+Modify: 2023-03-06 11:09:10.779867400 +0100
+Change: 2023-03-06 11:09:10.779867400 +0100
+ Birth: 2023-03-06 11:08:57.729867400 +0100
+andrea11@DESKTOP-HSTPJN3:/$ stat /mnt/c/
+  File: /mnt/c/
+  Size: 4096            Blocks: 0          IO Block: 4096   directory
+Device: 43h/67d Inode: 1407374883553287  Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-09-25 17:12:46.306941600 +0200
+Modify: 2025-09-25 15:28:33.587320400 +0200
+Change: 2025-09-25 15:28:33.587320400 +0200
+ Birth: -
+andrea11@DESKTOP-HSTPJN3:/$ ls /mnt/c
+ls: cannot access '/mnt/c/DumpStack.log.tmp': Permission denied
+ls: cannot access '/mnt/c/hiberfil.sys': Permission denied
+ls: cannot access '/mnt/c/pagefile.sys': Permission denied
+ls: cannot access '/mnt/c/swapfile.sys': Permission denied
+'$Recycle.Bin'             DumpStack.log          ProgramData                  ffmpeg-master-latest-win64-gpl
+'$SysReset'                DumpStack.log.tmp      Programmi                    hiberfil.sys
+'$WINDOWS.~BT'             ESD                    Recovery                     inetpub
+'$Windows.~WS'             Intel                 'System Volume Information'   pagefile.sys
+ ChromeDevSession          PerfLogs               Users                        swapfile.sys
+ Config.Msi               'Program Files'         WCH.CN
+'Documents and Settings'  'Program Files (x86)'   Windows
+andrea11@DESKTOP-HSTPJN3:/$

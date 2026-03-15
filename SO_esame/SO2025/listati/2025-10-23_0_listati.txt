@@ -1,0 +1,371 @@
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting> wsl
+andrea11@DESKTOP-HSTPJN3:~/scripting$ exec bash 2>/dev/null
+
+^C
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting> ^C
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting> ^C
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting> wsl
+andrea11@DESKTOP-HSTPJN3:~/scripting$ printenv
+SHELL=/bin/bash
+WSL2_GUI_APPS_ENABLED=1
+WSL_DISTRO_NAME=Ubuntu
+WT_SESSION=f34a9798-e59a-411d-aeb4-91747ccb74fb
+NAME=DESKTOP-HSTPJN3
+PWD=/home/andrea11/scripting
+LOGNAME=andrea11
+HOME=/home/andrea11
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/6438_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+WAYLAND_DISPLAY=wayland-0
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=andrea11
+DISPLAY=:0
+SHLVL=1
+XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnmnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft Network Monitor 3/:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Andrea/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Andrea/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Andrea/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/Andrea/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047/jre/bin:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Users/Andrea/AppData/Roaming/npm:/snap/bin
+HOSTTYPE=x86_64
+PULSE_SERVER=unix:/mnt/wslg/PulseServer
+WT_PROFILE_ID={61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+_=/usr/bin/printenv
+andrea11@DESKTOP-HSTPJN3:~/scripting$ bash
+andrea11@DESKTOP-HSTPJN3:~/scripting$ printenv
+SHELL=/bin/bash
+WSL2_GUI_APPS_ENABLED=1
+WSL_DISTRO_NAME=Ubuntu
+WT_SESSION=f34a9798-e59a-411d-aeb4-91747ccb74fb
+NAME=DESKTOP-HSTPJN3
+PWD=/home/andrea11/scripting
+LOGNAME=andrea11
+HOME=/home/andrea11
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/6438_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+WAYLAND_DISPLAY=wayland-0
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=andrea11
+DISPLAY=:0
+SHLVL=2
+XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft Network Monitor 3/:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Andrea/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Andrea/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Andrea/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/Andrea/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047/jre/bin:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Users/Andrea/AppData/Roaming/npm:/snap/bin
+HOSTTYPE=x86_64
+PULSE_SERVER=unix:/mnt/wslg/PulseServer
+WT_PROFILE_ID={61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+_=/usr/bin/printenv
+andrea11@DESKTOP-HSTPJN3:~/scripting$ bash
+andrea11@DESKTOP-HSTPJN3:~/scripting$ printenv
+SHELL=/bin/bash
+WSL2_GUI_APPS_ENABLED=1
+WSL_DISTRO_NAME=Ubuntu
+WT_SESSION=f34a9798-e59a-411d-aeb4-91747ccb74fb
+NAME=DESKTOP-HSTPJN3
+PWD=/home/andrea11/scripting
+LOGNAME=andrea11
+HOME=/home/andrea11
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/6438_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+WAYLAND_DISPLAY=wayland-0
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=andrea11
+DISPLAY=:0
+SHLVL=3
+XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft Network Monitor 3/:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Andrea/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Andrea/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Andrea/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/Andrea/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047/jre/bin:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Users/Andrea/AppData/Roaming/npm:/snap/bin
+HOSTTYPE=x86_64
+PULSE_SERVER=unix:/mnt/wslg/PulseServer
+WT_PROFILE_ID={61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+_=/usr/bin/printenv
+andrea11@DESKTOP-HSTPJN3:~/scripting$ exit
+exit
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $SHLVL
+2
+andrea11@DESKTOP-HSTPJN3:~/scripting$ exit
+exit
+andrea11@DESKTOP-HSTPJN3:~/scripting$ printenv
+SHELL=/bin/bash
+WSL2_GUI_APPS_ENABLED=1
+WSL_DISTRO_NAME=Ubuntu
+WT_SESSION=f34a9798-e59a-411d-aeb4-91747ccb74fb
+NAME=DESKTOP-HSTPJN3
+PWD=/home/andrea11/scripting
+LOGNAME=andrea11
+HOME=/home/andrea11
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/6438_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+WAYLAND_DISPLAY=wayland-0
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=andrea11
+DISPLAY=:0
+SHLVL=1
+XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft Network Monitor 3/:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Andrea/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Andrea/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Andrea/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Andrea/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/Andrea/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047/jre/bin:/mnt/c/ffmpeg-master-latest-win64-gpl/bin:/mnt/c/Users/Andrea/AppData/Roaming/npm:/snap/bin
+HOSTTYPE=x86_64
+PULSE_SERVER=unix:/mnt/wslg/PulseServer
+WT_PROFILE_ID={61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+_=/usr/bin/printenv
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $SHLVL
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ exit
+logout
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting> wsl  
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ eval "ls"
+a.sh            f1.txt     logging2.txt         script3.sh    script6.sh               t.txt    testo.txt
+altroscript.sh  f2.txt     logging_comando.txt  script4.1.sh  script7.sh               t2.txt   testo_nascosto.txt 
+arit.sh         filea.txt  script.sh            script4.sh    script8.sh               t3.txt   vade
+elenco.csv      fileb.txt  script2.sh           script5.sh    soluzione_compitino1.sh  test.sh  x.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ eval 'ls'
+a.sh            f1.txt     logging2.txt         script3.sh    script6.sh               t.txt    testo.txt
+altroscript.sh  f2.txt     logging_comando.txt  script4.1.sh  script7.sh               t2.txt   testo_nascosto.txt 
+arit.sh         filea.txt  script.sh            script4.sh    script8.sh               t3.txt   vade
+elenco.csv      fileb.txt  script2.sh           script5.sh    soluzione_compitino1.sh  test.sh  x.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ eval 'ls; echo ciao'
+a.sh            f1.txt     logging2.txt         script3.sh    script6.sh               t.txt    testo.txt
+altroscript.sh  f2.txt     logging_comando.txt  script4.1.sh  script7.sh               t2.txt   testo_nascosto.txt 
+arit.sh         filea.txt  script.sh            script4.sh    script8.sh               t3.txt   vade
+elenco.csv      fileb.txt  script2.sh           script5.sh    soluzione_compitino1.sh  test.sh  x.txt
+ciao
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ jobs
+andrea11@DESKTOP-HSTPJN3:~/scripting$ sleep 100 &
+[1] 6567
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ps -e
+  PID TTY          TIME CMD
+    1 hvc0     00:00:05 init(Ubuntu)
+    5 hvc0     00:03:03 init
+    8 ?        00:00:00 SessionLeader
+    9 ?        00:00:28 Relay(10)
+   10 pts/0    00:00:00 bash
+  974 ?        00:00:00 SessionLeader
+  975 ?        00:00:00 Relay(976)
+  976 pts/1    00:00:00 bash
+ 1015 ?        00:00:00 SessionLeader
+ 1016 ?        00:00:00 Relay(1017)
+ 1017 pts/2    00:00:00 bash
+ 1253 ?        00:00:00 SessionLeader
+ 1254 ?        00:00:00 Relay(1255)
+ 1255 pts/3    00:00:00 bash
+ 1266 ?        00:00:00 SessionLeader
+ 1267 ?        00:00:00 Relay(1268)
+ 1268 pts/4    00:00:00 bash
+ 1285 ?        00:00:00 SessionLeader
+ 1286 ?        00:00:00 Relay(1287)
+ 1287 pts/5    00:00:00 bash
+ 1385 ?        00:00:00 SessionLeader
+ 1386 ?        00:00:00 Relay(1387)
+ 1387 pts/6    00:00:00 bash
+ 1399 ?        00:00:00 SessionLeader
+ 1400 ?        00:00:00 Relay(1401)
+ 1401 pts/7    00:00:00 bash
+ 1474 ?        00:00:00 SessionLeader
+ 1475 ?        00:00:00 Relay(1476)
+ 1476 pts/8    00:00:00 bash
+ 1856 ?        00:00:00 SessionLeader
+ 1857 ?        00:00:00 Relay(1858)
+ 1858 pts/9    00:00:00 bash
+ 1871 ?        00:00:00 SessionLeader
+ 1872 ?        00:00:00 Relay(1873)
+ 1873 pts/10   00:00:00 bash
+ 1921 ?        00:00:00 SessionLeader
+ 1922 ?        00:00:00 Relay(1923)
+ 1923 pts/11   00:00:00 bash
+ 2062 pts/11   00:00:00 passwd
+ 2063 ?        00:00:00 SessionLeader
+ 2064 ?        00:00:00 Relay(2065)
+ 2065 pts/12   00:00:00 bash
+ 2159 ?        00:00:00 SessionLeader
+ 2160 ?        00:00:00 Relay(2161)
+ 2161 pts/13   00:00:00 bash
+ 2367 ?        00:00:00 SessionLeader
+ 2368 ?        00:00:00 Relay(2369)
+ 2369 pts/15   00:00:00 bash
+ 2381 ?        00:00:00 SessionLeader
+ 2382 ?        00:00:00 Relay(2383)
+ 2383 pts/14   00:00:00 bash
+ 2445 ?        00:00:00 SessionLeader
+ 2446 ?        00:00:00 Relay(2447)
+ 2447 pts/16   00:00:00 bash
+ 2500 ?        00:00:00 SessionLeader
+ 2501 ?        00:00:00 Relay(2502)
+ 2502 pts/17   00:00:00 bash
+ 2559 ?        00:00:00 SessionLeader
+ 2560 ?        00:00:00 Relay(2561)
+ 2561 pts/18   00:00:00 bash
+ 2635 ?        00:00:00 SessionLeader
+ 2636 ?        00:00:00 Relay(2637)
+ 2637 pts/19   00:00:01 bash
+ 3302 ?        00:00:00 SessionLeader
+ 3303 ?        00:00:00 Relay(3304)
+ 3304 pts/20   00:00:01 bash
+ 3487 ?        00:00:00 SessionLeader
+ 3488 ?        00:00:00 Relay(3489)
+ 3489 pts/21   00:00:00 bash
+ 3854 ?        00:00:00 SessionLeader
+ 3855 ?        00:00:00 Relay(3856)
+ 3856 pts/22   00:00:00 bash
+ 3920 ?        00:00:00 SessionLeader
+ 3921 ?        00:00:00 Relay(3922)
+ 3922 pts/23   00:00:00 bash
+ 3953 ?        00:00:00 SessionLeader
+ 3954 ?        00:00:00 Relay(3955)
+ 3955 pts/24   00:00:00 bash
+ 4258 ?        00:00:00 SessionLeader
+ 4259 ?        00:03:43 Relay(4260)
+ 4260 pts/25   00:00:03 bash
+ 4766 ?        00:00:00 SessionLeader
+ 4767 ?        00:00:00 Relay(4768)
+ 4768 pts/26   00:00:00 bash
+ 4779 ?        00:00:00 SessionLeader
+ 4780 ?        00:00:02 Relay(4781)
+ 4781 pts/27   00:00:00 bash
+ 5310 pts/27   00:01:29 top
+ 5314 ?        00:00:00 SessionLeader
+ 5315 ?        00:00:00 Relay(5316)
+ 5316 pts/28   00:00:00 bash
+ 5349 ?        00:00:00 SessionLeader
+ 5350 ?        00:00:00 Relay(5351)
+ 5351 pts/29   00:00:00 bash
+ 6411 ?        00:00:00 SessionLeader
+ 6412 ?        00:00:00 Relay(6413)
+ 6413 pts/30   00:00:00 bash
+ 6515 ?        00:00:00 SessionLeader
+ 6516 ?        00:00:00 Relay(6517)
+ 6517 pts/31   00:00:00 bash
+ 6567 pts/31   00:00:00 sleep
+ 6568 pts/31   00:00:00 ps
+andrea11@DESKTOP-HSTPJN3:~/scripting$ jobs
+[1]+  Running                 sleep 100 &
+andrea11@DESKTOP-HSTPJN3:~/scripting$ fg %1
+sleep 100
+
+
+
+
+
+
+
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ jobs
+andrea11@DESKTOP-HSTPJN3:~/scripting$ sleep 1000 &
+[1] 6569
+andrea11@DESKTOP-HSTPJN3:~/scripting$ jobs
+[1]+  Running                 sleep 1000 &
+andrea11@DESKTOP-HSTPJN3:~/scripting$ fg %1
+sleep 1000
+
+
+
+^Z
+[1]+  Stopped                 sleep 1000
+andrea11@DESKTOP-HSTPJN3:~/scripting$ jobs
+[1]+  Stopped                 sleep 1000
+andrea11@DESKTOP-HSTPJN3:~/scripting$ bg %1
+[1]+ sleep 1000 &
+andrea11@DESKTOP-HSTPJN3:~/scripting$ jobs
+[1]+  Running                 sleep 1000 &
+andrea11@DESKTOP-HSTPJN3:~/scripting$ fg %1
+sleep 1000
+^Z
+[1]+  Stopped                 sleep 1000
+andrea11@DESKTOP-HSTPJN3:~/scripting$ fg %1
+sleep 1000
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -
+trap: usage: trap [-lp] [[arg] signal_spec ...]
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+^Z
+[1]+  Stopped                 sleep 1000
+andrea11@DESKTOP-HSTPJN3:~/scripting$ fg %1
+sleep 1000
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -
+trap: usage: trap [-lp] [[arg] signal_spec ...]
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+sleep 1000
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -
+trap: usage: trap [-lp] [[arg] signal_spec ...]
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -
+trap: usage: trap [-lp] [[arg] signal_spec ...]
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
+53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
+58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
+63) SIGRTMAX-1  64) SIGRTMAX
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
+53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
+58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
+63) SIGRTMAX-1  64) SIGRTMAX
+andrea11@DESKTOP-HSTPJN3:~/scripting$ trap -l | grep -i stp
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+andrea11@DESKTOP-HSTPJN3:~/scripting$

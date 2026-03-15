@@ -1,0 +1,20 @@
+total 72
+-rwx------ 1 andrea11 andrea11   78 Oct 14 13:29 a.sh
+-rw-r--r-- 1 andrea11 andrea11    0 Oct  9 15:53 altroscript.sh
+-rwxrwxrwx 1 andrea11 andrea11  141 Oct  9 16:49 arit.sh
+-rw-r--r-- 1 andrea11 andrea11   75 Oct 19 17:16 elenco.csv
+-rw-r--r-- 1 andrea11 andrea11  740 Oct 16 15:05 s.sh
+-rwxr-xr-x 1 andrea11 andrea11  372 Oct 14 11:17 script.sh
+-rwx------ 1 andrea11 andrea11  653 Oct 14 13:39 script2.sh
+-rwx------ 1 andrea11 andrea11  907 Oct 15 13:18 script3.sh
+-rwx------ 1 andrea11 andrea11  106 Oct 16 16:20 script4.1.sh
+-rwx------ 1 andrea11 andrea11  461 Oct 16 16:30 script4.sh
+-rwx------ 1 andrea11 andrea11  577 Oct 21 11:48 script5.sh
+-rwx------ 1 andrea11 andrea11  454 Oct 21 12:37 script6.sh
+-rw-r--r-- 1 andrea11 andrea11  589 Oct 21 12:47 t.txt
+-rw-r--r-- 1 andrea11 andrea11  675 Oct 21 13:13 t2.txt
+-rw-r--r-- 1 andrea11 andrea11   12 Oct 21 13:22 t3.txt
+-rwx------ 1 andrea11 andrea11  460 Oct 19 17:06 test.sh
+-rw-r--r-- 1 andrea11 andrea11  574 Oct 21 12:43 testo.txt
+-rw-r--r-- 1 andrea11 andrea11   27 Oct 14 13:02 testo_nascosto.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct 21 10:40 vade

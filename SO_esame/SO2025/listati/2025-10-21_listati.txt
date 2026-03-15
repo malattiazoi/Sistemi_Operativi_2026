@@ -1,0 +1,598 @@
+andrea11@DESKTOP-HSTPJN3:~/scripting$ uname
+Linux
+andrea11@DESKTOP-HSTPJN3:~/scripting$ uname -a
+andrea11@DESKTOP-HSTPJN3:~/scripting$ uname
+Linux
+andrea11@DESKTOP-HSTPJN3:~/scripting$ uname -a
+andrea11@DESKTOP-HSTPJN3:~/scripting$ uname -a
+Linux DESKTOP-HSTPJN3 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 6 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ uname -a
+Linux DESKTOP-HSTPJN3 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+sei su linux
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh 
+sei su linux
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 82813       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-21 11:03:20.020261152 +0200
+Modify: 2025-10-21 11:02:59.348263179 +0200
+Change: 2025-10-21 11:02:59.348263179 +0200
+ Birth: 2025-10-09 15:51:51.577512713 +0200
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo
+primo argomento ciao
+secondo argomento mondo
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo
+primo argomento: ciao
+secondo argomento: mondo
+TERZO argomento:
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo a
+primo argomento: ciao
+secondo argomento: mondo
+TERZO argomento:
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo a
+primo argomento: ciao
+secondo argomento: a
+TERZO argomento:
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+mondo - bello -
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+mondo - bello -
+il nome di questo script è ./script5.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+mondo - bello -
+il nome di questo script è ./script5.sh
+hai inserito 2 argomenti
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+il nome di questo script è ./script5.sh
+hai inserito 3 argomenti
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao "mondo bello"^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ls
+a.sh            elenco.csv  script2.sh    script4.sh  testo.txt
+altroscript.sh  s.sh        script3.sh    script5.sh  testo_nascosto.txt
+arit.sh         script.sh   script4.1.sh  test.sh     vade
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $?
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ls jydfiufjyc
+ls: cannot access 'jydfiufjyc': No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $?
+2
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $?
+130
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+il nome di questo script è ./script5.sh
+hai inserito 3 argomenti
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+il nome di questo script è ./script5.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+il nome di questo script è ./script5.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+il nome di questo script è ./script5.sh
+ultima riga prima di exit
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+il nome di questo script è ./script5.sh
+ultima riga prima di exit
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $?
+0
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+il nome di questo script è ./script5.sh
+ultima riga prima di exit
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $?
+1
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh ciao mondo bello
+ciao - mondo - bello
+ciao - mondo - bello
+hkzlfnbgd
+hkzlfnbgd
+aebh
+ettb
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ sleep 120 &^Crea11@DESKTOP-HSTPJN3:~/scripting$ s     
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C      
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ sleep 120 &      
+[1] 5567
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $!
+5567
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $$
+4260
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $$^C
+[1]+  Done                    sleep 120
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5582
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $$
+4260
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $$
+4260
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $$
+4260
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5583
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5584
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5585
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo $$
+4260
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5586
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5587
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5588
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5589
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5590
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5591
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh
+PID dello script: 5589
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5590
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5591
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5590
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5591
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5590
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5591
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5591
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh     
+PID dello script: 5592
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh -f ciao.txt -v
+PID dello script: 5592
+PID dello script: 5592
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script5.sh -f ciao.txt -v^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script
+script.sh     script2.sh    script3.sh    script4.1.sh  script4.sh    script5.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script
+script.sh     script2.sh    script3.sh    script4.1.sh  script4.sh    script5.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting$ chmod 700 ./script6.sh 
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script6.sh 
+Scegli un animale:
+1) cane
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script6.sh
+Scegli un animale:
+1) cane
+Scegli un animale:
+1) cane
+1) cane
+2) gatto
+3) pappagallo
+3) pappagallo
+4) pesce
+5) Esci
+#? 3
+Hai scelto il pappagallo
+#? ^Candrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script6.sh 
+Scegli un animale:
+1) cane
+2) gatto
+3) pappagallo
+4) pesce
+5) Esci
+#? 3
+Hai scelto il pappagallo
+#? ^Candrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script6.sh 
+Scegli un animale:
+1) cane
+2) gatto
+3) pappagallo
+4) pesce
+5) Esci
+#? 4
+Hai scelto il pesce 🐡
+#? ^Candrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo 🐡 | xxd
+#? ^Candrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo 🐡 | xxd
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo 🐡 | xxd
+00000000: f09f 90a1 0a                             .....
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo -n 🐡 | xxd
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo -n 🐡 | xxd
+00000000: f09f 90a1                                ....
+andrea11@DESKTOP-HSTPJN3:~/scripting$ echo -n 🐡 | xxd -b
+00000000: 11110000 10011111 10010000 10100001                    ....
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script6.sh
+Scegli un animale:
+1) cane
+2) gatto
+3) pappagallo
+4) pesce
+5) Esci
+#? p
+#? ^Candrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scriptinScegli un animale:
+1) cane
+2) gatto
+3) pappagallo
+#? 1
+#? 1
+Hai scelto il cane 🐶
+andrea11@DESKTOP-HSTPJN3:~/scriptinandrea11@DESKTOP-HSTPJN3:~/scripting$ g  
+rep^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat testo.txt | fold -w 10
+Lorem Ipsu
+m is simpl
+y dummy te
+xt of the
+printing a
+nd typeset
+ting indus
+try. Lorem
+ Ipsum has
+ been the
+industry's
+ standard
+dummy text
+ ever sinc
+e the 1500
+s, when an
+ unknown p
+rinter too
+k a galley
+ of type a
+nd scrambl
+ed it to m
+ake a type
+ specimen
+book. It h
+as survive
+d not only
+ five cent
+uries, but
+ also the
+leap into
+electronic
+ typesetti
+ng, remain
+ing essent
+ially unch
+anged. It
+was popula
+rised in t
+he 1960s w
+ith the re
+lease of L
+etraset sh
+eets conta
+ining Lore
+m Ipsum pa
+ssages, an
+d more rec
+ently with
+ desktop p
+ublishing
+software l
+ike Aldus
+PageMaker
+including
+versions o
+f Lorem Ip
+sum.andrea11@DESKTOP-HSTPJN3:~/scripting$ cat testo.txt | fold -w 10 -s     
+Lorem
+Ipsum is
+simply
+dummy
+text of
+the
+printing
+and
+typesettin
+g
+industry.
+Lorem
+Ipsum has
+been the
+industry's
+ standard
+dummy
+text ever
+since the
+1500s,
+when an
+unknown
+printer
+took a
+galley of
+type and
+scrambled
+it to
+make a
+type
+specimen
+book. It
+has
+survived
+not only
+five
+centuries,
+ but also
+the leap
+into
+electronic
+
+typesettin
+g,
+remaining
+essentiall
+y
+unchanged.
+ It was
+popularise
+d in the
+1960s
+with the
+release
+of
+Letraset
+sheets
+containing
+ Lorem
+Ipsum
+passages,
+and more
+recently
+with
+desktop
+publishing
+ software
+like
+Aldus
+PageMaker
+including
+versions
+of Lorem
+Ipsum.andrea11@DESKTOP-HSTPJN3:~/scripting$ cat testo.txt | fold -w 30 -s   
+Lorem Ipsum is simply dummy
+text of the printing and
+typesetting industry. Lorem
+Ipsum has been the industry's
+standard dummy text ever
+since the 1500s, when an
+unknown printer took a galley
+of type and scrambled it to
+make a type specimen book. It
+has survived not only five
+centuries, but also the leap
+into electronic typesetting,
+remaining essentially
+unchanged. It was popularised
+in the 1960s with the release
+of Letraset sheets containing
+Lorem Ipsum passages, and
+more recently with desktop
+publishing software like
+Aldus PageMaker including
+versions of Lorem Ipsum.andrea11@DESKTOP-HSTPJN3:~/scripting$ cat testo.txt | fold -w 40 -s
+Lorem Ipsum is simply dummy text of the
+printing and typesetting industry.
+Lorem Ipsum has been the industry's
+standard dummy text ever since the
+1500s, when an unknown printer took a
+galley of type and scrambled it to make
+a type specimen book. It has survived
+not only five centuries, but also the
+leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the
+release of Letraset sheets containing
+Lorem Ipsum passages, and more recently
+with desktop publishing software like
+Aldus PageMaker including versions of
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat testo.txt | fold -w 40
+Lorem Ipsum is simply dummy text of the 
+printing and typesetting industry. Lorem
+ Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an
+ unknown printer took a galley of type a
+nd scrambled it to make a type specimen 
+book. It has survived not only five cent
+uries, but also the leap into electronic
+ typesetting, remaining essentially unch
+anged. It was popularised in the 1960s w
+ith the release of Letraset sheets conta
+ining Lorem Ipsum passages, and more rec
+ently with desktop publishing software l
+ike Aldus PageMaker including versions o
+f Lorem Ipsum.andrea11@DESKTOP-HSTPJN3:~/scripting$ cat testo.txt | fold -w 40 -s
+Lorem Ipsum is simply dummy text of the
+printing and typesetting industry.
+Lorem Ipsum has been the industry's
+standard dummy text ever since the
+1500s, when an unknown printer took a
+galley of type and scrambled it to make
+a type specimen book. It has survived
+not only five centuries, but also the
+leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the
+release of Letraset sheets containing
+Lorem Ipsum passages, and more recently
+with desktop publishing software like
+Aldus PageMaker including versions of
+Lorem Ipsum.andrea11@DESKTOP-HSTPJN3:~/scripting$ cat testo.txt | fold -w 40 -s > t.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t.txt 
+Lorem Ipsum is simply dummy text of the
+printing and typesetting industry.
+Lorem Ipsum has been the industry's
+standard dummy text ever since the
+1500s, when an unknown printer took a
+galley of type and scrambled it to make
+a type specimen book. It has survived
+not only five centuries, but also the
+leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the
+release of Letraset sheets containing
+Lorem Ipsum passages, and more recently
+with desktop publishing software like
+Aldus PageMaker including versions of
+Lorem Ipsum.andrea11@DESKTOP-HSTPJN3:~/scripting$ grep "book" t.txt 
+a type specimen book. It has survived
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep "specimen book" t.txt
+a type specimen book. It has survived
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -v "specimen book" t.txt
+Lorem Ipsum is simply dummy text of the
+printing and typesetting industry.
+Lorem Ipsum has been the industry's
+standard dummy text ever since the
+1500s, when an unknown printer took a
+galley of type and scrambled it to make
+not only five centuries, but also the
+leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the
+release of Letraset sheets containing
+Lorem Ipsum passages, and more recently
+with desktop publishing software like
+Aldus PageMaker including versions of
+Lorem Ipsum.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep "Lorem Ipsum" t.txt
+Lorem Ipsum is simply dummy text of the
+Lorem Ipsum has been the industry's
+Lorem Ipsum passages, and more recently
+Lorem Ipsum.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep "lorem ipsum" t.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum" t.txt
+Lorem Ipsum is simply dummy text of the
+Lorem Ipsum has been the industry's
+Lorem Ipsum passages, and more recently
+Lorem Ipsum.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum" t.txt testo.txt 
+t.txt:Lorem Ipsum is simply dummy text of the
+t.txt:Lorem Ipsum has been the industry's
+t.txt:Lorem Ipsum passages, and more recently
+t.txt:Lorem Ipsum.
+testo.txt:Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum" *.txt
+t.txt:Lorem Ipsum is simply dummy text of the
+t.txt:Lorem Ipsum has been the industry's
+t.txt:Lorem Ipsum passages, and more recently
+t.txt:Lorem Ipsum.
+testo.txt:Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum" 
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum" *
+t.txt:Lorem Ipsum is simply dummy text of the
+t.txt:Lorem Ipsum has been the industry's
+t.txt:Lorem Ipsum passages, and more recently
+t.txt:Lorem Ipsum.
+testo.txt:Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but alsndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but alsthe 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but als make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It o the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+grep: vade: Is a directory
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum" .txt
+grep: .txt: No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum"
+^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -i "lorem ipsum"^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "^2" t2.txt
+21-10-2025
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "^printing" t2.txt
+printing and typesetting industry.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "^printing" t2.txt
+printing and typesetting industry.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "printing" t2.txt
+printing and typesetting industry.
+Lorem Ipsum printing has been the industry's
+^Cdrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "the$^Ct2.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "the$" t2.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "the$" t2.txt
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "the $" t2.txt
+Lorem Ipsum is simply dummy text of the 
+standard dummy text ever since the 
+not only five centuries, but also the 
+popularised in the 1960s with the 
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "[0-9]{2}-[0-9]{2}-[0-9]{4}" t
+2.txt
+21-10-2025
+30-09-2025
+hduyj 17-10-2025
+15-10-2025
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "[0-9]{2}-[0-9]{2}-[0-9]{4}" t2.txt
+91-10-2025
+30-09-2025
+hduyj 17-10-2025
+15-10-2025
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "[0-3]{1}[0-9]{1}-[0-9]{2}-[0-9]{4}" t2.txt
+30-09-2025
+hduyj 17-10-2025
+15-10-2025
+21-11-2025
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "[0-3]{1}[0-9]{1}-[0-9]{2}-[0-9]{4}" t2.txt
+39-10-2025
+30-09-2025
+hduyj 17-10-2025
+15-10-2025
+21-11-2025
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "dummy.*since" t2.txt
+standard dummy text ever since the
+andrea11@DESKTOP-HSTPJN3:~/scripting$ grep -E "dummy.*since" t2.txt
+standard dummysince the
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t3.txt 
+a
+a
+a
+b
+b
+candrea11@DESKTOP-HSTPJN3:~/scripting$ cat t3.txt 
+a
+a
+b
+b
+c
+andrea11@DESKTOP-HSTPJN3:~/scripting$ cat t3.txt | uniq
+a
+b
+c
+andrea11@DESKTOP-HSTPJN3:~/scripting$

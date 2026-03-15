@@ -1,0 +1,4 @@
+Scrivere uno script Bash che prenda in input due file e confronti il numero di righe contenute in ciascuno.
+Se i due file hanno lo stesso numero di righe, lo script deve stampare il messaggio "I file hanno lo stesso numero di righe" riportando anche il numero di righe presenti.
+Altrimenti, deve stampare la differenza tra il numero di righe dei due file e quante righe hanno i due file rispettivamente.
+Nota: si usino almeno due command substitutions nello script.

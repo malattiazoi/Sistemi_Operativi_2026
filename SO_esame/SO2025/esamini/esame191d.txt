@@ -1,0 +1,68 @@
+[Attenzione: questo è un testo codificato in UTF-8]
+
+Creare nella propria home sulla macchina di indirizzo IP 10.0.14.23 una
+directory denominata tuousername.esame191d (es.franco.esame191d) e
+svolgere l'esercizio in tale directory o, in alternativa, creare una
+directory con lo stesso nome nella propria home macOS, svolgere gli
+esercizi in tale directory e, alla fine della prova, trasferirla nella
+propria home su 10.0.14.23.
+
+Gli script creati devono essere eseguibili sia su macOS che su Linux.
+Nella directory si DEVE anche creare un file di nome "leggimi.txt" che
+descriva l'impostazione adottata per le soluzioni oltre ad eventuali
+commenti e/o osservazioni. Si fa presente che il contenuto di tale file
+permette spesso una migliore comprensione della logica seguita nello
+svolgimento e, di conseguenza, la sua presenza va a tutto vantaggio
+dell'esaminando.
+
+Aggiungere dopo la she-bang line di qualsiasi script creato una riga di
+commento contenente il proprio cognome, nome e numero di matricola.
+
+Alla fine, copiare, incollare ed eseguire, in un terminale con il quale
+si sia acceduto al proprio account Linux, la seguente linea di comando:
+
+cd; tar cvfz $USER.esame191d.tgz $USER.esame191d
+
+[ATTENZIONE: dare il comando qui sopra indicato nello shell eseguito
+sulla macchina Linux, DOPO che la cartella tuousername.esame191d è stata
+trasferita sulla propria home su 10.0.14.23 e NON mentre è ancora nella
+propria home su macOS (se in essa si è lavorato).]
+
+Esercizio 1
+
+Eseguire la procedura di consegna descritta nell'introduzione (ovvero 
+la stessa che dovrà essere eseguita di nuovo alla fine della prova per
+l'intero svolgimento del compito), ponendo preliminarmente nella
+cartella tuousername.esame191d il solo documento che state leggendo
+(esame191d.txt).
+
+Attenzione: chi non completa l'esercizio 1 entro 20 minuti dalla
+consegna della traccia verrà considerato ritirato dalla prova.
+
+Esercizio 2
+
+Scrivere uno script bash di sinossi:
+
+pdf_by_header.sh <DIR> 
+
+che conti quanti file nella directory <DIR>, a qualsiasi livello di
+annidamento, iniziano con la sequenza di byte tipica dei file PDF, che
+espressa in esadecimale corrisponde a "255044462d".
+
+
+P.S. Ricordo qui alcuni comandi utili per lavorare con il nostro server
+Linux (10.0.14.23)
+
+Per il login su 10.0.14.23: ssh tuousername@10.0.14.23
+
+Per il trasferimento di una directory DIR1 da mac all'interno di una
+directory DIR2 su 10.0.14.23: scp -r DIR1 tuousername@10.0.14.23:DIR2
+
+Per il trasferimento di una directory DIR1 da mac all'interno della
+propria home su 10.0.14.23: scp -r DIR1 tuousername@10.0.14.23:
+
+Per il trasferimento di un file FILE1 da mac all'interno di una
+directory DIR2 su 10.0.14.23: scp FILE1 tuousername@10.0.14.23:DIR2
+
+Per il trasferimento di un file FILE1 da mac all'interno della propria
+home su 10.0.14.23 scp FILE1 tuousername@10.0.14.23:

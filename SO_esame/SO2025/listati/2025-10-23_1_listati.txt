@@ -1,0 +1,834 @@
+1400
+1401
+1474
+1475
+1476
+1856
+1857
+1858
+1871
+1872
+1873
+1921
+1922
+1923
+2062
+2063
+2064
+2065
+2159
+2160
+2161
+2367
+2368
+2369
+2381
+2382
+2383
+2445
+2446
+2447
+2500
+2501
+2502
+2559
+2560
+2561
+2635
+2636
+2637
+3302
+3303
+3304
+3487
+3488
+3489
+3854
+3855
+3856
+3920
+3921
+3922
+3953
+3954
+3955
+4258
+4259
+4260
+4766
+4767
+4768
+4779
+4780
+4781
+5310
+5314
+5315
+5316
+5349
+5350
+5351
+6411
+6412
+6413
+6515
+6516
+6517
+6579
+6580
+6581
+6592
+6593
+6594
+6605
+6636
+6637
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ps -e | cut -d " " -f3
+PID
+
+
+
+
+
+974
+975
+976
+?
+?
+pts/2
+?
+?
+pts/3
+?
+?
+pts/4
+?
+?
+pts/5
+?
+?
+pts/6
+?
+?
+pts/7
+?
+?
+pts/8
+?
+?
+pts/9
+?
+?
+pts/10
+?
+?
+pts/11
+pts/11
+?
+?
+pts/12
+?
+?
+pts/13
+?
+?
+pts/15
+?
+?
+pts/14
+?
+?
+pts/16
+?
+?
+pts/17
+?
+?
+pts/18
+?
+?
+pts/19
+?
+?
+pts/20
+?
+?
+pts/21
+?
+?
+pts/22
+?
+?
+pts/23
+?
+?
+pts/24
+?
+?
+pts/25
+?
+?
+pts/26
+?
+?
+pts/27
+pts/27
+?
+?
+pts/28
+?
+?
+pts/29
+?
+?
+pts/30
+?
+?
+pts/31
+?
+?
+pts/32
+?
+?
+pts/33
+pts/32
+pts/33
+pts/33
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ps -e sleep
+error: list of process IDs must follow p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PGREP(1)                             User Commands                            PGREP(1)
+
+NAME
+       pgrep,  pkill,  pidwait  - look up, signal, or wait for processes based on name   
+       and other attributes
+
+SYNOPSIS
+       pgrep [options] pattern
+       pkill [options] pattern
+       pidwait [options] pattern
+
+DESCRIPTION
+       pgrep looks through the currently running processes and lists the  process  IDs   
+       which  match the selection criteria to stdout.  All the criteria have to match.   
+       For example,
+
+              $ pgrep -u root sshd
+
+       will only list the processes called sshd AND owned by root.  On the other hand,   
+
+              $ pgrep -u root,daemon
+
+       will list the processes owned by root OR daemon.
+
+       pkill will send the specified signal (by default SIGTERM) to each  process  in‐   
+       stead of listing them on stdout.
+
+       pidwait will wait for each process instead of listing them on stdout.
+
+OPTIONS
+       -signal
+       --signal signal
+              Defines  the signal to send to each matched process.  Either the numeric   
+              or the symbolic signal name can be used.  (pkill only.)
+
+       -c, --count
+              Suppress normal output; instead print a  count  of  matching  processes.   
+              When  count does not match anything, e.g. returns zero, the command will   
+              return non-zero value. Note that for pkill and pidwait, the count is the   
+              number  of  matching processes, not the processes that were successfully   
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleep
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f slee
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f -a sleep
+6605 sleep 1000
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f -a slee
+6605 sleep 1000
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f slee
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleep
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep sleep
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep slee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PGREP(1)                             User Commands                            PGREP(1)
+
+NAME
+       pgrep,  pkill,  pidwait  - look up, signal, or wait for processes based on name   
+       and other attributes
+
+SYNOPSIS
+       pgrep [options] pattern
+       pkill [options] pattern
+       pidwait [options] pattern
+
+DESCRIPTION
+       pgrep looks through the currently running processes and lists the  process  IDs   
+       which  match the selection criteria to stdout.  All the criteria have to match.   
+       For example,
+
+              $ pgrep -u root sshd
+
+       will only list the processes called sshd AND owned by root.  On the other hand,   
+
+              $ pgrep -u root,daemon
+
+       will list the processes owned by root OR daemon.
+
+       pkill will send the specified signal (by default SIGTERM) to each  process  in‐   
+       stead of listing them on stdout.
+
+       pidwait will wait for each process instead of listing them on stdout.
+
+OPTIONS
+       -signal
+       --signal signal
+              Defines  the signal to send to each matched process.  Either the numeric   
+              or the symbolic signal name can be used.  (pkill only.)
+
+       -c, --count
+              Suppress normal output; instead print a  count  of  matching  processes.   
+              When  count does not match anything, e.g. returns zero, the command will   
+              return non-zero value. Note that for pkill and pidwait, the count is the   
+              number  of  matching processes, not the processes that were successfully   
+              signaled or waited for.
+
+       -d, --delimiter delimiter
+              Sets the string used to delimit each process ID in the  output  (by  de‐   
+              fault a newline).  (pgrep only.)
+
+       -e, --echo
+              Display name and PID of the process being killed.  (pkill only.)
+
+       -f, --full
+              The  pattern is normally only matched against the process name.  When -f   
+              is set, the full command line is used.
+
+       -g, --pgroup pgrp,...
+              Only match processes in the process group IDs listed.  Process  group  0   
+              is translated into pgrep's, pkill's, or pidwait's own process group.       
+
+       -G, --group gid,...
+              Only  match processes whose real group ID is listed.  Either the numeri‐   
+              cal or symbolical value may be used.
+
+       -i, --ignore-case
+              Match processes case-insensitively.
+
+       -l, --list-name
+              List the process name as well as the process ID.  (pgrep only.)
+
+       -a, --list-full
+              List the full command line as well as the process ID.  (pgrep only.)       
+
+       -n, --newest
+              Select only the newest (most recently  started)  of  the  matching  pro‐   
+              cesses.
+
+       -o, --oldest
+              Select  only  the  oldest  (least recently started) of the matching pro‐   
+              cesses.
+
+       -O, --older secs
+              Select processes older than secs.
+
+       -P, --parent ppid,...
+              Only match processes whose parent process ID is listed.
+
+       -s, --session sid,...
+              Only match processes whose process session ID is listed.  Session  ID  0   
+              is translated into pgrep's, pkill's, or pidwait's own session ID.
+
+       -t, --terminal term,...
+              Only match processes whose controlling terminal is listed.  The terminal   
+              name should be specified without the "/dev/" prefix.
+
+       -u, --euid euid,...
+              Only match processes whose effective user ID is listed.  Either the  nu‐   
+              merical or symbolical value may be used.
+
+       -U, --uid uid,...
+              Only match processes whose real user ID is listed.  Either the numerical   
+              or symbolical value may be used.
+
+       -v, --inverse
+              Negates the matching.  This option is usually used in  pgrep's  or  pid‐   
+              wait's  context.   In  pkill's  context  the short option is disabled to   
+              avoid accidental usage of the option.
+
+       -w, --lightweight
+              Shows all thread ids instead of pids in pgrep's  or  pidwait's  context.   
+              In pkill's context this option is disabled.
+
+       -x, --exact
+              Only  match  processes whose names (or command lines if -f is specified)   
+              exactly match the pattern.
+
+       -F, --pidfile file
+              Read PIDs from file.  This option is more useful for pkillorpidwait than   
+              pgrep.
+
+       -L, --logpidfile
+              Fail if pidfile (see -F) not locked.
+
+       -r, --runstates D,R,S,Z,...
+              Match only processes which match the process state.
+
+       --ns pid
+              Match  processes  that belong to the same namespaces. Required to run as   
+              root to match processes from other users. See --nslist for how to  limit   
+              which namespaces to match.
+
+       --nslist name,...
+              Match only the provided namespaces. Available namespaces: ipc, mnt, net,   
+              pid, user,uts.
+
+       -q, --queue value
+              Use sigqueue(3) rather than kill(2) and the value argument  is  used  to   
+              specify  an integer to be sent with the signal. If the receiving process   
+              has installed a handler for this signal using  the  SA_SIGINFO  flag  to   
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ man pgrep
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep sleep 10
+pgrep: only one pattern can be provided
+Try `pgrep --help' for more information.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep "sleep 10"
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f "sleep 10"
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep sleep 10
+pgrep: only one pattern can be provided
+Try `pgrep --help' for more information.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep "sleep 10"
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f "sleep 10"
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep "sleep 10"
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f "sleep 10"
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f "sleep 10"
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f "sleep 10"
+6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleep 10
+pgrep: only one pattern can be provided
+Try `pgrep --help' for more information.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep sleep 10
+pgrep: only one pattern can be provided
+Try `pgrep --help' for more information.
+andrea11@DESKTOP-HSTPJN3:~/scripting$ man pgrep
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill 6605
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleep
+6685
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -15 6685
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill SIGTERM 6685
+-bash: kill: SIGTERM: arguments must be process or job IDs        
+-bash: kill: (6685) - No such process
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill 6685 SIGTERM 
+-bash: kill: (6685) - No such process
+-bash: kill: SIGTERM: arguments must be process or job IDs        
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -SIGTERM 6685
+-bash: kill: (6685) - No such process
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -SIGTERM 6685^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleep
+6687
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -SIGTERM 6687
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 6689^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleep
+6687
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -SIGTERM 6687
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 6689^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -SIGTERM 6687
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 6689^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 6689^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleandrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f sleep
+6689
+~/scripting$ pgrep -f sleep
+6689
+andrea11@DESKTOP-HSTPJN3:6689
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 6689
+PJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTPJN3:andrea11@DESKTOP-HSTandrea11@DESKTOP-HSTPJN3:~/scripting$
+andrea11@DESKTOP-HSTPJN3:~/scripting$
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep script
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep-f  script
+pgrep-f: command not found
+andrea11@DESKTOP-HSTPJN3:~/scripting$ pgrep -f  script        
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ps -e
+  PID TTY          TIME CMD
+    1 hvc0     00:00:05 init(Ubuntu)
+    5 hvc0     00:03:08 init
+    8 ?        00:00:00 SessionLeader
+    9 ?        00:00:28 Relay(10)
+   10 pts/0    00:00:00 bash
+  974 ?        00:00:00 SessionLeader
+  975 ?        00:00:00 Relay(976)
+  976 pts/1    00:00:00 bash
+ 1015 ?        00:00:00 SessionLeader
+ 1016 ?        00:00:00 Relay(1017)
+ 1017 pts/2    00:00:00 bash
+ 1253 ?        00:00:00 SessionLeader
+ 1254 ?        00:00:00 Relay(1255)
+ 1255 pts/3    00:00:00 bash
+ 1266 ?        00:00:00 SessionLeader
+ 1267 ?        00:00:00 Relay(1268)
+ 1268 pts/4    00:00:00 bash
+ 1285 ?        00:00:00 SessionLeader
+ 1286 ?        00:00:00 Relay(1287)
+ 1287 pts/5    00:00:00 bash
+ 1385 ?        00:00:00 SessionLeader
+ 1386 ?        00:00:00 Relay(1387)
+ 1387 pts/6    00:00:00 bash
+ 1399 ?        00:00:00 SessionLeader
+ 1400 ?        00:00:00 Relay(1401)
+ 1401 pts/7    00:00:00 bash
+ 1474 ?        00:00:00 SessionLeader
+ 1475 ?        00:00:00 Relay(1476)
+ 1476 pts/8    00:00:00 bash
+ 1856 ?        00:00:00 SessionLeader
+ 1857 ?        00:00:00 Relay(1858)
+ 1858 pts/9    00:00:00 bash
+ 1871 ?        00:00:00 SessionLeader
+ 1872 ?        00:00:00 Relay(1873)
+ 1873 pts/10   00:00:00 bash
+ 1921 ?        00:00:00 SessionLeader
+ 1922 ?        00:00:00 Relay(1923)
+ 1923 pts/11   00:00:00 bash
+ 2062 pts/11   00:00:00 passwd
+ 2063 ?        00:00:00 SessionLeader
+ 2064 ?        00:00:00 Relay(2065)
+ 2065 pts/12   00:00:00 bash
+ 2159 ?        00:00:00 SessionLeader
+ 2160 ?        00:00:00 Relay(2161)
+ 2161 pts/13   00:00:00 bash
+ 2367 ?        00:00:00 SessionLeader
+ 2368 ?        00:00:00 Relay(2369)
+ 2369 pts/15   00:00:00 bash
+ 2381 ?        00:00:00 SessionLeader
+ 2382 ?        00:00:00 Relay(2383)
+ 2383 pts/14   00:00:00 bash
+ 2445 ?        00:00:00 SessionLeader
+ 2446 ?        00:00:00 Relay(2447)
+ 2447 pts/16   00:00:00 bash
+ 2500 ?        00:00:00 SessionLeader
+ 2501 ?        00:00:00 Relay(2502)
+ 2502 pts/17   00:00:00 bash
+ 2559 ?        00:00:00 SessionLeader
+ 2560 ?        00:00:00 Relay(2561)
+ 2561 pts/18   00:00:00 bash
+ 2635 ?        00:00:00 SessionLeader
+ 2636 ?        00:00:00 Relay(2637)
+ 2637 pts/19   00:00:01 bash
+ 3302 ?        00:00:00 SessionLeader
+ 3303 ?        00:00:00 Relay(3304)
+ 3304 pts/20   00:00:01 bash
+ 3487 ?        00:00:00 SessionLeader
+ 3488 ?        00:00:00 Relay(3489)
+ 3489 pts/21   00:00:00 bash
+ 3854 ?        00:00:00 SessionLeader
+ 3855 ?        00:00:00 Relay(3856)
+ 3856 pts/22   00:00:00 bash
+ 3920 ?        00:00:00 SessionLeader
+ 3921 ?        00:00:00 Relay(3922)
+ 3922 pts/23   00:00:00 bash
+ 3953 ?        00:00:00 SessionLeader
+ 3954 ?        00:00:00 Relay(3955)
+ 3955 pts/24   00:00:00 bash
+ 4258 ?        00:00:00 SessionLeader
+ 4259 ?        00:03:43 Relay(4260)
+ 4260 pts/25   00:00:03 bash
+ 4766 ?        00:00:00 SessionLeader
+ 4767 ?        00:00:00 Relay(4768)
+ 4768 pts/26   00:00:00 bash
+ 4779 ?        00:00:00 SessionLeader
+ 4780 ?        00:00:02 Relay(4781)
+ 4781 pts/27   00:00:00 bash
+ 5310 pts/27   00:01:35 top
+ 5314 ?        00:00:00 SessionLeader
+ 5315 ?        00:00:00 Relay(5316)
+ 5316 pts/28   00:00:00 bash
+ 5349 ?        00:00:00 SessionLeader
+ 5350 ?        00:00:00 Relay(5351)
+ 5351 pts/29   00:00:00 bash
+ 6411 ?        00:00:00 SessionLeader
+ 6412 ?        00:00:00 Relay(6413)
+ 6413 pts/30   00:00:00 bash
+ 6515 ?        00:00:00 SessionLeader
+ 6516 ?        00:00:00 Relay(6517)
+ 6517 pts/31   00:00:00 bash
+ 6579 ?        00:00:00 SessionLeader
+ 6580 ?        00:00:00 Relay(6581)
+ 6581 pts/32   00:00:00 bash
+ 6592 ?        00:00:00 SessionLeader
+ 6593 ?        00:00:00 Relay(6594)
+ 6594 pts/33   00:00:00 bash
+ 6938 pts/32   00:00:00 bash
+ 7000 pts/32   00:00:00 sleep
+ 7001 pts/33   00:00:00 ps
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 6594
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting> wsl
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ps -e
+  PID TTY          TIME CMD
+    1 hvc0     00:00:05 init(Ubuntu)
+    5 hvc0     00:03:08 init
+    8 ?        00:00:00 SessionLeader
+    9 ?        00:00:28 Relay(10)
+   10 pts/0    00:00:00 bash
+  974 ?        00:00:00 SessionLeader
+  975 ?        00:00:00 Relay(976)
+  976 pts/1    00:00:00 bash
+ 1015 ?        00:00:00 SessionLeader
+ 1016 ?        00:00:00 Relay(1017)
+ 1017 pts/2    00:00:00 bash
+ 1253 ?        00:00:00 SessionLeader
+ 1254 ?        00:00:00 Relay(1255)
+ 1255 pts/3    00:00:00 bash
+ 1266 ?        00:00:00 SessionLeader
+ 1267 ?        00:00:00 Relay(1268)
+ 1268 pts/4    00:00:00 bash
+ 1285 ?        00:00:00 SessionLeader
+ 1286 ?        00:00:00 Relay(1287)
+ 1287 pts/5    00:00:00 bash
+ 1385 ?        00:00:00 SessionLeader
+ 1386 ?        00:00:00 Relay(1387)
+ 1387 pts/6    00:00:00 bash
+ 1399 ?        00:00:00 SessionLeader
+ 1400 ?        00:00:00 Relay(1401)
+ 1401 pts/7    00:00:00 bash
+ 1474 ?        00:00:00 SessionLeader
+ 1475 ?        00:00:00 Relay(1476)
+ 1476 pts/8    00:00:00 bash
+ 1856 ?        00:00:00 SessionLeader
+ 1857 ?        00:00:00 Relay(1858)
+ 1858 pts/9    00:00:00 bash
+ 1871 ?        00:00:00 SessionLeader
+ 1872 ?        00:00:00 Relay(1873)
+ 1873 pts/10   00:00:00 bash
+ 1921 ?        00:00:00 SessionLeader
+ 1922 ?        00:00:00 Relay(1923)
+ 1923 pts/11   00:00:00 bash
+ 2062 pts/11   00:00:00 passwd
+ 2063 ?        00:00:00 SessionLeader
+ 2064 ?        00:00:00 Relay(2065)
+ 2065 pts/12   00:00:00 bash
+ 2159 ?        00:00:00 SessionLeader
+ 2160 ?        00:00:00 Relay(2161)
+ 2161 pts/13   00:00:00 bash
+ 2367 ?        00:00:00 SessionLeader
+ 2368 ?        00:00:00 Relay(2369)
+ 2369 pts/15   00:00:00 bash
+ 2381 ?        00:00:00 SessionLeader
+ 2382 ?        00:00:00 Relay(2383)
+ 2383 pts/14   00:00:00 bash
+ 2445 ?        00:00:00 SessionLeader
+ 2446 ?        00:00:00 Relay(2447)
+ 2447 pts/16   00:00:00 bash
+ 2500 ?        00:00:00 SessionLeader
+ 2501 ?        00:00:00 Relay(2502)
+ 2502 pts/17   00:00:00 bash
+ 2559 ?        00:00:00 SessionLeader
+ 2560 ?        00:00:00 Relay(2561)
+ 2561 pts/18   00:00:00 bash
+ 2635 ?        00:00:00 SessionLeader
+ 2636 ?        00:00:00 Relay(2637)
+ 2637 pts/19   00:00:01 bash
+ 3302 ?        00:00:00 SessionLeader
+ 3303 ?        00:00:00 Relay(3304)
+ 3304 pts/20   00:00:01 bash
+ 3487 ?        00:00:00 SessionLeader
+ 3488 ?        00:00:00 Relay(3489)
+ 3489 pts/21   00:00:00 bash
+ 3854 ?        00:00:00 SessionLeader
+ 3855 ?        00:00:00 Relay(3856)
+ 3856 pts/22   00:00:00 bash
+ 3920 ?        00:00:00 SessionLeader
+ 3921 ?        00:00:00 Relay(3922)
+ 3922 pts/23   00:00:00 bash
+ 3953 ?        00:00:00 SessionLeader
+ 3954 ?        00:00:00 Relay(3955)
+ 3955 pts/24   00:00:00 bash
+ 4258 ?        00:00:00 SessionLeader
+ 4259 ?        00:03:43 Relay(4260)
+ 4260 pts/25   00:00:03 bash
+ 4766 ?        00:00:00 SessionLeader
+ 4767 ?        00:00:00 Relay(4768)
+ 4768 pts/26   00:00:00 bash
+ 4779 ?        00:00:00 SessionLeader
+ 4780 ?        00:00:02 Relay(4781)
+ 4781 pts/27   00:00:00 bash
+ 5310 pts/27   00:01:35 top
+ 5314 ?        00:00:00 SessionLeader
+ 5315 ?        00:00:00 Relay(5316)
+ 5316 pts/28   00:00:00 bash
+ 5349 ?        00:00:00 SessionLeader
+ 5350 ?        00:00:00 Relay(5351)
+ 5351 pts/29   00:00:00 bash
+ 6411 ?        00:00:00 SessionLeader
+ 6412 ?        00:00:00 Relay(6413)
+ 6413 pts/30   00:00:00 bash
+ 6515 ?        00:00:00 SessionLeader
+ 6516 ?        00:00:00 Relay(6517)
+ 6517 pts/31   00:00:00 bash
+ 6579 ?        00:00:00 SessionLeader
+ 6580 ?        00:00:00 Relay(6581)
+ 6581 pts/32   00:00:00 bash
+ 6938 pts/32   00:00:00 bash
+ 7015 pts/32   00:00:00 sleep
+ 7016 ?        00:00:00 SessionLeader
+ 7017 ?        00:00:00 Relay(7018)
+ 7018 pts/33   00:00:00 bash
+ 7029 pts/33   00:00:00 ps
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script8.sh ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script8.sh 
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Facendo cose...
+il mio pid è 7043
+Terminated
+andrea11@DESKTOP-HSTPJN3:~/scripting$ ./script8.sh
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+eh volevi uscire, io qua sto facendo cose importanti..
+Facendo cose...
+il mio pid è 7071
+eh volevi uscire, io qua sto facendo cose importanti..
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+eh volevi uscire, io qua sto facendo cose importanti..
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Facendo cose...
+il mio pid è 7071
+Killed
+andrea11@DESKTOP-HSTPJN3:~/scripting$  

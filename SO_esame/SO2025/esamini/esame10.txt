@@ -1,0 +1,17 @@
+Creare nella propria home una cartella denominata nomeaccount.esame10
+(es.franco.esame10).
+Svolgere l'esercizio nella cartella.
+Nella cartella si può (ma non è obbligatorio) porre un file di nome leggimi
+contenente commenti e o osservazioni.
+Alla fine usare nella home i comandi:
+
+tar cvf nomeaccount.esame10.tar nomeaccount.esame10
+gzip nomeaccount.esame10.tar
+
+Esercizio
+Uno script A svolge delle operazioni (es.incrementa un contatore).
+Costruire uno script B che costringa ad intervalli regolari 
+lo script A a stampare allo standard output il risultato dell'operazione.
+Lo script A può essere modificato per ottenere lo scopo prefisso.
+Non è permesso usare file temporanei per lo svolgimento dell'esercizio.
+I due script devono essere lanciati indipendentemente.

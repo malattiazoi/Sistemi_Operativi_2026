@@ -1,0 +1,179 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tutti i diritti riservati.
+
+Installa la versione più recente di PowerShell per nuove funzionalità e miglioramenti. https://aka.ms/PSWindows
+
+PS C:\Users\Andrea> wsl
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ls /home/achezzi
+ls: cannot access '/home/achezzi': No such file or directory
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ls
+ AppData                                                                                        OneDrive
+ Apple                                                                                          OpenVPN
+ Contacts                                                                                       Pictures
+ Cookies                                                                                        Postman
+'Dati applicazioni'                                                                             PycharmProjects
+ Desktop                                                                                        Recenti
+ Documenti                                                                                     'Risorse di rete'
+ Documents                                                                                     'Risorse di stampa'
+ Downloads                                                                                     'Saved Games'
+ Favorites                                                                                      Searches
+'Impostazioni locali'                                                                           SendTo
+ IntelGraphicsProfiles                                                                          Tracing
+ Links                                                                                          Videos
+'Menu Avvio'                                                                                    eclipse
+ Modelli                                                                                        eclipse-workspace
+ Music                                                                                          file.zip
+ NTUSER.DAT                                                                                     ntuser.dat.LOG1
+ NTUSER.DAT{7161da94-e2fd-11ed-abbf-010101010000}.TM.blf                                        ntuser.dat.LOG2
+ NTUSER.DAT{7161da94-e2fd-11ed-abbf-010101010000}.TMContainer00000000000000000001.regtrans-ms   ntuser.ini
+ NTUSER.DAT{7161da94-e2fd-11ed-abbf-010101010000}.TMContainer00000000000000000002.regtrans-ms
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ cd /home
+andrea11@DESKTOP-HSTPJN3:/home$ ls
+andrea11
+andrea11@DESKTOP-HSTPJN3:/home$ cd andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  b.txt  c.txt
+andrea11@DESKTOP-HSTPJN3:~$ man scp
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  b.txt  c.txt
+andrea11@DESKTOP-HSTPJN3:~$ scp a.txt achezzi@10.0.14.23
+andrea11@DESKTOP-HSTPJN3:~$ scp a.txt achezzi@10.0.14.23:/
+achezzi@10.0.14.23's password:
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ scp a.txt achezzi@10.0.14.23:/home/achezzi/arrivato.txt
+achezzi@10.0.14.23's password:
+a.txt                                                                               100%   13     0.1KB/s   00:00
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  achezzi@10.0.14.23  b.txt  c.txt
+andrea11@DESKTOP-HSTPJN3:~$ rm achezzi@10.0.14.23
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  b.txt  c.txt
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  b.txt  c.txt
+andrea11@DESKTOP-HSTPJN3:~$ nano elaborato.txt
+andrea11@DESKTOP-HSTPJN3:~$ cat elaborato.txt
+questo è il mio bellissimo esame
+andrea11@DESKTOP-HSTPJN3:~$ scp elaborato.txt achezzi@hplinux^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ scp elaborato.txt achezzi@hplinux:/home/achezzi/elaborato_atterrato.txt
+ssh: Could not resolve hostname hplinux: Temporary failure in name resolution
+lost connection
+andrea11@DESKTOP-HSTPJN3:~$ scp elaborato.txt achezzi@10.0.14.23:/home/achezzi/elaborato_atterrato.txt
+achezzi@10.0.14.23's password:
+elaborato.txt                                                                       100%   34     0.3KB/s   00:00
+andrea11@DESKTOP-HSTPJN3:~$ scp elaborato.txt achezzi@10.0.14.23:^Come/achezzi/elaborato_atterrato.txt
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ scp achezzi@10.0.14.23:/home/achezzi/creato_sul_server.txt ./creato_sul_server_arrivato_da_noi.txt
+achezzi@10.0.14.23's password:
+creato_sul_server.txt                                                               100%   30     0.4KB/s   00:00
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 20
+-rw-r--r-- 2 andrea11 andrea11 13 Sep 30 10:54 a.txt
+-rw-r--r-- 2 andrea11 andrea11 13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11  2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11 30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11 34 Sep 30 11:23 elaborato.txt
+andrea11@DESKTOP-HSTPJN3:~$ cat creato_sul_server_arrivato_da_noi.txt
+contenuto prodotto su hplinux
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open
+xdg-open - opens a file or URL in the user's preferred application
+
+Synopsis
+
+xdg-open { file | URL }
+
+xdg-open { --help | --manual | --version }
+
+Use 'man xdg-open' or 'xdg-open --manual' for additional info.
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 11:52:38.724: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:223): WARNING **: 11:52:38.724: The directory '~/Templates' doesn't exist, ignoring it
+vim '/home/andrea11/creato_sul_server_arrivato_da_noi.txt'
+
+(tilix:233): GLib-GObject-WARNING **: 11:52:44.376: invalid (NULL) pointer instance
+
+(tilix:233): GLib-GObject-CRITICAL **: 11:52:44.376: g_signal_handlers_disconnect_matched: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ scp achezzi@10.0.14.23:/home/achezzi/creato_sul_server.txt ./creato_sul_server_arrivato_da_noi.txt^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ pwd
+/home/andrea11
+andrea11@DESKTOP-HSTPJN3:~$ scp achezzi@10.0.14.23:/home/achezzi/creato_sul_server.txt /mnt/c/Users/
+/mnt/c/Users/All\ Users/     /mnt/c/Users/Default/        /mnt/c/Users/Public/
+/mnt/c/Users/Andrea/         /mnt/c/Users/Default\ User/  /mnt/c/Users/desktop.ini
+andrea11@DESKTOP-HSTPJN3:~$ scp achezzi@10.0.14.23:/home/achezzi/creato_sul_sandrea11@DESKTOP-HSTPJN3:~$ scp achezzi@10.0.14.23:/home/achezzi/creato_sul_server.txt /mnt/c/Users/Andrea/Desktop/SO2025
+achezzi@10.0.14.23's password:
+creato_sul_server.txt                      100%   30     0.3KB/s   00:00
+andrea11@DESKTOP-HSTPJN3:~$ man cp
+andrea11@DESKTOP-HSTPJN3:~$ scp achezzi@10.0.14.23:/home/achezzi/creato_sul_server.txt /mnt/c/Users/Andrea/Desktop/^C2025
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ man scp
+andrea11@DESKTOP-HSTPJN3:~$ scp achezzi@10.0.14.23:/home/achezzi/creato_sul_server.txt /mnt/c/Users/Andrea/Desktop/SO2025
+achezzi@10.0.14.23's password:
+creato_sul_server.txt                                                                               100%   30     0.3KB/s   00:00
+andrea11@DESKTOP-HSTPJN3:~$ man scp
+andrea11@DESKTOP-HSTPJN3:~$ hostname -I
+172.25.113.79
+andrea11@DESKTOP-HSTPJN3:~$ cd /home
+andrea11@DESKTOP-HSTPJN3:/home$ cd /
+andrea11@DESKTOP-HSTPJN3:/$ ls
+Docker  dev   init   lib64       media  proc  sbin  sys  var        wslKPhdaD  wslgFNnPA  wsloMNDeD
+bin     etc   lib    libx32      mnt    root  snap  tmp  wslCeogNA  wslOiaACJ  wslkPobcD
+boot    home  lib32  lost+found  opt    run   srv   usr  wslGgBkIL  wslcEiPKG  wsloKmNdD
+andrea11@DESKTOP-HSTPJN3:/$ ls -l
+total 2776
+drwxr-xr-x   3 root root    4096 Feb 20  2024 Docker
+lrwxrwxrwx   1 root root       7 Jan  3  2023 bin -> usr/bin
+drwxr-xr-x   2 root root    4096 Apr 18  2022 boot
+drwxr-xr-x   8 root root    3160 Sep 30 11:01 dev
+drwxr-xr-x  92 root root    4096 Sep 30 11:13 etc
+drwxr-xr-x   3 root root    4096 Mar  6  2023 home
+-rwxrwxrwx   1 root root 2735264 Aug  6 21:54 init
+lrwxrwxrwx   1 root root       7 Jan  3  2023 lib -> usr/lib
+lrwxrwxrwx   1 root root       9 Jan  3  2023 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root       9 Jan  3  2023 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root      10 Jan  3  2023 libx32 -> usr/libx32
+drwx------   2 root root   16384 Mar  6  2023 lost+found
+drwxr-xr-x   2 root root    4096 Jan  3  2023 media
+drwxr-xr-x   5 root root    4096 Mar  6  2023 mnt
+drwxr-xr-x   3 root root    4096 Sep 26  2023 opt
+dr-xr-xr-x 204 root root       0 Sep 30 11:01 proc
+drwx------   3 root root    4096 Feb 20  2024 root
+drwxr-xr-x   7 root root     140 Sep 30 11:01 run
+lrwxrwxrwx   1 root root       8 Jan  3  2023 sbin -> usr/sbin
+drwxr-xr-x   8 root root    4096 Jan  3  2023 snap
+drwxr-xr-x   2 root root    4096 Jan  3  2023 srv
+dr-xr-xr-x  13 root root       0 Sep 30 11:01 sys
+drwxrwxrwt  30 root root    4096 Sep 23 11:22 tmp
+drwxr-xr-x  14 root root    4096 Jan  3  2023 usr
+drwxr-xr-x  13 root root    4096 Jan  3  2023 var
+drwx------   2 root root    4096 Sep 30 10:14 wslCeogNA
+drwx------   2 root root    4096 Mar  6  2023 wslGgBkIL
+drwx------   2 root root    4096 Sep 30 10:14 wslKPhdaD
+drwx------   2 root root    4096 Mar  6  2023 wslOiaACJ
+drwx------   2 root root    4096 Mar  6  2023 wslcEiPKG
+drwx------   2 root root    4096 Mar  6  2023 wslgFNnPA
+drwx------   2 root root    4096 Sep 30 10:14 wslkPobcD
+drwx------   2 root root    4096 Sep 30 10:14 wsloKmNdD
+drwx------   2 root root    4096 Sep 30 10:14 wsloMNDeD
+andrea11@DESKTOP-HSTPJN3:/$ ls
+Docker  dev   init   lib64       media  proc  sbin  sys  var        wslKPhdaD  wslgFNnPA  wsloMNDeD
+bin     etc   lib    libx32      mnt    root  snap  tmp  wslCeogNA  wslOiaACJ  wslkPobcD
+boot    home  lib32  lost+found  opt    run   srv   usr  wslGgBkIL  wslcEiPKG  wsloKmNdD
+andrea11@DESKTOP-HSTPJN3:/$  cd /home
+andrea11@DESKTOP-HSTPJN3:/home$ ls -l
+total 4
+drwxr-x--- 9 andrea11 andrea11 4096 Sep 30 12:01 andrea11
+andrea11@DESKTOP-HSTPJN3:/home$

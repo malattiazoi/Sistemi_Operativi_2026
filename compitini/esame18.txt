@@ -1,0 +1,23 @@
+Creare nella home una cartella denominata nomeaccount.esame18 
+(es.franco.esame2).
+In questa cartella creare due cartelle denominate 
+esercizio1, esercizio2.
+Svolgere ciascun esercizio nella sua cartella.
+Nella cartella si può (non è obbligatorio) porre un file di  nome leggimi
+contenente commenti e o osservazioni.
+Alla fine usare nella home i comandi:
+
+tar cvf nomeaccount.esame18.tar nomeaccount.esame18
+gzip nomeaccount.esame18.tar
+
+Esercizi
+
+1) Fare in modo che il proprio prompt principale indichi il numero
+di processi attivi nel sistema al momento.
+
+2) Scrivere uno script che accetta come argomento il nome di una directory e
+calcola una stringa che è indice dell'integrità della directory, in modo che, se
+rieseguendo lo stesso script sulla stessa directory il risultato non cambia,
+si abbia la certezza che la struttura interna della directory e i suoi 
+contenuti non sono stati modificati.
+

@@ -1,0 +1,93 @@
+================================================================================
+MANUALE RAPIDO: PERMESSI FILE & DIRECTORY (LINUX/BASH)
+================================================================================
+
+--- 1. I VALORI BASE (LETTURA, SCRITTURA, ESECUZIONE) ---
+Ogni permesso ha un VALORE NUMERICO (Ottale) e un SIMBOLO.
+
+VALORE | SIMBOLO | SIGNIFICATO SU FILE         | SIGNIFICATO SU DIRECTORY
+-------|---------|-----------------------------|---------------------------
+   4   |    r    | READ (Leggere contenuto)    | Fare 'ls' (Vedere i file)
+   2   |    w    | WRITE (Modificare/Salvare)  | Creare/Cancellare file dentro
+   1   |    x    | EXECUTE (Eseguire script)   | Fare 'cd' (Entrare dentro)
+   0   |    -    | NESSUN PERMESSO             | Accesso negato
+
+> SOMMA I VALORI:
+  7 = 4+2+1 (rwx) -> Legge, Scrive, Esegue (Tutto)
+  6 = 4+2+0 (rw-) -> Legge, Scrive (Standard per file dati)
+  5 = 4+0+1 (r-x) -> Legge, Esegue (Standard per script pubblici)
+  4 = 4+0+0 (r--) -> Solo lettura
+  0 = 0+0+0 (---) -> Nulla
+
+--- 2. LA STRUTTURA A 3 CIFRE (UGO) ---
+Quando scrivi `chmod 755 file`, le cifre rappresentano tre gruppi:
+
+   7       5       5
+   ^       ^       ^
+   |       |       |
+ USER    GROUP   OTHERS
+(Prop.) (Gruppo) (Tutti gli altri)
+
+Esempio: chmod 644 file.txt
+- User   (6 = rw): Il proprietario legge e scrive.
+- Group  (4 = r-): Il gruppo legge solo.
+- Others (4 = r-): Gli altri leggono solo.
+
+--- 3. IL "PRIMO BYTE" (PERMESSI SPECIALI) ---
+Esiste una 4^ cifra (quella più a sinistra) per permessi avanzati.
+Sintassi completa: `chmod XABC file` (dove X è il permesso speciale).
+
+VALORE (X) | NOME        | SIMBOLO | EFFETTO
+-----------|-------------|---------|---------------------------------------------
+     4     | SUID        | s (User)| Esegue il file con i permessi del PROPRIETARIO
+           | (SetUID)    |         | (es. comando 'passwd' per cambiare password)
+-----------|-------------|---------|---------------------------------------------
+     2     | SGID        | s (Grp) | Esegue con i permessi del GRUPPO.
+           | (SetGID)    |         | Su Directory: i nuovi file ereditano il gruppo.
+-----------|-------------|---------|---------------------------------------------
+     1     | STICKY BIT  | t (Oth) | Su Directory: SOLO il proprietario di un file
+           |             |         | può cancellarlo (anche se la dir è rw per tutti).
+           |             |         | (Tipico della cartella /tmp).
+
+> DOVE APPAIONO I SIMBOLI?
+  - SUID appare al posto della 'x' dell'Utente (rws------)
+  - SGID appare al posto della 'x' del Gruppo (---rws---)
+  - STICKY appare al posto della 'x' degli Altri (------rwt)
+
+Esempi Speciali:
+- chmod 4755 -> SUID attivo. Tutti eseguono come se fossero il proprietario.
+- chmod 2755 -> SGID attivo. Utile per cartelle condivise tra gruppi.
+- chmod 1777 -> Sticky Bit attivo. Cartella pubblica (/tmp), ma non posso
+                cancellare i file degli altri.
+
+--- 4. CONFIGURAZIONI CLASSICHE DA ESAME ---
+
+CODICE | SCENARIO TIPICO
+-------|-------------------------------------------------------
+ 600   | "FILE SEGRETO": rw-------
+       | Solo io leggo e scrivo. Nessun altro vede nulla.
+       | (Richiesto per file password, chiavi ssh, diari).
+
+ 644   | "FILE STANDARD": rw-r--r--
+       | Io modifico, tutti gli altri leggono e basta.
+       | (Siti web, documenti pubblici).
+
+ 700   | "SCRIPT PRIVATO / CARTELLA PRIVATA": rwx------
+       | Solo io entro/eseguo. Gli altri fuori.
+
+ 755   | "SCRIPT/DIR PUBBLICA": rwxr-xr-x
+       | Io faccio tutto, gli altri possono eseguire/entrare ma non modificare.
+
+ 777   | "PERICOLO TOTALE": rwxrwxrwx
+       | Chiunque fa tutto. Da evitare (o usare solo per test disperati).
+
+ 1777  | "DIRECTORY TEMPORANEA": rwxrwxrwt
+       | Tutti scrivono, ma cancello solo la roba mia (Sticky Bit).
+
+--- 5. COMANDI UTILI ---
+
+- ls -l            -> Mostra i permessi (es. -rwxr-xr-x)
+- chmod 755 file   -> Imposta permessi numerici
+- chmod u+x file   -> Aggiunge esecuzione solo all'Utente (Simbolico)
+- chmod o-r file   -> Toglie lettura agli Altri (Simbolico)
+- chown user:grp f -> Cambia proprietario e gruppo

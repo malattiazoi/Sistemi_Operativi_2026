@@ -1,0 +1,287 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tutti i diritti riservati.
+
+Installa la versione più recente di PowerShell per nuove funzionalità e miglioramenti. https://aka.ms/PSWindows
+
+PS C:\Users\Andrea\Desktop\SO2025> wsl
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ls
+SO2025_C1.pptx  a  cartella  ciao.txt  cod.txt  codx.txt  frase.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo "la donzelletta"
+la donzelletta
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo "la donzelletta" > f1.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f1.txt
+la donzelletta
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo "vien" > f2.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f2.txt
+vien
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo "dalla campagna" > f3.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f3.txt
+dalla campagna
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 11:42:19.391: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:2471): WARNING **: 11:42:19.391: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/Sandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Anandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f
+f1.txt     f2.txt     f3.txt     frase.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f
+f1.txt     f2.txt     f3.txt     frase.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f
+f1.txt     f2.txt     f3.txt     frase.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f1.txt f2.txt f3.txt > unito.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat unito.txt
+la donzelletta
+vien
+dalla campagna
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/Sandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Anandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat unito.txt
+la donzelletta
+vien
+dalla campagna
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo "al mattino" >> unito.txt ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ man echo
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "la donzelletta"
+la donzellettaandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Anandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2andreaandrananananandranandreaandreaandreaananananananandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "la donzelletta"
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ sktop/SO2025$ echo ta
+"
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "la donzellta"
+la donzelltaandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "la donzellta^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo "la donzelletta"
+la donzelletta
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "la donzelletta" > f1.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "vien" > f2.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "dalla campagna" > f3.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f1.txt f2.txt f3.txt > unito.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat unito.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "la donzelletta " > f1.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo -n "vien " > f2.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo "dalla campagna" > f3.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat unito.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat f1.txt f2.txt f3.txt > unito.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat unito.txt
+la donzelletta vien dalla campagna
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/Sandrea11@DESKTOP-HSTPJN3:/mnandrea11@DESandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ls
+SO2025_C1.pptx  cartella  cod.txt   f1.txt  f3.txt     unito.txt
+a               ciao.txt  codx.txt  f2.txt  frase.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ls -l
+total 4448
+-rwxrwxrwx 1 andrea11 andrea11 4551179 Sep 23 10:32 SO2025_C1.pptx
+-rwxrwxrwx 1 andrea11 andrea11       7 Sep 18 16:29 a
+drwxrwxrwx 1 andrea11 andrea11    4096 Sep 18 16:12 cartella
+-rwxrwxrwx 1 andrea11 andrea11       0 Sep 18 16:05 ciao.txt
+-rwxrwxrwx 1 andrea11 andrea11      48 Sep 23 10:32 cod.txt
+-rwxrwxrwx 1 andrea11 andrea11      45 Sep 23 10:32 codx.txt
+-rwxrwxrwx 1 andrea11 andrea11      15 Sep 23 11:52 f1.txt
+-rwxrwxrwx 1 andrea11 andrea11       5 Sep 23 11:52 f2.txt
+-rwxrwxrwx 1 andrea11 andrea11      15 Sep 23 11:53 f3.txt
+-rwxrwxrwx 1 andrea11 andrea11       7 Sep 18 16:20 frase.txt
+-rwxrwxrwx 1 andrea11 andrea11      35 Sep 23 11:53 unito.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ touch ciao
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ ls -l
+total 4448
+-rwxrwxrwx 1 andrea11 andrea11 4551179 Sep 23 10:32 SO2025_C1.pptx
+-rwxrwxrwx 1 andrea11 andrea11       7 Sep 18 16:29 a
+drwxrwxrwx 1 andrea11 andrea11    4096 Sep 18 16:12 cartella
+-rwxrwxrwx 1 andrea11 andrea11       0 Sep 23 12:06 ciao
+-rwxrwxrwx 1 andrea11 andrea11       0 Sep 18 16:05 ciao.txt
+-rwxrwxrwx 1 andrea11 andrea11      48 Sep 23 10:32 cod.txt
+-rwxrwxrwx 1 andrea11 andrea11      45 Sep 23 10:32 codx.txt
+-rwxrwxrwx 1 andrea11 andrea11      15 Sep 23 11:52 f1.txt
+-rwxrwxrwx 1 andrea11 andrea11       5 Sep 23 11:52 f2.txt
+-rwxrwxrwx 1 andrea11 andrea11      15 Sep 23 11:53 f3.txt
+-rwxrwxrwx 1 andrea11 andrea11       7 Sep 18 16:20 frase.txt
+-rwxrwxrwx 1 andrea11 andrea11      35 Sep 23 11:53 unito.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo hjtdjhtjugj > ciao
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/Sandrea11@DESKTOP-HSTPJN3:/mnandrea11@DESandrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano parole.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano parole.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat parole.txt
+albero
+casa
+pc
+computer
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano parole.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat parole.txt
+zebra
+quadro
+termosifone
+albero
+casa
+pc
+computer
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ man sort
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ sort parole.txt
+albero
+casa
+computer
+pc
+quadro
+termosifone
+zebra
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano parole.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ sort parole.txt > parole_ordinate.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat parole.txt parole_ordinate.txt
+zebra
+quadro
+termosifone
+albero
+casa
+pc
+computer
+albero
+casa
+computer
+pc
+quadro
+termosifone
+zebra
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ sort parole.txt
+albero
+casa
+computer
+pc
+quadro
+termosifone
+zebra
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ sort -r parole.txt
+zebra
+termosifone
+quadro
+pc
+computer
+casa
+albero
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat parole.txt | sort
+albero
+casa
+computer
+pc
+quadro
+termosifone
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat parole.txt | sort -r
+zebra
+termosifone
+quadro
+pc
+computer
+casa
+albero
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano elenco.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano elenco.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano elenco.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo radar | rev
+radar
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ echo ciao | rev
+oaic
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat elenco.txt | rev
+odnoM
+eroruF
+artselaP
+eraM
+eraihC
+atiM
+artseniF
+eromuR
+atiL
+eraC
+eloS
+eronO
+atiV
+eroloD
+odnoF
+atsiviR
+eromA
+elovaT
+atiD
+odnoceS
+artseaM
+atiF
+odnoforP
+atiS
+eraR
+elotS
+atseT
+elloC
+eraP
+ednoR
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat elenco.txt | rev | sort
+artseaM
+artselaP
+artseniF
+atiD
+atiF
+atiL
+atiM
+atiS
+atiV
+atseT
+atsiviR
+ednoR
+elloC
+eloS
+elotS
+elovaT
+eraC
+eraM
+eraP
+eraR
+eraihC
+eroloD
+eromA
+eromuR
+eronO
+eroruF
+odnoF
+odnoM
+odnoceS
+odnoforP
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat elenco.txt | rev | sort | rev
+Maestra
+Palestra
+Finestra
+Dita
+Fita
+Lita
+Mita
+Sita
+Vita
+Testa
+Rivista
+Ronde
+Colle
+Sole
+Stole
+Tavole
+Care
+Mare
+Pare
+Rare
+Chiare
+Dolore
+Amore
+Rumore
+Onore
+Furore
+Fondo
+Mondo
+Secondo
+Profondo
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ cat elenco.txt | rev | sort | rev > rimario.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$ nano rimario.txt
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea/Desktop/SO2025$

@@ -1,0 +1,21 @@
+Creare nella propria home una cartella denominata nomeaccount.esame6 
+(es.franco.esame6).
+In questa cartella creare due cartelle denominate 
+esercizio1, esercizio2.
+Svolgere ciascun esercizio nella sua cartella.
+Nella cartella si può (non è obbligatorio) porre un file di nome leggimi
+contenente commenti e o osservazioni.
+Alla fine usare nella home i comandi:
+
+tar cvf nomeaccount.esame6.tar nomeaccount.esame6
+gzip nomeaccount.esame6.tar
+
+Esercizi
+
+1) Fare uno script che permetta a chiunque di aggiungere dati in coda ad un vostro 
+file senza permettere di visualizzare il suo contenuto.
+
+2) Scrivere uno script che verifica l'esistenza di una certa directory
+ed esegue nel proprio contesto gli script contenuti nella directory che
+hanno uno schema di nome prefissato (es. nome_scelto_da_te_01, 
+nome_scelto_da_te_02, ecc, nell'ordine suggerito dal numero).

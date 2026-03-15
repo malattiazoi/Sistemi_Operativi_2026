@@ -1,0 +1,26 @@
+[Attenzione: questo è un testo codificato in UTF-8]
+
+Creare nella propria home su hplinux2.unisalento.it una directory denominata proprioaccount.esame62 
+(es.franco.esame62) e svolgere l'esercizio in tale directory o, in alternativa, creare una 
+directory con lo stesso nome nella propria home Mac OS X, svolgere gli esercizi in tale directory 
+e, alla fine della prova, trasferirla nella propria home su hplinux2.unisalento.it.
+
+Gli script creati devono essere eseguibili sia su Mac OS X che su Linux.
+Nella directory si DEVE anche creare un file di nome "leggimi" contenente commenti e/o osservazioni.
+Si fa presente che il contenuto di tale file permette spesso una migliore comprensione della logica 
+seguita nello svolgimento e, di conseguenza, la sua presenza va a tutto vantaggio dell'esaminando.
+
+Alla fine usare nel proprio account Linux la linea di comando:
+
+cd; tar cvfz $USER.esame62.tgz $USER.esame62
+
+[ATTENZIONE: dare il comando qui sopra indicato nello shell eseguito sulla macchina Linux, 
+DOPO che la cartella proprioaccount.esame62 è stata trasferita sulla propria home su 
+hplinux2.unisalento.it e NON mentre è ancora nella propria home su Mac OS X (se in essa si 
+è lavorato)]
+
+Esercizio
+
+Il digest md5 di un file contenente 2 caratteri è e0aa021e21dddbd6d8cecec71e9cf564.
+Scrivere uno script che stampi il contenuto del file e indicare il tempo macchina 
+consumato in modalità utente e in modalità sistema eseguendo tale script.

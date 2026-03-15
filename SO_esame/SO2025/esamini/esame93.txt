@@ -1,0 +1,42 @@
+[Attenzione: questo è un testo codificato in UTF-8]
+Creare nella propria home su hplinux2.unisalento.it una directory denominata 
+proprioaccount.esame93 (es.franco.esame93) e svolgere l'esercizio in tale directory o, 
+in alternativa, creare una directory con lo stesso nome nella propria home Mac OS X, 
+svolgere gli esercizi in tale directory e, alla fine della prova, trasferirla nella 
+propria home su hplinux2.unisalento.it.
+
+Gli script creati devono essere eseguibili sia su Mac OS X che su Linux.
+Nella directory si DEVE anche creare un file di nome "leggimi.txt" che descriva 
+l'impostazione adottata per le soluzioni oltre ad eventuali commenti e/o osservazioni.
+Si fa presente che il contenuto di tale file permette spesso una migliore comprensione 
+della logica seguita nello svolgimento e, di conseguenza, la sua presenza va a tutto 
+vantaggio dell'esaminando.
+
+Alla fine usare nel proprio account Linux la linea di comando:
+
+cd; tar cvfz $USER.esame93.tgz $USER.esame93
+
+[ATTENZIONE: dare il comando qui sopra indicato nello shell eseguito sulla macchina Linux, 
+DOPO che la cartella proprioaccount.esame93 è stata trasferita sulla propria home su 
+hplinux2.unisalento.it e NON mentre è ancora nella propria home su Mac OS X (se in essa si 
+è lavorato). Si raccomanda, per qualsiasi dubbio sullo svolgimento e la consegna del 
+compito, di fare riferimento alla pagina web:
+http://www.liis.it/mw/index.php/LiiS:Istruzioni]
+
+
+
+Esercizio
+
+In una mostra dedicata agli studi neuropsicologici, vogliamo allestire un terminale con 
+il quale sfidare i visitatori a scrivere una frase nel più breve tempo possibile. 
+Scrivere uno script bash che:
+1) Stampi a terminale: 
+Vediamo quanto tempo ci metti a scrivere sulla tastiera la frase che si trova tra le 
+virgolette (il tempo verrà computato dal momento in cui tocchi il primo tasto):
+"Ma la volpe col suo balzo ha raggiunto il quieto Fido"
+2) Si fermi nel preciso istante in cui il visitatore ha scritto esattamente la frase 
+oppure quando sono trascorsi 45 secondi dalla pressione del primo tasto.
+3) Stampi a terminale il tempo trascorso e la posizione del tentativo appena terminato
+nella classifica di tutti i tentativi condotti fino a quel momento.
+Per Mac dare la stima dei tempi in secondi. Per Linux in millisecondi.
+

@@ -1,0 +1,13 @@
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ tty
+/dev/pts/11
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 12:45:21.710: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:2019): WARNING **: 12:45:21.710: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ passwd
+Changing password for andrea11.
+Current password:

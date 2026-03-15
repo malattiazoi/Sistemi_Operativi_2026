@@ -1,0 +1,25 @@
+Creare nella propria home sulla macchina hplinux2.unile.it una cartella 
+denominata proprionomeaccount.esame17 (es.franco.esame17).
+Nella cartella si DEVE porre un file di nome LEGGIMI contenente la spiegazione
+del metodo seguito, commenti e/o osservazioni.
+Nella cartella si devono creare due cartelle di nome esercizio1 ed
+esercizio2 nelle quali verranno posti rispettivamente i due esercizi svolti.
+Alla fine usare nella propria home i comandi:
+
+tar cvf proprionomeaccount.esame17.tar proprionomeaccount.esame17
+gzip proprionomeaccount.esame17.tar
+
+Esercizio 1
+
+Scrivere uno script bash che accetta come argomento il nome di una directory e
+stampi a terminale il numero di inode più alto presente nella directory e 
+in tutte le sue sottodirectory.
+
+Esercizio 2
+
+Scrivere uno script bash che visiti periodicamente una certa pagina html via 
+http e stampi a terminale un messaggio quando trova una certa stringa nella 
+pagina.
+Intervallo della periodicità, indirizzo della pagina e stringa siano passati
+come parametri allo script.
+

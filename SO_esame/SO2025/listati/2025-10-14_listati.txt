@@ -1,0 +1,17 @@
+andrea11@DESKTOP-HSTPJN3:~$ if [ "$x" -gt "$y" ]; then echo "x che è $x, è maggiore di $y"; echo altra riga; fi
+-bash: [: : integer expression expected
+andrea11@DESKTOP-HSTPJN3:~$ x=10
+andrea11@DESKTOP-HSTPJN3:~$ y=5
+andrea11@DESKTOP-HSTPJN3:~$ if [ "$x" -gt "$y" ]; then echo "x che è $x, è maggiore di $y"; echo altra riga; fi
+x che è 10, è maggiore di 5
+altra riga
+andrea11@DESKTOP-HSTPJN3:~$ x=3
+andrea11@DESKTOP-HSTPJN3:~$ if [ "$x" -gt "$y" ]; then echo "x che è $x, è maggiore di $y"; echo altra riga; fi
+andrea11@DESKTOP-HSTPJN3:~$ echo ciao; ls; echo arrivederci
+ciao
+GNUstep  b.txt               c.txt                                  elaborato.txt  scripting
+a        bbb                 cartella_compressa.zip                 ff.txt         spec
+a.txt    byte_casuali.byte   compito                                miofile.txt    sticky
+aaa.txt  byte_casuali2.byte  creato_sul_server_arrivato_da_noi.txt  oggi           test
+arrivederci
+andrea11@DESKTOP-HSTPJN3:~$

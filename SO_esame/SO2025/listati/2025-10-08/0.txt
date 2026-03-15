@@ -1,0 +1,1550 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tutti i diritti riservati.
+
+Installa la versione più recente di PowerShell per nuove funzionalità e miglioramenti. https://aka.ms/PSWindows
+
+PS C:\Users\Andrea> wsl
+-bash: cd: /home/andrea11/compitozxe: No such file or directory
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ cd /home/andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ nano .bashrc
+andrea11@DESKTOP-HSTPJN3:~$ exit
+logout
+PS C:\Users\Andrea> wsl
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ cd /home/andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ mkdir sticky
+andrea11@DESKTOP-HSTPJN3:~$ ls
+GNUstep  aaa.txt  byte_casuali.byte   cartella_compressa.zip                 elaborato.txt  oggi    test
+a        b.txt    byte_casuali2.byte  compito                                ff.txt         spec
+a.txt    bbb      c.txt               creato_sul_server_arrivato_da_noi.txt  miofile.txt    sticky
+andrea11@DESKTOP-HSTPJN3:~$ stat sticky/
+  File: sticky/
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 35670       Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-08 11:59:09.469859255 +0200
+Modify: 2025-10-08 11:59:09.469859255 +0200
+Change: 2025-10-08 11:59:09.469859255 +0200
+ Birth: 2025-10-08 11:59:09.469859255 +0200
+andrea11@DESKTOP-HSTPJN3:~$ chmod 1755 sticky
+andrea11@DESKTOP-HSTPJN3:~$ stat sticky/
+  File: sticky/
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 35670       Links: 2
+Access: (1755/drwxr-xr-t)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-08 11:59:09.469859255 +0200
+Modify: 2025-10-08 11:59:09.469859255 +0200
+Change: 2025-10-08 12:00:11.005864305 +0200
+ Birth: 2025-10-08 11:59:09.469859255 +0200
+andrea11@DESKTOP-HSTPJN3:~$ chmod 1754 sticky
+andrea11@DESKTOP-HSTPJN3:~$ stat sticky/
+  File: sticky/
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 35670       Links: 2
+Access: (1754/drwxr-xr-T)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-08 11:59:09.469859255 +0200
+Modify: 2025-10-08 11:59:09.469859255 +0200
+Change: 2025-10-08 12:02:06.461867184 +0200
+ Birth: 2025-10-08 11:59:09.469859255 +0200
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 68
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  1 12:44 GNUstep
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  2 15:29 a
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 a.txt
+-rw-r--r-- 1 andrea11 andrea11    8 Sep 30 13:13 aaa.txt
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:08 bbb
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:03 byte_casuali.byte
+-rw-r--r-- 1 andrea11 andrea11  102 Oct  2 16:04 byte_casuali2.byte
+-rw-r--r-- 1 andrea11 andrea11    2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11  557 Oct  2 15:26 cartella_compressa.zip
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  2 15:16 compito
+-rw-r--r-- 1 andrea11 andrea11   30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Sep 30 11:23 elaborato.txt
+-rw-r--r-- 1 andrea11 andrea11    0 Oct  7 11:25 ff.txt
+-rw-r--r-- 1 andrea11 andrea11    5 Oct  1 12:25 miofile.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 oggi
+-rwsr-Sr-T 1 andrea11 andrea11    0 Oct  7 12:23 spec
+drwxr-xr-T 2 andrea11 andrea11 4096 Oct  8 11:59 sticky
+drwsrwxrwx 2 andrea11 andrea11 4096 Oct  7 11:16 test
+andrea11@DESKTOP-HSTPJN3:~$ which passwd
+/usr/bin/passwd
+andrea11@DESKTOP-HSTPJN3:~$ stat /usr/bin/passwd
+  File: /usr/bin/passwd
+  Size: 59976           Blocks: 120        IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 1629        Links: 1
+Access: (4755/-rwsr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-10-07 13:03:37.441770219 +0200
+Modify: 2022-11-24 13:05:18.000000000 +0100
+Change: 2023-03-06 11:08:58.009867400 +0100
+ Birth: 2023-03-06 11:08:58.009867400 +0100
+andrea11@DESKTOP-HSTPJN3:~$ ls
+GNUstep  aaa.txt  byte_casuali.byte   cartella_compressa.zip                 elaborato.txt  oggi    test
+a        b.txt    byte_casuali2.byte  compito                                ff.txt         spec
+a.txt    bbb      c.txt               creato_sul_server_arrivato_da_noi.txt  miofile.txt    sticky
+andrea11@DESKTOP-HSTPJN3:~$ cd /usr/bin
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ ls
+ 411toppm                             ipcs                               ps2txt
+ GET                                  iptables-xml                       psfaddtable
+ HEAD                                 ischroot                           psfgettable
+ HTMLLinker                           ispell-wrapper                     psfstriptable
+ JxrDecApp                            join                               psfxtable
+ JxrEncApp                            journalctl                         psidtopgm
+ NF                                   jpegtopnm                          pslog
+ POST                                 js                                 pstopnm
+ X11                                  js-yaml                            pstree
+ Xvfb                                 json_pp                            pstree.x11
+'['                                   kbd_mode                           ptar
+ aa-enabled                           kbdinfo                            ptardiff
+ aa-exec                              kbxutil                            ptargrep
+ aa-features-abi                      keep-one-running                   ptx
+ add-apt-repository                   kernel-install                     purge-old-kernels
+ addpart                              keyring                            pwd
+ addr2line                            kill                               pwdx
+ animate                              killall                            py3clean
+ animate-im6                          kmod                               py3compile
+ animate-im6.q16                      last                               py3versions
+ anytopnm                             lastb                              pydoc3
+ apport-bug                           lastlog                            pydoc3.10
+ apport-cli                           lcf                                pygettext3
+ apport-collect                       ld                                 pygettext3.10
+ apport-unpack                        ld.bfd                             python3
+ appres                               ld.gold                            python3.10
+ apropos                              ldd                                qrcode-terminal
+ apt                                  leaftoppm                          qrttoppm
+ apt-add-repository                   less                               ranlib
+ apt-cache                            lessecho                           rasttopnm
+ apt-cdrom                            lessfile                           rawtopgm
+ apt-config                           lesskey                            rawtoppm
+ apt-extracttemplates                 lesspipe                           rbash
+ apt-ftparchive                       lexgrog                            rcp
+ apt-get                              libnetcfg                          rdma
+ apt-key                              link                               readelf
+ apt-mark                             linux32                            readlink
+ apt-sortpkgs                         linux64                            realpath
+ ar                                   lispmtopgm                         red
+ arborist                             listres                            rendercheck
+ arch                                 ln                                 renice
+ as                                   lnstat                             reset
+ asciitopgm                           loadkeys                           resizecons
+ aspell                               loadunimap                         resizepart
+ aspell-import                        locale                             resolvectl
+ atktopbm                             locale-check                       rev
+ atobm                                localectl                          rgb3toppm
+ autogsdoc                            localedef                          rgrep
+ awk                                  logger                             rimraf
+ b2sum                                login                              rletopnm
+ base32                               loginctl                           rlogin
+ base64                               logname                            rm
+ basename                             look                               rmdir
+ basenc                               lowntfs-3g                         rnano
+ bash                                 ls                                 routef
+ bashbug                              lsattr                             routel
+ bdftopcf                             lsb_release                        rpcgen
+ bdftruncate                          lsblk                              rrsync
+ bioradtopgm                          lscpu                              rsh
+ bitmap                               lshw                               rsync
+ bmptopnm                             lsipc                              rsync-ssl
+ bmptoppm                             lslocks                            rtstat
+ bmtoa                                lslogins                           run-one
+ bootctl                              lsmem                              run-one-constantly
+ broadwayd                            lsmod                              run-one-until-failure
+ browse                               lsns                               run-one-until-success
+ brushtopbm                           lsof                               run-parts
+ bunzip2                              lspci                              run-this-one
+ busctl                               lspgpot                            run-with-aspell
+ busybox                              lsusb                              runcon
+ byobu                                lto-dump-11                        rview
+ byobu-config                         luit                               rvim
+ byobu-ctrl-a                         lwp-download                       savelog
+ byobu-disable                        lwp-dump                           sbigtopgm
+ byobu-disable-prompt                 lwp-mirror                         scp
+ byobu-enable                         lwp-request                        screen
+ byobu-enable-prompt                  lxpolkit                           screendump
+ byobu-export                         lzcat                              script
+ byobu-janitor                        lzcmp                              scriptlive
+ byobu-keybindings                    lzdiff                             scriptreplay
+ byobu-launch                         lzegrep                            sdiff
+ byobu-launcher                       lzfgrep                            sed
+ byobu-launcher-install               lzgrep                             select-default-iwrap
+ byobu-launcher-uninstall             lzless                             select-editor
+ byobu-layout                         lzma                               semver
+ byobu-prompt                         lzmainfo                           sensible-browser
+ byobu-quiet                          lzmore                             sensible-editor
+ byobu-reconnect-sockets              macptopbm                          sensible-pager
+ byobu-screen                         make                               seq
+ byobu-select-backend                 make-first-existing-target         session-migration
+ byobu-select-profile                 make_strings                       sessreg
+ byobu-select-session                 man                                setarch
+ byobu-shell                          man-recode                         setfont
+ byobu-silent                         mandb                              setkeycodes
+ byobu-status                         manifest                           setleds
+ byobu-status-detail                  manpath                            setlogcons
+ byobu-tmux                           mapscrn                            setmetamode
+ byobu-ugraph                         mawk                               setpci
+ byobu-ulevel                         mcookie                            setpriv
+ bzcat                                md5sum                             setsid
+ bzcmp                                md5sum.textutils                   setterm
+ bzdiff                               mdatopbm                           setupcon
+ bzegrep                              mdig                               setxkbmap
+ bzexe                                memusage                           sfparse
+ bzfgrep                              memusagestat                       sftp
+ bzgrep                               mesg                               sg
+ bzip2                                mgrtopbm                           sgitopnm
+ bzip2recover                         migrate-pubring-from-classic-gpg   sh
+ bzless                               mimeopen                           sha1sum
+ bzmore                               mimetype                           sha224sum
+ c++                                  mk_modmap                          sha256sum
+ c++filt                              mkdir                              sha384sum
+ c89                                  mkfifo                             sha512sum
+ c89-gcc                              mkfontdir                          shasum
+ c99                                  mkfontscale                        showconsolefont
+ c99-gcc                              mknod                              showkey
+ c_rehash                             mksquashfs                         showrgb
+ captoinfo                            mktemp                             shred
+ cat                                  mogrify                            shuf
+ catman                               mogrify-im6                        sirtopnm
+ cc                                   mogrify-im6.q16                    size
+ chage                                montage                            skill
+ chattr                               montage-im6                        slabtop
+ chcon                                montage-im6.q16                    sldtoppm
+ chfn                                 more                               sleep
+ chgrp                                mount                              slogin
+ chmod                                mountpoint                         snap
+ choom                                mt                                 snapctl
+ chown                                mt-gnu                             snapfuse
+ chrt                                 mtr                                snice
+ chsh                                 mtr-packet                         soelim
+ chvt                                 mtrace                             sort
+ ckbcomp                              mtvtoppm                           sotruss
+ cksum                                mv                                 spctoppm
+ clear                                namei                              splain
+ clear_console                        nano                               split
+ cmp                                  nawk                               splitfont
+ cmuwmtopbm                           nc                                 sprof
+ codepage                             nc.openbsd                         sputoppm
+ col                                  neotoppm                           sqfscat
+ col1                                 neqn                               sqfstar
+ col2                                 netcat                             ss
+ col3                                 networkctl                         ssh
+ col4                                 networkd-dispatcher                ssh-add
+ col5                                 newgrp                             ssh-agent
+ col6                                 ngettext                           ssh-argv0
+ col7                                 nice                               ssh-copy-id
+ col8                                 nisdomainname                      ssh-keygen
+ col9                                 nl                                 ssh-keyscan
+ colcrt                               nm                                 st4topgm
+ colrm                                nmap                               stat
+ column                               node                               static-sh
+ comm                                 node-coveralls                     stdbuf
+ compare                              node-gyp                           strace
+ compare-im6                          nodejs                             strace-log-merge
+ compare-im6.q16                      nohup                              stream
+ composite                            notify-send                        stream-im6
+ composite-im6                        nping                              stream-im6.q16
+ composite-im6.q16                    npm                                streamzip
+ conjure                              npm-arborist                       strings
+ conjure-im6                          npm-packlist                       strip
+ conjure-im6.q16                      nproc                              stty
+ containerd                           npx                                su
+ containerd-shim                      nroff                              sudo
+ containerd-shim-runc-v1              nsenter                            sudoedit
+ containerd-shim-runc-v2              nslookup                           sudoreplay
+ containerd-stress                    nstat                              sum
+ convert                              nsupdate                           sync
+ convert-im6                          ntfs-3g                            systemctl
+ convert-im6.q16                      ntfs-3g.probe                      systemd
+ corelist                             ntfscat                            systemd-analyze
+ cp                                   ntfscluster                        systemd-ask-password
+ cpan                                 ntfscmp                            systemd-cat
+ cpan5.34-x86_64-linux-gnu            ntfsdecrypt                        systemd-cgls
+ cpio                                 ntfsfallocate                      systemd-cgtop
+ cpp                                  ntfsfix                            systemd-cryptenroll
+ cpp-11                               ntfsinfo                           systemd-delta
+ crontab                              ntfsls                             systemd-detect-virt
+ csplit                               ntfsmove                           systemd-escape
+ ctail                                ntfsrecover                        systemd-hwdb
+ ctr                                  ntfssecaudit                       systemd-id128
+ ctstat                               ntfstruncate                       systemd-inhibit
+ curl                                 ntfsusermap                        systemd-machine-id-setup
+ cut                                  ntfswipe                           systemd-mount
+ cvtenc                               numfmt                             systemd-notify
+ cvtsudoers                           objcopy                            systemd-path
+ dash                                 objdump                            systemd-run
+ date                                 oclock                             systemd-socket-activate
+ dbus-cleanup-sockets                 od                                 systemd-stdio-bridge
+ dbus-daemon                          oem-getlogs                        systemd-sysext
+ dbus-launch                          on_ac_power                        systemd-sysusers
+ dbus-monitor                         open                               systemd-tmpfiles
+ dbus-run-session                     openapp                            systemd-tty-ask-password-agent
+ dbus-send                            opener                             systemd-umount
+ dbus-update-activation-environment   openssl                            tabs
+ dbus-uuidgen                         opentool                           tac
+ dd                                   openvt                             tail
+ deallocvt                            p11-kit                            tap
+ deb-systemd-helper                   pacote                             tap-mocha-reporter
+ deb-systemd-invoke                   pager                              tap-parser
+ debconf                              palmtopnm                          tar
+ debconf-apt-progress                 pamcut                             taskset
+ debconf-communicate                  pamdeinterlace                     tbl
+ debconf-copydb                       pamdice                            tcpdump
+ debconf-escape                       pamfile                            tee
+ debconf-set-selections               pamoil                             telnet
+ debconf-show                         pamstack                           telnet.netkit
+ debian-distro-info                   pamstretch                         tempfile
+ debugapp                             pamstretch-gen                     test
+ defaults                             paperconf                          tgatoppm
+ delpart                              partx                              thinkjettopbm
+ delv                                 passwd                             tic
+ desktop-file-edit                    paste                              tifftopnm
+ desktop-file-install                 pastebinit                         tilix
+ desktop-file-validate                patch                              tilix.wrapper
+ df                                   pathchk                            time
+ dh_bash-completion                   pbget                              timedatectl
+ dh_perl_openssl                      pbmclean                           timeout
+ diff                                 pbmlife                            tload
+ diff3                                pbmmake                            tmux
+ dig                                  pbmmask                            tnftp
+ dir                                  pbmpage                            toe
+ dircolors                            pbmpscale                          top
+ dirmngr                              pbmreduce                          touch
+ dirmngr-client                       pbmtext                            tput
+ dirname                              pbmtextps                          tr
+ display                              pbmto10x                           tracepath
+ display-im6                          pbmtoascii                         transset
+ display-im6.q16                      pbmtoatk                           troff
+ distro-info                          pbmtobbnbg                         true
+ dmesg                                pbmtocmuwm                         truncate
+ dnsdomainname                        pbmtoepsi                          trust
+ do-release-upgrade                   pbmtoepson                         tset
+ docker                               pbmtog3                            tsort
+ docker-init                          pbmtogem                           tty
+ docker-proxy                         pbmtogo                            tzselect
+ dockerd                              pbmtoicon                          ua
+ domainname                           pbmtolj                            ubuntu-advantage
+ dpkg                                 pbmtomacp                          ubuntu-bug
+ dpkg-architecture                    pbmtomda                           ubuntu-core-launcher
+ dpkg-buildflags                      pbmtomgr                           ubuntu-distro-info
+ dpkg-buildpackage                    pbmtonokia                         ubuntu-security-status
+ dpkg-checkbuilddeps                  pbmtopgm                           ucf
+ dpkg-deb                             pbmtopi3                           ucfq
+ dpkg-distaddfile                     pbmtoplot                          ucfr
+ dpkg-divert                          pbmtoppa                           uclampset
+ dpkg-genbuildinfo                    pbmtopsg3                          ucs2any
+ dpkg-genchanges                      pbmtoptx                           udevadm
+ dpkg-gencontrol                      pbmtowbmp                          udisksctl
+ dpkg-gensymbols                      pbmtox10bm                         ul
+ dpkg-maintscript-helper              pbmtoxbm                           umount
+ dpkg-mergechangelogs                 pbmtoybm                           uname
+ dpkg-name                            pbmtozinc                          unattended-upgrade
+ dpkg-parsechangelog                  pbmupc                             unattended-upgrades
+ dpkg-query                           pbput                              uncompress
+ dpkg-realpath                        pbputs                             unexpand
+ dpkg-scanpackages                    pcmanfm                            unicode_start
+ dpkg-scansources                     pcxtoppm                           unicode_stop
+ dpkg-shlibdeps                       pdb3                               uniq
+ dpkg-source                          pdb3.10                            unlink
+ dpkg-split                           pdf2dsc                            unlzma
+ dpkg-statoverride                    pdf2ps                             unpigz
+ dpkg-trigger                         peekfd                             unshare
+ dpkg-vendor                          perl                               unsquashfs
+ du                                   perl5.34-x86_64-linux-gnu          unxz
+ dumpkeys                             perl5.34.0                         unzip
+ dvipdf                               perlbug                            unzipsfx
+ dwp                                  perldoc                            update-alternatives
+ echo                                 perlivp                            update-desktop-database
+ ed                                   perlthanks                         update-mime-database
+ editor                               pf2afm                             uptime
+ editres                              pfbtopfa                           usb-devices
+ egrep                                pgmbentley                         usbhid-dump
+ eject                                pgmcrater                          usbreset
+ elfedit                              pgmedge                            users
+ enc2xs                               pgmenhance                         utmpdump
+ encguess                             pgmhist                            uuidgen
+ env                                  pgmkernel                          uuidparse
+ envsubst                             pgmnoise                           vdir
+ eps2eps                              pgmnorm                            vi
+ eqn                                  pgmoil                             view
+ esparse                              pgmramp                            viewres
+ esvalidate                           pgmslice                           vigpg
+ ex                                   pgmtexture                         vim
+ expand                               pgmtofs                            vim.basic
+ expiry                               pgmtolispm                         vim.tiny
+ expr                                 pgmtopbm                           vimdiff
+ eyuvtoppm                            pgmtoppm                           vimtutor
+ factor                               pgrep                              vmstat
+ faillog                              pi1toppm                           w
+ faked-sysv                           pi3topbm                           wall
+ faked-tcp                            pic                                watch
+ fakeroot                             pico                               watchgnupg
+ fakeroot-sysv                        piconv                             wbmptopbm
+ fakeroot-tcp                         pidof                              wc
+ fallocate                            pidwait                            wdctl
+ false                                pigz                               wget
+ fc-cache                             pinentry                           whatis
+ fc-cat                               pinentry-curses                    whereis
+ fc-conflist                          pinentry-gnome3                    which
+ fc-list                              pinentry-x11                       which.debianutils
+ fc-match                             ping                               whiptail
+ fc-pattern                           ping4                              who
+ fc-query                             ping6                              whoami
+ fc-scan                              pinky                              wifi-status
+ fc-validate                          pjtoppm                            winicontoppm
+ fgconsole                            pkaction                           wmdocker
+ fgrep                                pkcheck                            word-list-compress
+ fiascotopnm                          pkcon                              write
+ file                                 pkexec                             write.ul
+ fincore                              pkill                              wscat
+ find                                 pkmon                              wslinfo
+ findmnt                              pkttyagent                         wslpath
+ firefox                              pl                                 x-terminal-emulator
+ fitstopnm                            pl2link                            x-www-browser
+ flock                                pl2pm                              x11perf
+ fmt                                  pldd                               x11perfcomp
+ fold                                 pldes                              x86_64
+ fonttosfnt                           plget                              x86_64-linux-gnu-addr2line
+ free                                 plmerge                            x86_64-linux-gnu-ar
+ fstopgm                              plparse                            x86_64-linux-gnu-as
+ ftp                                  plser                              x86_64-linux-gnu-c++filt
+ funzip                               plutil                             x86_64-linux-gnu-cpp
+ fuser                                plymouth                           x86_64-linux-gnu-cpp-11
+ fusermount                           pmap                               x86_64-linux-gnu-dwp
+ fusermount3                          pngtopnm                           x86_64-linux-gnu-elfedit
+ g++                                  pnmalias                           x86_64-linux-gnu-g++
+ g++-11                               pnmarith                           x86_64-linux-gnu-g++-11
+ g3topbm                              pnmcat                             x86_64-linux-gnu-gcc
+ gapplication                         pnmcolormap                        x86_64-linux-gnu-gcc-11
+ gawk                                 pnmcomp                            x86_64-linux-gnu-gcc-ar
+ gcc                                  pnmconvol                          x86_64-linux-gnu-gcc-ar-11
+ gcc-11                               pnmcrop                            x86_64-linux-gnu-gcc-nm
+ gcc-ar                               pnmcut                             x86_64-linux-gnu-gcc-nm-11
+ gcc-ar-11                            pnmdepth                           x86_64-linux-gnu-gcc-ranlib
+ gcc-nm                               pnmenlarge                         x86_64-linux-gnu-gcc-ranlib-11
+ gcc-nm-11                            pnmfile                            x86_64-linux-gnu-gcov
+ gcc-ranlib                           pnmflip                            x86_64-linux-gnu-gcov-11
+ gcc-ranlib-11                        pnmgamma                           x86_64-linux-gnu-gcov-dump
+ gcov                                 pnmhisteq                          x86_64-linux-gnu-gcov-dump-11
+ gcov-11                              pnmhistmap                         x86_64-linux-gnu-gcov-tool
+ gcov-dump                            pnmindex                           x86_64-linux-gnu-gcov-tool-11
+ gcov-dump-11                         pnminterp                          x86_64-linux-gnu-gold
+ gcov-tool                            pnminterp-gen                      x86_64-linux-gnu-gprof
+ gcov-tool-11                         pnminvert                          x86_64-linux-gnu-ld
+ gcr-viewer                           pnmmargin                          x86_64-linux-gnu-ld.bfd
+ gdbus                                pnmmontage                         x86_64-linux-gnu-ld.gold
+ gdk-pixbuf-csource                   pnmnlfilt                          x86_64-linux-gnu-lto-dump-11
+ gdk-pixbuf-pixdata                   pnmnoraw                           x86_64-linux-gnu-nm
+ gdk-pixbuf-thumbnailer               pnmnorm                            x86_64-linux-gnu-objcopy
+ gdnc                                 pnmpad                             x86_64-linux-gnu-objdump
+ gdomap                               pnmpaste                           x86_64-linux-gnu-ranlib
+ gemtopbm                             pnmpsnr                            x86_64-linux-gnu-readelf
+ gemtopnm                             pnmquant                           x86_64-linux-gnu-size
+ gencat                               pnmremap                           x86_64-linux-gnu-strings
+ geqn                                 pnmrotate                          x86_64-linux-gnu-strip
+ getconf                              pnmscale                           xargs
+ getent                               pnmscalefixed                      xauth
+ getkeycodes                          pnmshear                           xbiff
+ getopt                               pnmsmooth                          xbmtopbm
+ gettext                              pnmsplit                           xcalc
+ gettext.sh                           pnmtile                            xclipboard
+ ghostscript                          pnmtoddif                          xclock
+ giftopnm                             pnmtofiasco                        xcmsdb
+ ginstall-info                        pnmtofits                          xconsole
+ gio                                  pnmtojpeg                          xcursorgen
+ gio-querymodules                     pnmtopalm                          xcutsel
+ git                                  pnmtoplainpnm                      xdg-desktop-icon
+ git-receive-pack                     pnmtopng                           xdg-desktop-menu
+ git-shell                            pnmtops                            xdg-email
+ git-upload-archive                   pnmtorast                          xdg-icon-resource
+ git-upload-pack                      pnmtorle                           xdg-mime
+ glib-compile-schemas                 pnmtosgi                           xdg-open
+ gmake                                pnmtosir                           xdg-screensaver
+ gnome-keyring                        pnmtotiff                          xdg-settings
+ gnome-keyring-3                      pnmtotiffcmyk                      xdg-user-dir
+ gnome-keyring-daemon                 pnmtoxwd                           xdg-user-dirs-update
+ gnome-www-browser                    pod2html                           xditview
+ gold                                 pod2man                            xdpyinfo
+ gouldtoppm                           pod2text                           xdriinfo
+ gpasswd                              pod2usage                          xedit
+ gpg                                  podchecker                         xev
+ gpg-agent                            pphs                               xeyes
+ gpg-connect-agent                    ppm3d                              xfd
+ gpg-wks-server                       ppmbrighten                        xfontsel
+ gpg-zip                              ppmchange                          xgamma
+ gpgcompose                           ppmcie                             xgc
+ gpgconf                              ppmcolormask                       xhost
+ gpgparsemail                         ppmcolors                          ximtoppm
+ gpgsm                                ppmdim                             xkbbell
+ gpgsplit                             ppmdist                            xkbcomp
+ gpgtar                               ppmdither                          xkbevd
+ gpgv                                 ppmfade                            xkbprint
+ gpic                                 ppmflash                           xkbvleds
+ gprof                                ppmforge                           xkbwatch
+ grep                                 ppmhist                            xkeystone
+ gresource                            ppmlabel                           xkill
+ groff                                ppmmake                            xload
+ grog                                 ppmmix                             xlogo
+ grops                                ppmnorm                            xlsatoms
+ grotty                               ppmntsc                            xlsclients
+ groups                               ppmpat                             xlsfonts
+ gs                                   ppmquant                           xmag
+ gsbj                                 ppmquantall                        xman
+ gsdj                                 ppmqvga                            xmessage
+ gsdj500                              ppmrainbow                         xmlparse
+ gsettings                            ppmrelief                          xmodmap
+ gslj                                 ppmshadow                          xmore
+ gslp                                 ppmshift                           xpmtoppm
+ gsnd                                 ppmspread                          xprop
+ gspath                               ppmtoacad                          xrandr
+ gtbl                                 ppmtobmp                           xrdb
+ gtk-builder-tool                     ppmtoeyuv                          xrefresh
+ gtk-encode-symbolic-svg              ppmtogif                           xset
+ gtk-launch                           ppmtoicr                           xsetmode
+ gtk-query-settings                   ppmtoilbm                          xsetpointer
+ gtk-update-icon-cache                ppmtojpeg                          xsetroot
+ gunzip                               ppmtoleaf                          xstdcmap
+ gyp                                  ppmtolj                            xsubpp
+ gzexe                                ppmtomap                           xvfb-run
+ gzip                                 ppmtomitsu                         xvidtune
+ h2ph                                 ppmtompeg                          xvinfo
+ h2xs                                 ppmtoneo                           xvminitoppm
+ hardlink                             ppmtopcx                           xwd
+ hd                                   ppmtopgm                           xwdtopnm
+ head                                 ppmtopi1                           xwininfo
+ helpztags                            ppmtopict                          xwud
+ hexdump                              ppmtopj                            xxd
+ hipstopgm                            ppmtopuzz                          xz
+ host                                 ppmtorgb3                          xzcat
+ hostid                               ppmtosixel                         xzcmp
+ hostname                             ppmtotga                           xzdiff
+ hostnamectl                          ppmtouil                           xzegrep
+ htop                                 ppmtowinicon                       xzfgrep
+ hwe-support-status                   ppmtoxpm                           xzgrep
+ i386                                 ppmtoyuv                           xzless
+ iceauth                              ppmtoyuvsplit                      xzmore
+ ico                                  ppmtv                              ybmtopbm
+ icontopbm                            pr                                 yes
+ iconv                                precat                             ypdomainname
+ id                                   preconv                            yuvsplittoppm
+ identify                             preunzip                           yuvtoppm
+ identify-im6                         prezip                             zcat
+ identify-im6.q16                     prezip-bin                         zcmp
+ ilbmtoppm                            printafm                           zdiff
+ imagetops                            printenv                           zdump
+ imgtoppm                             printf                             zegrep
+ import                               prlimit                            zeisstopnm
+ import-im6                           pro                                zfgrep
+ import-im6.q16                       prove                              zforce
+ info                                 prtstat                            zgrep
+ infobrowser                          ps                                 zip
+ infocmp                              ps2ascii                           zipcloak
+ infotocap                            ps2epsi                            zipdetails
+ install                              ps2pdf                             zipgrep
+ install-info                         ps2pdf12                           zipinfo
+ instmodsh                            ps2pdf13                           zipnote
+ ionice                               ps2pdf14                           zipsplit
+ ip                                   ps2pdfwr                           zless
+ ipcmk                                ps2ps                              zmore
+ ipcrm                                ps2ps2                             znew
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ which passwd
+/usr/bin/passwd
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ cd /usr/bin/passwd
+-bash: cd: /usr/bin/passwd: Not a directory
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ cd /usr/bin
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ echo ls
+ls
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ echo $(ls)
+411toppm GET HEAD HTMLLinker JxrDecApp JxrEncApp NF POST X11 Xvfb [ aa-enabled aa-exec aa-features-abi add-apt-repository addpart addr2line animate animate-im6 animate-im6.q16 anytopnm apport-bug apport-cli apport-collect apport-unpack appres apropos apt apt-add-repository apt-cache apt-cdrom apt-config apt-extracttemplates apt-ftparchive apt-get apt-key apt-mark apt-sortpkgs ar arborist arch as asciitopgm aspell aspell-import atktopbm atobm autogsdoc awk b2sum base32 base64 basename basenc bash bashbug bdftopcf bdftruncate bioradtopgm bitmap bmptopnm bmptoppm bmtoa bootctl broadwayd browse brushtopbm bunzip2 busctl busybox byobu byobu-config byobu-ctrl-a byobu-disable byobu-disable-prompt byobu-enable byobu-enable-prompt byobu-export byobu-janitor byobu-keybindings byobu-launch byobu-launcher byobu-launcher-install byobu-launcher-uninstall byobu-layout byobu-prompt byobu-quiet byobu-reconnect-sockets byobu-screen byobu-select-backend byobu-select-profile byobu-select-session byobu-shell byobu-silent byobu-status byobu-status-detail byobu-tmux byobu-ugraph byobu-ulevel bzcat bzcmp bzdiff bzegrep bzexe bzfgrep bzgrep bzip2 bzip2recover bzless bzmore c++ c++filt c89 c89-gcc c99 c99-gcc c_rehash captoinfo cat catman cc chage chattr chcon chfn chgrp chmod choom chown chrt chsh chvt ckbcomp cksum clear clear_console cmp cmuwmtopbm codepage col col1 col2 col3 col4 col5 col6 col7 col8 col9 colcrt colrm column comm compare compare-im6 compare-im6.q16 composite composite-im6 composite-im6.q16 conjure conjure-im6 conjure-im6.q16 containerd containerd-shim containerd-shim-runc-v1 containerd-shim-runc-v2 containerd-stress convert convert-im6 convert-im6.q16 corelist cp cpan cpan5.34-x86_64-linux-gnu cpio cpp cpp-11 crontab csplit ctail ctr ctstat curl cut cvtenc cvtsudoers dash date dbus-cleanup-sockets dbus-daemon dbus-launch dbus-monitor dbus-run-session dbus-send dbus-update-activation-environment dbus-uuidgen dd deallocvt deb-systemd-helper deb-systemd-invoke debconf debconf-apt-progress debconf-communicate debconf-copydb debconf-escape debconf-set-selections debconf-show debian-distro-info debugapp defaults delpart delv desktop-file-edit desktop-file-install desktop-file-validate df dh_bash-completion dh_perl_openssl diff diff3 dig dir dircolors dirmngr dirmngr-client dirname display display-im6 display-im6.q16 distro-info dmesg dnsdomainname do-release-upgrade docker docker-init docker-proxy dockerd domainname dpkg dpkg-architecture dpkg-buildflags dpkg-buildpackage dpkg-checkbuilddeps dpkg-deb dpkg-distaddfile dpkg-divert dpkg-genbuildinfo dpkg-genchanges dpkg-gencontrol dpkg-gensymbols dpkg-maintscript-helper dpkg-mergechangelogs dpkg-name dpkg-parsechangelog dpkg-query dpkg-realpath dpkg-scanpackages dpkg-scansources dpkg-shlibdeps dpkg-source dpkg-split dpkg-statoverride dpkg-trigger dpkg-vendor du dumpkeys dvipdf dwp echo ed editor editres egrep eject elfedit enc2xs encguess env envsubst eps2eps eqn esparse esvalidate ex expand expiry expr eyuvtoppm factor faillog faked-sysv faked-tcp fakeroot fakeroot-sysv fakeroot-tcp fallocate false fc-cache fc-cat fc-conflist fc-list fc-match fc-pattern fc-query fc-scan fc-validate fgconsole fgrep fiascotopnm file fincore find findmnt firefox fitstopnm flock fmt fold fonttosfnt free fstopgm ftp funzip fuser fusermount fusermount3 g++ g++-11 g3topbm gapplication gawk gcc gcc-11 gcc-ar gcc-ar-11 gcc-nm gcc-nm-11 gcc-ranlib gcc-ranlib-11 gcov gcov-11 gcov-dump gcov-dump-11 gcov-tool gcov-tool-11 gcr-viewer gdbus gdk-pixbuf-csource gdk-pixbuf-pixdata gdk-pixbuf-thumbnailer gdnc gdomap gemtopbm gemtopnm gencat geqn getconf getent getkeycodes getopt gettext gettext.sh ghostscript giftopnm ginstall-info gio gio-querymodules git git-receive-pack git-shell git-upload-archive git-upload-pack glib-compile-schemas gmake gnome-keyring gnome-keyring-3 gnome-keyring-daemon gnome-www-browser gold gouldtoppm gpasswd gpg gpg-agent gpg-connect-agent gpg-wks-server gpg-zip gpgcompose gpgconf gpgparsemail gpgsm gpgsplit gpgtar gpgv gpic gprof grep gresource groff grog grops grotty groups gs gsbj gsdj gsdj500 gsettings gslj gslp gsnd gspath gtbl gtk-builder-tool gtk-encode-symbolic-svg gtk-launch gtk-query-settings gtk-update-icon-cache gunzip gyp gzexe gzip h2ph h2xs hardlink hd head helpztags hexdump hipstopgm host hostid hostname hostnamectl htop hwe-support-status i386 iceauth ico icontopbm iconv id identify identify-im6 identify-im6.q16 ilbmtoppm imagetops imgtoppm import import-im6 import-im6.q16 info infobrowser infocmp infotocap install install-info instmodsh ionice ip ipcmk ipcrm ipcs iptables-xml ischroot ispell-wrapper join journalctl jpegtopnm js js-yaml json_pp kbd_mode kbdinfo kbxutil keep-one-running kernel-install keyring kill killall kmod last lastb lastlog lcf ld ld.bfd ld.gold ldd leaftoppm less lessecho lessfile lesskey lesspipe lexgrog libnetcfg link linux32 linux64 lispmtopgm listres ln lnstat loadkeys loadunimap locale locale-check localectl localedef logger login loginctl logname look lowntfs-3g ls lsattr lsb_release lsblk lscpu lshw lsipc lslocks lslogins lsmem lsmod lsns lsof lspci lspgpot lsusb lto-dump-11 luit lwp-download lwp-dump lwp-mirror lwp-request lxpolkit lzcat lzcmp lzdiff lzegrep lzfgrep lzgrep lzless lzma lzmainfo lzmore macptopbm make make-first-existing-target make_strings man man-recode mandb manifest manpath mapscrn mawk mcookie md5sum md5sum.textutils mdatopbm mdig memusage memusagestat mesg mgrtopbm migrate-pubring-from-classic-gpg mimeopen mimetype mk_modmap mkdir mkfifo mkfontdir mkfontscale mknod mksquashfs mktemp mogrify mogrify-im6 mogrify-im6.q16 montage montage-im6 montage-im6.q16 more mount mountpoint mt mt-gnu mtr mtr-packet mtrace mtvtoppm mv namei nano nawk nc nc.openbsd neotoppm neqn netcat networkctl networkd-dispatcher newgrp ngettext nice nisdomainname nl nm nmap node node-coveralls node-gyp nodejs nohup notify-send nping npm npm-arborist npm-packlist nproc npx nroff nsenter nslookup nstat nsupdate ntfs-3g ntfs-3g.probe ntfscat ntfscluster ntfscmp ntfsdecrypt ntfsfallocate ntfsfix ntfsinfo ntfsls ntfsmove ntfsrecover ntfssecaudit ntfstruncate ntfsusermap ntfswipe numfmt objcopy objdump oclock od oem-getlogs on_ac_power open openapp opener openssl opentool openvt p11-kit pacote pager palmtopnm pamcut pamdeinterlace pamdice pamfile pamoil pamstack pamstretch pamstretch-gen paperconf partx passwd paste pastebinit patch pathchk pbget pbmclean pbmlife pbmmake pbmmask pbmpage pbmpscale pbmreduce pbmtext pbmtextps pbmto10x pbmtoascii pbmtoatk pbmtobbnbg pbmtocmuwm pbmtoepsi pbmtoepson pbmtog3 pbmtogem pbmtogo pbmtoicon pbmtolj pbmtomacp pbmtomda pbmtomgr pbmtonokia pbmtopgm pbmtopi3 pbmtoplot pbmtoppa pbmtopsg3 pbmtoptx pbmtowbmp pbmtox10bm pbmtoxbm pbmtoybm pbmtozinc pbmupc pbput pbputs pcmanfm pcxtoppm pdb3 pdb3.10 pdf2dsc pdf2ps peekfd perl perl5.34-x86_64-linux-gnu perl5.34.0 perlbug perldoc perlivp perlthanks pf2afm pfbtopfa pgmbentley pgmcrater pgmedge pgmenhance pgmhist pgmkernel pgmnoise pgmnorm pgmoil pgmramp pgmslice pgmtexture pgmtofs pgmtolispm pgmtopbm pgmtoppm pgrep pi1toppm pi3topbm pic pico piconv pidof pidwait pigz pinentry pinentry-curses pinentry-gnome3 pinentry-x11 ping ping4 ping6 pinky pjtoppm pkaction pkcheck pkcon pkexec pkill pkmon pkttyagent pl pl2link pl2pm pldd pldes plget plmerge plparse plser plutil plymouth pmap pngtopnm pnmalias pnmarith pnmcat pnmcolormap pnmcomp pnmconvol pnmcrop pnmcut pnmdepth pnmenlarge pnmfile pnmflip pnmgamma pnmhisteq pnmhistmap pnmindex pnminterp pnminterp-gen pnminvert pnmmargin pnmmontage pnmnlfilt pnmnoraw pnmnorm pnmpad pnmpaste pnmpsnr pnmquant pnmremap pnmrotate pnmscale pnmscalefixed pnmshear pnmsmooth pnmsplit pnmtile pnmtoddif pnmtofiasco pnmtofits pnmtojpeg pnmtopalm pnmtoplainpnm pnmtopng pnmtops pnmtorast pnmtorle pnmtosgi pnmtosir pnmtotiff pnmtotiffcmyk pnmtoxwd pod2html pod2man pod2text pod2usage podchecker pphs ppm3d ppmbrighten ppmchange ppmcie ppmcolormask ppmcolors ppmdim ppmdist ppmdither ppmfade ppmflash ppmforge ppmhist ppmlabel ppmmake ppmmix ppmnorm ppmntsc ppmpat ppmquant ppmquantall ppmqvga ppmrainbow ppmrelief ppmshadow ppmshift ppmspread ppmtoacad ppmtobmp ppmtoeyuv ppmtogif ppmtoicr ppmtoilbm ppmtojpeg ppmtoleaf ppmtolj ppmtomap ppmtomitsu ppmtompeg ppmtoneo ppmtopcx ppmtopgm ppmtopi1 ppmtopict ppmtopj ppmtopuzz ppmtorgb3 ppmtosixel ppmtotga ppmtouil ppmtowinicon ppmtoxpm ppmtoyuv ppmtoyuvsplit ppmtv pr precat preconv preunzip prezip prezip-bin printafm printenv printf prlimit pro prove prtstat ps ps2ascii ps2epsi ps2pdf ps2pdf12 ps2pdf13 ps2pdf14 ps2pdfwr ps2ps ps2ps2 ps2txt psfaddtable psfgettable psfstriptable psfxtable psidtopgm pslog pstopnm pstree pstree.x11 ptar ptardiff ptargrep ptx purge-old-kernels pwd pwdx py3clean py3compile py3versions pydoc3 pydoc3.10 pygettext3 pygettext3.10 python3 python3.10 qrcode-terminal qrttoppm ranlib rasttopnm rawtopgm rawtoppm rbash rcp rdma readelf readlink realpath red rendercheck renice reset resizecons resizepart resolvectl rev rgb3toppm rgrep rimraf rletopnm rlogin rm rmdir rnano routef routel rpcgen rrsync rsh rsync rsync-ssl rtstat run-one run-one-constantly run-one-until-failure run-one-until-success run-parts run-this-one run-with-aspell runcon rview rvim savelog sbigtopgm scp screen screendump script scriptlive scriptreplay sdiff sed select-default-iwrap select-editor semver sensible-browser sensible-editor sensible-pager seq session-migration sessreg setarch setfont setkeycodes setleds setlogcons setmetamode setpci setpriv setsid setterm setupcon setxkbmap sfparse sftp sg sgitopnm sh sha1sum sha224sum sha256sum sha384sum sha512sum shasum showconsolefont showkey showrgb shred shuf sirtopnm size skill slabtop sldtoppm sleep slogin snap snapctl snapfuse snice soelim sort sotruss spctoppm splain split splitfont sprof sputoppm sqfscat sqfstar ss ssh ssh-add ssh-agent ssh-argv0 ssh-copy-id ssh-keygen ssh-keyscan st4topgm stat static-sh stdbuf strace strace-log-merge stream stream-im6 stream-im6.q16 streamzip strings strip stty su sudo sudoedit sudoreplay sum sync systemctl systemd systemd-analyze systemd-ask-password systemd-cat systemd-cgls systemd-cgtop systemd-cryptenroll systemd-delta systemd-detect-virt systemd-escape systemd-hwdb systemd-id128 systemd-inhibit systemd-machine-id-setup systemd-mount systemd-notify systemd-path systemd-run systemd-socket-activate systemd-stdio-bridge systemd-sysext systemd-sysusers systemd-tmpfiles systemd-tty-ask-password-agent systemd-umount tabs tac tail tap tap-mocha-reporter tap-parser tar taskset tbl tcpdump tee telnet telnet.netkit tempfile test tgatoppm thinkjettopbm tic tifftopnm tilix tilix.wrapper time timedatectl timeout tload tmux tnftp toe top touch tput tr tracepath transset troff true truncate trust tset tsort tty tzselect ua ubuntu-advantage ubuntu-bug ubuntu-core-launcher ubuntu-distro-info ubuntu-security-status ucf ucfq ucfr uclampset ucs2any udevadm udisksctl ul umount uname unattended-upgrade unattended-upgrades uncompress unexpand unicode_start unicode_stop uniq unlink unlzma unpigz unshare unsquashfs unxz unzip unzipsfx update-alternatives update-desktop-database update-mime-database uptime usb-devices usbhid-dump usbreset users utmpdump uuidgen uuidparse vdir vi view viewres vigpg vim vim.basic vim.tiny vimdiff vimtutor vmstat w wall watch watchgnupg wbmptopbm wc wdctl wget whatis whereis which which.debianutils whiptail who whoami wifi-status winicontoppm wmdocker word-list-compress write write.ul wscat wslinfo wslpath x-terminal-emulator x-www-browser x11perf x11perfcomp x86_64 x86_64-linux-gnu-addr2line x86_64-linux-gnu-ar x86_64-linux-gnu-as x86_64-linux-gnu-c++filt x86_64-linux-gnu-cpp x86_64-linux-gnu-cpp-11 x86_64-linux-gnu-dwp x86_64-linux-gnu-elfedit x86_64-linux-gnu-g++ x86_64-linux-gnu-g++-11 x86_64-linux-gnu-gcc x86_64-linux-gnu-gcc-11 x86_64-linux-gnu-gcc-ar x86_64-linux-gnu-gcc-ar-11 x86_64-linux-gnu-gcc-nm x86_64-linux-gnu-gcc-nm-11 x86_64-linux-gnu-gcc-ranlib x86_64-linux-gnu-gcc-ranlib-11 x86_64-linux-gnu-gcov x86_64-linux-gnu-gcov-11 x86_64-linux-gnu-gcov-dump x86_64-linux-gnu-gcov-dump-11 x86_64-linux-gnu-gcov-tool x86_64-linux-gnu-gcov-tool-11 x86_64-linux-gnu-gold x86_64-linux-gnu-gprof x86_64-linux-gnu-ld x86_64-linux-gnu-ld.bfd x86_64-linux-gnu-ld.gold x86_64-linux-gnu-lto-dump-11 x86_64-linux-gnu-nm x86_64-linux-gnu-objcopy x86_64-linux-gnu-objdump x86_64-linux-gnu-ranlib x86_64-linux-gnu-readelf x86_64-linux-gnu-size x86_64-linux-gnu-strings x86_64-linux-gnu-strip xargs xauth xbiff xbmtopbm xcalc xclipboard xclock xcmsdb xconsole xcursorgen xcutsel xdg-desktop-icon xdg-desktop-menu xdg-email xdg-icon-resource xdg-mime xdg-open xdg-screensaver xdg-settings xdg-user-dir xdg-user-dirs-update xditview xdpyinfo xdriinfo xedit xev xeyes xfd xfontsel xgamma xgc xhost ximtoppm xkbbell xkbcomp xkbevd xkbprint xkbvleds xkbwatch xkeystone xkill xload xlogo xlsatoms xlsclients xlsfonts xmag xman xmessage xmlparse xmodmap xmore xpmtoppm xprop xrandr xrdb xrefresh xset xsetmode xsetpointer xsetroot xstdcmap xsubpp xvfb-run xvidtune xvinfo xvminitoppm xwd xwdtopnm xwininfo xwud xxd xz xzcat xzcmp xzdiff xzegrep xzfgrep xzgrep xzless xzmore ybmtopbm yes ypdomainname yuvsplittoppm yuvtoppm zcat zcmp zdiff zdump zegrep zeisstopnm zfgrep zforce zgrep zip zipcloak zipdetails zipgrep zipinfo zipnote zipsplit zless zmore znew
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ echo ls
+ls
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ echo ls
+ls
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ ls
+ 411toppm                             pbmtoepsi
+ GET                                  pbmtoepson
+ HEAD                                 pbmtog3
+ HTMLLinker                           pbmtogem
+ JxrDecApp                            pbmtogo
+ JxrEncApp                            pbmtoicon
+ NF                                   pbmtolj
+ POST                                 pbmtomacp
+ X11                                  pbmtomda
+ Xvfb                                 pbmtomgr
+'['                                   pbmtonokia
+ aa-enabled                           pbmtopgm
+ aa-exec                              pbmtopi3
+ aa-features-abi                      pbmtoplot
+ add-apt-repository                   pbmtoppa
+ addpart                              pbmtopsg3
+ addr2line                            pbmtoptx
+ animate                              pbmtowbmp
+ animate-im6                          pbmtox10bm
+ animate-im6.q16                      pbmtoxbm
+ anytopnm                             pbmtoybm
+ apport-bug                           pbmtozinc
+ apport-cli                           pbmupc
+ apport-collect                       pbput
+ apport-unpack                        pbputs
+ appres                               pcmanfm
+ apropos                              pcxtoppm
+ apt                                  pdb3
+ apt-add-repository                   pdb3.10
+ apt-cache                            pdf2dsc
+ apt-cdrom                            pdf2ps
+ apt-config                           peekfd
+ apt-extracttemplates                 perl
+ apt-ftparchive                       perl5.34-x86_64-linux-gnu
+ apt-get                              perl5.34.0
+ apt-key                              perlbug
+ apt-mark                             perldoc
+ apt-sortpkgs                         perlivp
+ ar                                   perlthanks
+ arborist                             pf2afm
+ arch                                 pfbtopfa
+ as                                   pgmbentley
+ asciitopgm                           pgmcrater
+ aspell                               pgmedge
+ aspell-import                        pgmenhance
+ atktopbm                             pgmhist
+ atobm                                pgmkernel
+ autogsdoc                            pgmnoise
+ awk                                  pgmnorm
+ b2sum                                pgmoil
+ base32                               pgmramp
+ base64                               pgmslice
+ basename                             pgmtexture
+ basenc                               pgmtofs
+ bash                                 pgmtolispm
+ bashbug                              pgmtopbm
+ bdftopcf                             pgmtoppm
+ bdftruncate                          pgrep
+ bioradtopgm                          pi1toppm
+ bitmap                               pi3topbm
+ bmptopnm                             pic
+ bmptoppm                             pico
+ bmtoa                                piconv
+ bootctl                              pidof
+ broadwayd                            pidwait
+ browse                               pigz
+ brushtopbm                           pinentry
+ bunzip2                              pinentry-curses
+ busctl                               pinentry-gnome3
+ busybox                              pinentry-x11
+ byobu                                ping
+ byobu-config                         ping4
+ byobu-ctrl-a                         ping6
+ byobu-disable                        pinky
+ byobu-disable-prompt                 pjtoppm
+ byobu-enable                         pkaction
+ byobu-enable-prompt                  pkcheck
+ byobu-export                         pkcon
+ byobu-janitor                        pkexec
+ byobu-keybindings                    pkill
+ byobu-launch                         pkmon
+ byobu-launcher                       pkttyagent
+ byobu-launcher-install               pl
+ byobu-launcher-uninstall             pl2link
+ byobu-layout                         pl2pm
+ byobu-prompt                         pldd
+ byobu-quiet                          pldes
+ byobu-reconnect-sockets              plget
+ byobu-screen                         plmerge
+ byobu-select-backend                 plparse
+ byobu-select-profile                 plser
+ byobu-select-session                 plutil
+ byobu-shell                          plymouth
+ byobu-silent                         pmap
+ byobu-status                         pngtopnm
+ byobu-status-detail                  pnmalias
+ byobu-tmux                           pnmarith
+ byobu-ugraph                         pnmcat
+ byobu-ulevel                         pnmcolormap
+ bzcat                                pnmcomp
+ bzcmp                                pnmconvol
+ bzdiff                               pnmcrop
+ bzegrep                              pnmcut
+ bzexe                                pnmdepth
+ bzfgrep                              pnmenlarge
+ bzgrep                               pnmfile
+ bzip2                                pnmflip
+ bzip2recover                         pnmgamma
+ bzless                               pnmhisteq
+ bzmore                               pnmhistmap
+ c++                                  pnmindex
+ c++filt                              pnminterp
+ c89                                  pnminterp-gen
+ c89-gcc                              pnminvert
+ c99                                  pnmmargin
+ c99-gcc                              pnmmontage
+ c_rehash                             pnmnlfilt
+ captoinfo                            pnmnoraw
+ cat                                  pnmnorm
+ catman                               pnmpad
+ cc                                   pnmpaste
+ chage                                pnmpsnr
+ chattr                               pnmquant
+ chcon                                pnmremap
+ chfn                                 pnmrotate
+ chgrp                                pnmscale
+ chmod                                pnmscalefixed
+ choom                                pnmshear
+ chown                                pnmsmooth
+ chrt                                 pnmsplit
+ chsh                                 pnmtile
+ chvt                                 pnmtoddif
+ ckbcomp                              pnmtofiasco
+ cksum                                pnmtofits
+ clear                                pnmtojpeg
+ clear_console                        pnmtopalm
+ cmp                                  pnmtoplainpnm
+ cmuwmtopbm                           pnmtopng
+ codepage                             pnmtops
+ col                                  pnmtorast
+ col1                                 pnmtorle
+ col2                                 pnmtosgi
+ col3                                 pnmtosir
+ col4                                 pnmtotiff
+ col5                                 pnmtotiffcmyk
+ col6                                 pnmtoxwd
+ col7                                 pod2html
+ col8                                 pod2man
+ col9                                 pod2text
+ colcrt                               pod2usage
+ colrm                                podchecker
+ column                               pphs
+ comm                                 ppm3d
+ compare                              ppmbrighten
+ compare-im6                          ppmchange
+ compare-im6.q16                      ppmcie
+ composite                            ppmcolormask
+ composite-im6                        ppmcolors
+ composite-im6.q16                    ppmdim
+ conjure                              ppmdist
+ conjure-im6                          ppmdither
+ conjure-im6.q16                      ppmfade
+ containerd                           ppmflash
+ containerd-shim                      ppmforge
+ containerd-shim-runc-v1              ppmhist
+ containerd-shim-runc-v2              ppmlabel
+ containerd-stress                    ppmmake
+ convert                              ppmmix
+ convert-im6                          ppmnorm
+ convert-im6.q16                      ppmntsc
+ corelist                             ppmpat
+ cp                                   ppmquant
+ cpan                                 ppmquantall
+ cpan5.34-x86_64-linux-gnu            ppmqvga
+ cpio                                 ppmrainbow
+ cpp                                  ppmrelief
+ cpp-11                               ppmshadow
+ crontab                              ppmshift
+ csplit                               ppmspread
+ ctail                                ppmtoacad
+ ctr                                  ppmtobmp
+ ctstat                               ppmtoeyuv
+ curl                                 ppmtogif
+ cut                                  ppmtoicr
+ cvtenc                               ppmtoilbm
+ cvtsudoers                           ppmtojpeg
+ dash                                 ppmtoleaf
+ date                                 ppmtolj
+ dbus-cleanup-sockets                 ppmtomap
+ dbus-daemon                          ppmtomitsu
+ dbus-launch                          ppmtompeg
+ dbus-monitor                         ppmtoneo
+ dbus-run-session                     ppmtopcx
+ dbus-send                            ppmtopgm
+ dbus-update-activation-environment   ppmtopi1
+ dbus-uuidgen                         ppmtopict
+ dd                                   ppmtopj
+ deallocvt                            ppmtopuzz
+ deb-systemd-helper                   ppmtorgb3
+ deb-systemd-invoke                   ppmtosixel
+ debconf                              ppmtotga
+ debconf-apt-progress                 ppmtouil
+ debconf-communicate                  ppmtowinicon
+ debconf-copydb                       ppmtoxpm
+ debconf-escape                       ppmtoyuv
+ debconf-set-selections               ppmtoyuvsplit
+ debconf-show                         ppmtv
+ debian-distro-info                   pr
+ debugapp                             precat
+ defaults                             preconv
+ delpart                              preunzip
+ delv                                 prezip
+ desktop-file-edit                    prezip-bin
+ desktop-file-install                 printafm
+ desktop-file-validate                printenv
+ df                                   printf
+ dh_bash-completion                   prlimit
+ dh_perl_openssl                      pro
+ diff                                 prove
+ diff3                                prtstat
+ dig                                  ps
+ dir                                  ps2ascii
+ dircolors                            ps2epsi
+ dirmngr                              ps2pdf
+ dirmngr-client                       ps2pdf12
+ dirname                              ps2pdf13
+ display                              ps2pdf14
+ display-im6                          ps2pdfwr
+ display-im6.q16                      ps2ps
+ distro-info                          ps2ps2
+ dmesg                                ps2txt
+ dnsdomainname                        psfaddtable
+ do-release-upgrade                   psfgettable
+ docker                               psfstriptable
+ docker-init                          psfxtable
+ docker-proxy                         psidtopgm
+ dockerd                              pslog
+ domainname                           pstopnm
+ dpkg                                 pstree
+ dpkg-architecture                    pstree.x11
+ dpkg-buildflags                      ptar
+ dpkg-buildpackage                    ptardiff
+ dpkg-checkbuilddeps                  ptargrep
+ dpkg-deb                             ptx
+ dpkg-distaddfile                     purge-old-kernels
+ dpkg-divert                          pwd
+ dpkg-genbuildinfo                    pwdx
+ dpkg-genchanges                      py3clean
+ dpkg-gencontrol                      py3compile
+ dpkg-gensymbols                      py3versions
+ dpkg-maintscript-helper              pydoc3
+ dpkg-mergechangelogs                 pydoc3.10
+ dpkg-name                            pygettext3
+ dpkg-parsechangelog                  pygettext3.10
+ dpkg-query                           python3
+ dpkg-realpath                        python3.10
+ dpkg-scanpackages                    qrcode-terminal
+ dpkg-scansources                     qrttoppm
+ dpkg-shlibdeps                       ranlib
+ dpkg-source                          rasttopnm
+ dpkg-split                           rawtopgm
+ dpkg-statoverride                    rawtoppm
+ dpkg-trigger                         rbash
+ dpkg-vendor                          rcp
+ du                                   rdma
+ dumpkeys                             readelf
+ dvipdf                               readlink
+ dwp                                  realpath
+ echo                                 red
+ ed                                   rendercheck
+ editor                               renice
+ editres                              reset
+ egrep                                resizecons
+ eject                                resizepart
+ elfedit                              resolvectl
+ enc2xs                               rev
+ encguess                             rgb3toppm
+ env                                  rgrep
+ envsubst                             rimraf
+ eps2eps                              rletopnm
+ eqn                                  rlogin
+ esparse                              rm
+ esvalidate                           rmdir
+ ex                                   rnano
+ expand                               routef
+ expiry                               routel
+ expr                                 rpcgen
+ eyuvtoppm                            rrsync
+ factor                               rsh
+ faillog                              rsync
+ faked-sysv                           rsync-ssl
+ faked-tcp                            rtstat
+ fakeroot                             run-one
+ fakeroot-sysv                        run-one-constantly
+ fakeroot-tcp                         run-one-until-failure
+ fallocate                            run-one-until-success
+ false                                run-parts
+ fc-cache                             run-this-one
+ fc-cat                               run-with-aspell
+ fc-conflist                          runcon
+ fc-list                              rview
+ fc-match                             rvim
+ fc-pattern                           savelog
+ fc-query                             sbigtopgm
+ fc-scan                              scp
+ fc-validate                          screen
+ fgconsole                            screendump
+ fgrep                                script
+ fiascotopnm                          scriptlive
+ file                                 scriptreplay
+ fincore                              sdiff
+ find                                 sed
+ findmnt                              select-default-iwrap
+ firefox                              select-editor
+ fitstopnm                            semver
+ flock                                sensible-browser
+ fmt                                  sensible-editor
+ fold                                 sensible-pager
+ fonttosfnt                           seq
+ free                                 session-migration
+ fstopgm                              sessreg
+ ftp                                  setarch
+ funzip                               setfont
+ fuser                                setkeycodes
+ fusermount                           setleds
+ fusermount3                          setlogcons
+ g++                                  setmetamode
+ g++-11                               setpci
+ g3topbm                              setpriv
+ gapplication                         setsid
+ gawk                                 setterm
+ gcc                                  setupcon
+ gcc-11                               setxkbmap
+ gcc-ar                               sfparse
+ gcc-ar-11                            sftp
+ gcc-nm                               sg
+ gcc-nm-11                            sgitopnm
+ gcc-ranlib                           sh
+ gcc-ranlib-11                        sha1sum
+ gcov                                 sha224sum
+ gcov-11                              sha256sum
+ gcov-dump                            sha384sum
+ gcov-dump-11                         sha512sum
+ gcov-tool                            shasum
+ gcov-tool-11                         showconsolefont
+ gcr-viewer                           showkey
+ gdbus                                showrgb
+ gdk-pixbuf-csource                   shred
+ gdk-pixbuf-pixdata                   shuf
+ gdk-pixbuf-thumbnailer               sirtopnm
+ gdnc                                 size
+ gdomap                               skill
+ gemtopbm                             slabtop
+ gemtopnm                             sldtoppm
+ gencat                               sleep
+ geqn                                 slogin
+ getconf                              snap
+ getent                               snapctl
+ getkeycodes                          snapfuse
+ getopt                               snice
+ gettext                              soelim
+ gettext.sh                           sort
+ ghostscript                          sotruss
+ giftopnm                             spctoppm
+ ginstall-info                        splain
+ gio                                  split
+ gio-querymodules                     splitfont
+ git                                  sprof
+ git-receive-pack                     sputoppm
+ git-shell                            sqfscat
+ git-upload-archive                   sqfstar
+ git-upload-pack                      ss
+ glib-compile-schemas                 ssh
+ gmake                                ssh-add
+ gnome-keyring                        ssh-agent
+ gnome-keyring-3                      ssh-argv0
+ gnome-keyring-daemon                 ssh-copy-id
+ gnome-www-browser                    ssh-keygen
+ gold                                 ssh-keyscan
+ gouldtoppm                           st4topgm
+ gpasswd                              stat
+ gpg                                  static-sh
+ gpg-agent                            stdbuf
+ gpg-connect-agent                    strace
+ gpg-wks-server                       strace-log-merge
+ gpg-zip                              stream
+ gpgcompose                           stream-im6
+ gpgconf                              stream-im6.q16
+ gpgparsemail                         streamzip
+ gpgsm                                strings
+ gpgsplit                             strip
+ gpgtar                               stty
+ gpgv                                 su
+ gpic                                 sudo
+ gprof                                sudoedit
+ grep                                 sudoreplay
+ gresource                            sum
+ groff                                sync
+ grog                                 systemctl
+ grops                                systemd
+ grotty                               systemd-analyze
+ groups                               systemd-ask-password
+ gs                                   systemd-cat
+ gsbj                                 systemd-cgls
+ gsdj                                 systemd-cgtop
+ gsdj500                              systemd-cryptenroll
+ gsettings                            systemd-delta
+ gslj                                 systemd-detect-virt
+ gslp                                 systemd-escape
+ gsnd                                 systemd-hwdb
+ gspath                               systemd-id128
+ gtbl                                 systemd-inhibit
+ gtk-builder-tool                     systemd-machine-id-setup
+ gtk-encode-symbolic-svg              systemd-mount
+ gtk-launch                           systemd-notify
+ gtk-query-settings                   systemd-path
+ gtk-update-icon-cache                systemd-run
+ gunzip                               systemd-socket-activate
+ gyp                                  systemd-stdio-bridge
+ gzexe                                systemd-sysext
+ gzip                                 systemd-sysusers
+ h2ph                                 systemd-tmpfiles
+ h2xs                                 systemd-tty-ask-password-agent
+ hardlink                             systemd-umount
+ hd                                   tabs
+ head                                 tac
+ helpztags                            tail
+ hexdump                              tap
+ hipstopgm                            tap-mocha-reporter
+ host                                 tap-parser
+ hostid                               tar
+ hostname                             taskset
+ hostnamectl                          tbl
+ htop                                 tcpdump
+ hwe-support-status                   tee
+ i386                                 telnet
+ iceauth                              telnet.netkit
+ ico                                  tempfile
+ icontopbm                            test
+ iconv                                tgatoppm
+ id                                   thinkjettopbm
+ identify                             tic
+ identify-im6                         tifftopnm
+ identify-im6.q16                     tilix
+ ilbmtoppm                            tilix.wrapper
+ imagetops                            time
+ imgtoppm                             timedatectl
+ import                               timeout
+ import-im6                           tload
+ import-im6.q16                       tmux
+ info                                 tnftp
+ infobrowser                          toe
+ infocmp                              top
+ infotocap                            touch
+ install                              tput
+ install-info                         tr
+ instmodsh                            tracepath
+ ionice                               transset
+ ip                                   troff
+ ipcmk                                true
+ ipcrm                                truncate
+ ipcs                                 trust
+ iptables-xml                         tset
+ ischroot                             tsort
+ ispell-wrapper                       tty
+ join                                 tzselect
+ journalctl                           ua
+ jpegtopnm                            ubuntu-advantage
+ js                                   ubuntu-bug
+ js-yaml                              ubuntu-core-launcher
+ json_pp                              ubuntu-distro-info
+ kbd_mode                             ubuntu-security-status
+ kbdinfo                              ucf
+ kbxutil                              ucfq
+ keep-one-running                     ucfr
+ kernel-install                       uclampset
+ keyring                              ucs2any
+ kill                                 udevadm
+ killall                              udisksctl
+ kmod                                 ul
+ last                                 umount
+ lastb                                uname
+ lastlog                              unattended-upgrade
+ lcf                                  unattended-upgrades
+ ld                                   uncompress
+ ld.bfd                               unexpand
+ ld.gold                              unicode_start
+ ldd                                  unicode_stop
+ leaftoppm                            uniq
+ less                                 unlink
+ lessecho                             unlzma
+ lessfile                             unpigz
+ lesskey                              unshare
+ lesspipe                             unsquashfs
+ lexgrog                              unxz
+ libnetcfg                            unzip
+ link                                 unzipsfx
+ linux32                              update-alternatives
+ linux64                              update-desktop-database
+ lispmtopgm                           update-mime-database
+ listres                              uptime
+ ln                                   usb-devices
+ lnstat                               usbhid-dump
+ loadkeys                             usbreset
+ loadunimap                           users
+ locale                               utmpdump
+ locale-check                         uuidgen
+ localectl                            uuidparse
+ localedef                            vdir
+ logger                               vi
+ login                                view
+ loginctl                             viewres
+ logname                              vigpg
+ look                                 vim
+ lowntfs-3g                           vim.basic
+ ls                                   vim.tiny
+ lsattr                               vimdiff
+ lsb_release                          vimtutor
+ lsblk                                vmstat
+ lscpu                                w
+ lshw                                 wall
+ lsipc                                watch
+ lslocks                              watchgnupg
+ lslogins                             wbmptopbm
+ lsmem                                wc
+ lsmod                                wdctl
+ lsns                                 wget
+ lsof                                 whatis
+ lspci                                whereis
+ lspgpot                              which
+ lsusb                                which.debianutils
+ lto-dump-11                          whiptail
+ luit                                 who
+ lwp-download                         whoami
+ lwp-dump                             wifi-status
+ lwp-mirror                           winicontoppm
+ lwp-request                          wmdocker
+ lxpolkit                             word-list-compress
+ lzcat                                write
+ lzcmp                                write.ul
+ lzdiff                               wscat
+ lzegrep                              wslinfo
+ lzfgrep                              wslpath
+ lzgrep                               x-terminal-emulator
+ lzless                               x-www-browser
+ lzma                                 x11perf
+ lzmainfo                             x11perfcomp
+ lzmore                               x86_64
+ macptopbm                            x86_64-linux-gnu-addr2line
+ make                                 x86_64-linux-gnu-ar
+ make-first-existing-target           x86_64-linux-gnu-as
+ make_strings                         x86_64-linux-gnu-c++filt
+ man                                  x86_64-linux-gnu-cpp
+ man-recode                           x86_64-linux-gnu-cpp-11
+ mandb                                x86_64-linux-gnu-dwp
+ manifest                             x86_64-linux-gnu-elfedit
+ manpath                              x86_64-linux-gnu-g++
+ mapscrn                              x86_64-linux-gnu-g++-11
+ mawk                                 x86_64-linux-gnu-gcc
+ mcookie                              x86_64-linux-gnu-gcc-11
+ md5sum                               x86_64-linux-gnu-gcc-ar
+ md5sum.textutils                     x86_64-linux-gnu-gcc-ar-11
+ mdatopbm                             x86_64-linux-gnu-gcc-nm
+ mdig                                 x86_64-linux-gnu-gcc-nm-11
+ memusage                             x86_64-linux-gnu-gcc-ranlib
+ memusagestat                         x86_64-linux-gnu-gcc-ranlib-11
+ mesg                                 x86_64-linux-gnu-gcov
+ mgrtopbm                             x86_64-linux-gnu-gcov-11
+ migrate-pubring-from-classic-gpg     x86_64-linux-gnu-gcov-dump
+ mimeopen                             x86_64-linux-gnu-gcov-dump-11
+ mimetype                             x86_64-linux-gnu-gcov-tool
+ mk_modmap                            x86_64-linux-gnu-gcov-tool-11
+ mkdir                                x86_64-linux-gnu-gold
+ mkfifo                               x86_64-linux-gnu-gprof
+ mkfontdir                            x86_64-linux-gnu-ld
+ mkfontscale                          x86_64-linux-gnu-ld.bfd
+ mknod                                x86_64-linux-gnu-ld.gold
+ mksquashfs                           x86_64-linux-gnu-lto-dump-11
+ mktemp                               x86_64-linux-gnu-nm
+ mogrify                              x86_64-linux-gnu-objcopy
+ mogrify-im6                          x86_64-linux-gnu-objdump
+ mogrify-im6.q16                      x86_64-linux-gnu-ranlib
+ montage                              x86_64-linux-gnu-readelf
+ montage-im6                          x86_64-linux-gnu-size
+ montage-im6.q16                      x86_64-linux-gnu-strings
+ more                                 x86_64-linux-gnu-strip
+ mount                                xargs
+ mountpoint                           xauth
+ mt                                   xbiff
+ mt-gnu                               xbmtopbm
+ mtr                                  xcalc
+ mtr-packet                           xclipboard
+ mtrace                               xclock
+ mtvtoppm                             xcmsdb
+ mv                                   xconsole
+ namei                                xcursorgen
+ nano                                 xcutsel
+ nawk                                 xdg-desktop-icon
+ nc                                   xdg-desktop-menu
+ nc.openbsd                           xdg-email
+ neotoppm                             xdg-icon-resource
+ neqn                                 xdg-mime
+ netcat                               xdg-open
+ networkctl                           xdg-screensaver
+ networkd-dispatcher                  xdg-settings
+ newgrp                               xdg-user-dir
+ ngettext                             xdg-user-dirs-update
+ nice                                 xditview
+ nisdomainname                        xdpyinfo
+ nl                                   xdriinfo
+ nm                                   xedit
+ nmap                                 xev
+ node                                 xeyes
+ node-coveralls                       xfd
+ node-gyp                             xfontsel
+ nodejs                               xgamma
+ nohup                                xgc
+ notify-send                          xhost
+ nping                                ximtoppm
+ npm                                  xkbbell
+ npm-arborist                         xkbcomp
+ npm-packlist                         xkbevd
+ nproc                                xkbprint
+ npx                                  xkbvleds
+ nroff                                xkbwatch
+ nsenter                              xkeystone
+ nslookup                             xkill
+ nstat                                xload
+ nsupdate                             xlogo
+ ntfs-3g                              xlsatoms
+ ntfs-3g.probe                        xlsclients
+ ntfscat                              xlsfonts
+ ntfscluster                          xmag
+ ntfscmp                              xman
+ ntfsdecrypt                          xmessage
+ ntfsfallocate                        xmlparse
+ ntfsfix                              xmodmap
+ ntfsinfo                             xmore
+ ntfsls                               xpmtoppm
+ ntfsmove                             xprop
+ ntfsrecover                          xrandr
+ ntfssecaudit                         xrdb
+ ntfstruncate                         xrefresh
+ ntfsusermap                          xset
+ ntfswipe                             xsetmode
+ numfmt                               xsetpointer
+ objcopy                              xsetroot
+ objdump                              xstdcmap
+ oclock                               xsubpp
+ od                                   xvfb-run
+ oem-getlogs                          xvidtune
+ on_ac_power                          xvinfo
+ open                                 xvminitoppm
+ openapp                              xwd
+ opener                               xwdtopnm
+ openssl                              xwininfo
+ opentool                             xwud
+ openvt                               xxd
+ p11-kit                              xz
+ pacote                               xzcat
+ pager                                xzcmp
+ palmtopnm                            xzdiff
+ pamcut                               xzegrep
+ pamdeinterlace                       xzfgrep
+ pamdice                              xzgrep
+ pamfile                              xzless
+ pamoil                               xzmore
+ pamstack                             ybmtopbm
+ pamstretch                           yes
+ pamstretch-gen                       ypdomainname
+ paperconf                            yuvsplittoppm
+ partx                                yuvtoppm
+ passwd                               zcat
+ paste                                zcmp
+ pastebinit                           zdiff
+ patch                                zdump
+ pathchk                              zegrep
+ pbget                                zeisstopnm
+ pbmclean                             zfgrep
+ pbmlife                              zforce
+ pbmmake                              zgrep
+ pbmmask                              zip
+ pbmpage                              zipcloak
+ pbmpscale                            zipdetails
+ pbmreduce                            zipgrep
+ pbmtext                              zipinfo
+ pbmtextps                            zipnote
+ pbmto10x                             zipsplit
+ pbmtoascii                           zless
+ pbmtoatk                             zmore
+ pbmtobbnbg                           znew
+ pbmtocmuwm
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ cd /usr/bin/passwd
+-bash: cd: /usr/bin/passwd: Not a directory
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ cd /usr/bin
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ which passwd
+/usr/bin/passwd
+andrea11@DESKTOP-HSTPJN3:/usr/bin$ cd /home/andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ which passwd
+/usr/bin/passwd
+andrea11@DESKTOP-HSTPJN3:~$ stat /usr/bin/passwd
+  File: /usr/bin/passwd
+  Size: 59976           Blocks: 120        IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 1629        Links: 1
+Access: (4755/-rwsr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-10-07 13:03:37.441770219 +0200
+Modify: 2022-11-24 13:05:18.000000000 +0100
+Change: 2023-03-06 11:08:58.009867400 +0100
+ Birth: 2023-03-06 11:08:58.009867400 +0100
+andrea11@DESKTOP-HSTPJN3:~$ stat $(which passwd)
+  File: /usr/bin/passwd
+  Size: 59976           Blocks: 120        IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 1629        Links: 1
+Access: (4755/-rwsr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-10-07 13:03:37.441770219 +0200
+Modify: 2022-11-24 13:05:18.000000000 +0100
+Change: 2023-03-06 11:08:58.009867400 +0100
+ Birth: 2023-03-06 11:08:58.009867400 +0100
+andrea11@DESKTOP-HSTPJN3:~$ stat $(which passwd)
+  File: /usr/bin/passwd
+  Size: 59976           Blocks: 120        IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 1629        Links: 1
+Access: (4755/-rwsr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-10-07 13:03:37.441770219 +0200
+Modify: 2022-11-24 13:05:18.000000000 +0100
+Change: 2023-03-06 11:08:58.009867400 +0100
+ Birth: 2023-03-06 11:08:58.009867400 +0100
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ls
+GNUstep  b.txt               c.txt                                  elaborato.txt  spec
+a        bbb                 cartella_compressa.zip                 ff.txt         sticky
+a.txt    byte_casuali.byte   compito                                miofile.txt    test
+aaa.txt  byte_casuali2.byte  creato_sul_server_arrivato_da_noi.txt  oggi
+andrea11@DESKTOP-HSTPJN3:~$ cd test
+andrea11@DESKTOP-HSTPJN3:~/test$ ls
+file1.txt  file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find .
+.
+./file2.txt
+./file1.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ mkdir cartela
+andrea11@DESKTOP-HSTPJN3:~/test$ mv cartela cartella
+andrea11@DESKTOP-HSTPJN3:~/test$ ls
+cartella  file1.txt  file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type f
+./file2.txt
+./file1.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type d
+.
+./cartella
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type d -name file1.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ mkdir aaa.a
+andrea11@DESKTOP-HSTPJN3:~/test$ ls -l
+total 12
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  8 12:39 aaa.a
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  8 12:37 cartella
+-rw-r--r-- 1 andrea11 andrea11    0 Oct  7 11:07 file1.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Oct  7 11:18 file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ mkdir aaa.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ ls -l
+total 16
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  8 12:39 aaa.a
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  8 12:39 aaa.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  8 12:37 cartella
+-rw-r--r-- 1 andrea11 andrea11    0 Oct  7 11:07 file1.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Oct  7 11:18 file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type d -name aaa.txt
+./aaa.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type d
+.
+./aaa.a
+./aaa.txt
+./cartella
+andrea11@DESKTOP-HSTPJN3:~/test$ cd cartella
+andrea11@DESKTOP-HSTPJN3:~/test/cartella$ echo jytdeuykgjfgilty > documento.txt
+andrea11@DESKTOP-HSTPJN3:~/test/cartella$ cd ..
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type f
+./file2.txt
+./cartella/documento.txt
+./file1.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ tree
+Command 'tree' not found, but can be installed with:
+sudo apt install tree
+andrea11@DESKTOP-HSTPJN3:~/test$ sudo apt install tree
+[sudo] password for andrea11:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aspell aspell-en dictionaries-common emacsen-common gnustep-base-common
+  gnustep-base-runtime gnustep-common gnustep-gui-common libao-common libao4 libaspell15
+  libasyncns0 libflac8 libflite1 libgc1 libgfortran5 libgif7 libgnustep-base1.28
+  libgnustep-gui0.29 libicns1 liblapack3 libobjc4 libogg0 libopus0 libpocketsphinx3
+  libpulse0 libsndfile1 libsphinxbase3 libvorbis0a libvorbisenc2 libxslt1.1
+  pocketsphinx-en-us
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 266 not upgraded.
+Need to get 47.9 kB of archives.
+After this operation, 116 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 tree amd64 2.0.2-1 [47.9 kB]
+Fetched 47.9 kB in 1s (62.9 kB/s)
+Selecting previously unselected package tree.
+(Reading database ... 67183 files and directories currently installed.)
+Preparing to unpack .../tree_2.0.2-1_amd64.deb ...
+Unpacking tree (2.0.2-1) ...
+Setting up tree (2.0.2-1) ...
+Processing triggers for man-db (2.10.2-1) ...
+andrea11@DESKTOP-HSTPJN3:~/test$ tree
+.
+├── aaa.a
+├── aaa.txt
+├── cartella
+│   └── documento.txt
+├── file1.txt
+└── file2.txt
+
+3 directories, 3 files
+andrea11@DESKTOP-HSTPJN3:~/test$ mv cartella/ c1
+andrea11@DESKTOP-HSTPJN3:~/test$ tree
+.
+├── aaa.a
+├── aaa.txt
+├── c1
+│   └── documento.txt
+├── file1.txt
+└── file2.txt
+
+3 directories, 3 files
+andrea11@DESKTOP-HSTPJN3:~/test$ mkdir c1/sub_c1
+andrea11@DESKTOP-HSTPJN3:~/test$ tree
+.
+├── aaa.a
+├── aaa.txt
+├── c1
+│   ├── documento.txt
+│   └── sub_c1
+├── file1.txt
+└── file2.txt
+
+4 directories, 3 files
+andrea11@DESKTOP-HSTPJN3:~/test$ echo ytdjytdjykuilhkuf > c1/sub_c1/casa.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ mv c1/sub_c1/casa.txt c1/sub_c1/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ tree
+.
+├── aaa.a
+├── aaa.txt
+├── c1
+│   ├── documento.txt
+│   └── sub_c1
+│       └── profondo.txt
+├── file1.txt
+└── file2.txt
+
+4 directories, 4 files
+andrea11@DESKTOP-HSTPJN3:~/test$ cd ..
+andrea11@DESKTOP-HSTPJN3:~$ tree
+.
+├── GNUstep
+│   └── Library
+│       └── Services
+├── a
+│   └── compito
+│       ├── miocompito.sh
+│       └── readme.txt
+├── a.txt
+├── aaa.txt
+├── b.txt
+├── bbb
+├── byte_casuali.byte
+├── byte_casuali2.byte
+├── c.txt
+├── cartella_compressa.zip
+├── compito
+│   ├── miocompito.sh
+│   └── readme.txt
+├── creato_sul_server_arrivato_da_noi.txt
+├── elaborato.txt
+├── ff.txt
+├── miofile.txt
+├── oggi
+│   ├── aaa.txt
+│   ├── errori_ls.txt
+│   ├── risultato.txt
+│   ├── stderr_di_xdg-open.txt
+│   └── stdout_stderr.txt
+├── spec
+├── sticky
+└── test
+    ├── aaa.a
+    ├── aaa.txt
+    ├── c1
+    │   ├── documento.txt
+    │   └── sub_c1
+    │       └── profondo.txt
+    ├── file1.txt
+    └── file2.txt
+
+13 directories, 26 files
+andrea11@DESKTOP-HSTPJN3:~$ c1/sub_c1/casa.txt^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ cd test
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type f
+./file2.txt
+./c1/sub_c1/profondo.txt
+./c1/documento.txt
+./file1.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -maxdepth 12 -type f -name profondo.txt
+./c1/sub_c1/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -maxdepth 1 -type f -name profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -maxdepth 2 -type f -name profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -maxdepth 3 -type f -name profondo.txt
+./c1/sub_c1/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ mkdir c2
+andrea11@DESKTOP-HSTPJN3:~/test$ mkdir c2/sub_c2aa
+andrea11@DESKTOP-HSTPJN3:~/test$ echo uytdfkugku > c2/sub_c2aa/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ tree
+.
+├── aaa.a
+├── aaa.txt
+├── c1
+│   ├── documento.txt
+│   └── sub_c1
+│       └── profondo.txt
+├── c2
+│   └── sub_c2aa
+│       └── profondo.txt
+├── file1.txt
+└── file2.txt
+
+6 directories, 5 files
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -maxdepth 3 -type f -name profondo.txt
+./c2/sub_c2aa/profondo.txt
+./c1/sub_c1/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ mkdir c2/sub_c2aa/strasub2
+andrea11@DESKTOP-HSTPJN3:~/test$ echo uytdfkugku > c2/sub_c2aa/strasub2/straprofondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ tree
+.
+├── aaa.a
+├── aaa.txt
+├── c1
+│   ├── documento.txt
+│   └── sub_c1
+│       └── profondo.txt
+├── c2
+│   └── sub_c2aa
+│       ├── profondo.txt
+│       └── strasub2
+│           └── straprofondo.txt
+├── file1.txt
+└── file2.txt
+
+7 directories, 6 files
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -maxdepth 3 -type f -name straprofondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -maxdepth 4 -type f -name straprofondo.txt
+./c2/sub_c2aa/strasub2/straprofondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type f -name *profondo.txt
+./c2/sub_c2aa/profondo.txt
+./c2/sub_c2aa/strasub2/straprofondo.txt
+./c1/sub_c1/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type f -name prof*o.txt
+./c2/sub_c2aa/profondo.txt
+./c1/sub_c1/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type f -name prof?o.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ find . -type f -name prof???o.txt
+./c2/sub_c2aa/profondo.txt
+./c1/sub_c1/profondo.txt
+andrea11@DESKTOP-HSTPJN3:~/test$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

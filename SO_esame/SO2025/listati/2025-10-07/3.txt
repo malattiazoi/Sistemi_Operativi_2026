@@ -1,0 +1,241 @@
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ps -e
+  PID TTY          TIME CMD
+    1 hvc0     00:00:00 init(Ubuntu)
+    5 hvc0     00:00:00 init
+    8 ?        00:00:00 SessionLeader
+    9 ?        00:00:28 Relay(10)
+   10 pts/0    00:00:00 bash
+  974 ?        00:00:00 SessionLeader
+  975 ?        00:00:00 Relay(976)
+  976 pts/1    00:00:00 bash
+ 1015 ?        00:00:00 SessionLeader
+ 1016 ?        00:00:00 Relay(1017)
+ 1017 pts/2    00:00:00 bash
+ 1253 ?        00:00:00 SessionLeader
+ 1254 ?        00:00:00 Relay(1255)
+ 1255 pts/3    00:00:00 bash
+ 1266 ?        00:00:00 SessionLeader
+ 1267 ?        00:00:00 Relay(1268)
+ 1268 pts/4    00:00:00 bash
+ 1285 ?        00:00:00 SessionLeader
+ 1286 ?        00:00:00 Relay(1287)
+ 1287 pts/5    00:00:00 bash
+ 1385 ?        00:00:00 SessionLeader
+ 1386 ?        00:00:00 Relay(1387)
+ 1387 pts/6    00:00:00 bash
+ 1399 ?        00:00:00 SessionLeader
+ 1400 ?        00:00:00 Relay(1401)
+ 1401 pts/7    00:00:00 bash
+ 1474 ?        00:00:00 SessionLeader
+ 1475 ?        00:00:00 Relay(1476)
+ 1476 pts/8    00:00:00 bash
+ 1856 ?        00:00:00 SessionLeader
+ 1857 ?        00:00:00 Relay(1858)
+ 1858 pts/9    00:00:00 bash
+ 1870 pts/9    00:00:00 ssh
+ 1871 ?        00:00:00 SessionLeader
+ 1872 ?        00:00:00 Relay(1873)
+ 1873 pts/10   00:00:00 bash
+ 1921 ?        00:00:00 SessionLeader
+ 1922 ?        00:00:00 Relay(1923)
+ 1923 pts/11   00:00:00 bash
+ 2062 pts/11   00:00:00 passwd
+ 2063 ?        00:00:00 SessionLeader
+ 2064 ?        00:00:00 Relay(2065)
+ 2065 pts/12   00:00:00 bash
+ 2076 pts/12   00:00:00 ps
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$  ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command
+  PID  RUID  EUID command
+    1     0     0 /init
+    5     0     0 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+    8     0     0 /init
+    9     0     0 /init
+   10  1000  1000 -bash
+  974     0     0 /init
+  975     0     0 /init
+  976  1000  1000 -bash
+ 1015     0     0 /init
+ 1016     0     0 /init
+ 1017  1000  1000 -bash
+ 1253     0     0 /init
+ 1254     0     0 /init
+ 1255  1000  1000 -bash
+ 1266     0     0 /init
+ 1267     0     0 /init
+ 1268  1000  1000 -bash
+ 1285     0     0 /init
+ 1286     0     0 /init
+ 1287  1000  1000 -bash
+ 1385     0     0 /init
+ 1386     0     0 /init
+ 1387  1000  1000 -bash
+ 1399     0     0 /init
+ 1400     0     0 /init
+ 1401  1000  1000 -bash
+ 1474     0     0 /init
+ 1475     0     0 /init
+ 1476  1000  1000 -bash
+ 1856     0     0 /init
+ 1857     0     0 /init
+ 1858  1000  1000 -bash
+ 1870  1000  1000 ssh achezzi@10.0.14.23
+ 1871     0     0 /init
+ 1872     0     0 /init
+ 1873  1000  1000 -bash
+ 1921     0     0 /init
+ 1922     0     0 /init
+ 1923  1000  1000 -bash
+ 2062  1000     0 passwd
+ 2063     0     0 /init
+ 2064     0     0 /init
+ 2065  1000  1000 -bash
+ 2077  1000  1000 ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ps -e ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$  ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command -p 2062
+  PID  RUID  EUID command
+    1     0     0 /init
+    5     0     0 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+    8     0     0 /init
+    9     0     0 /init
+   10  1000  1000 -bash
+  974     0     0 /init
+  975     0     0 /init
+  976  1000  1000 -bash
+ 1015     0     0 /init
+ 1016     0     0 /init
+ 1017  1000  1000 -bash
+ 1253     0     0 /init
+ 1254     0     0 /init
+ 1255  1000  1000 -bash
+ 1266     0     0 /init
+ 1267     0     0 /init
+ 1268  1000  1000 -bash
+ 1285     0     0 /init
+ 1286     0     0 /init
+ 1287  1000  1000 -bash
+ 1385     0     0 /init
+ 1386     0     0 /init
+ 1387  1000  1000 -bash
+ 1399     0     0 /init
+ 1400     0     0 /init
+ 1401  1000  1000 -bash
+ 1474     0     0 /init
+ 1475     0     0 /init
+ 1476  1000  1000 -bash
+ 1856     0     0 /init
+ 1857     0     0 /init
+ 1858  1000  1000 -bash
+ 1870  1000  1000 ssh achezzi@10.0.14.23
+ 1871     0     0 /init
+ 1872     0     0 /init
+ 1873  1000  1000 -bash
+ 1921     0     0 /init
+ 1922     0     0 /init
+ 1923  1000  1000 -bash
+ 2062  1000     0 passwd
+ 2063     0     0 /init
+ 2064     0     0 /init
+ 2065  1000  1000 -bash
+ 2078  1000  1000 ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command -p 2062
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ man ps
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$  ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command -2062
+  PID  RUID  EUID command
+    1     0     0 /init
+    5     0     0 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+    8     0     0 /init
+    9     0     0 /init
+   10  1000  1000 -bash
+  974     0     0 /init
+  975     0     0 /init
+  976  1000  1000 -bash
+ 1015     0     0 /init
+ 1016     0     0 /init
+ 1017  1000  1000 -bash
+ 1253     0     0 /init
+ 1254     0     0 /init
+ 1255  1000  1000 -bash
+ 1266     0     0 /init
+ 1267     0     0 /init
+ 1268  1000  1000 -bash
+ 1285     0     0 /init
+ 1286     0     0 /init
+ 1287  1000  1000 -bash
+ 1385     0     0 /init
+ 1386     0     0 /init
+ 1387  1000  1000 -bash
+ 1399     0     0 /init
+ 1400     0     0 /init
+ 1401  1000  1000 -bash
+ 1474     0     0 /init
+ 1475     0     0 /init
+ 1476  1000  1000 -bash
+ 1856     0     0 /init
+ 1857     0     0 /init
+ 1858  1000  1000 -bash
+ 1870  1000  1000 ssh achezzi@10.0.14.23
+ 1871     0     0 /init
+ 1872     0     0 /init
+ 1873  1000  1000 -bash
+ 1921     0     0 /init
+ 1922     0     0 /init
+ 1923  1000  1000 -bash
+ 2062  1000     0 passwd
+ 2063     0     0 /init
+ 2064     0     0 /init
+ 2065  1000  1000 -bash
+ 2094  1000  1000 ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command -2062
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ man ps^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command
+,tty=
+  PID  RUID  EUID command
+    1     0     0 /init                       hvc0
+    5     0     0 plan9 --control-socket 6 -- hvc0
+    8     0     0 /init                       ?
+    9     0     0 /init                       ?
+   10  1000  1000 -bash                       pts/0
+  974     0     0 /init                       ?
+  975     0     0 /init                       ?
+  976  1000  1000 -bash                       pts/1
+ 1015     0     0 /init                       ?
+ 1016     0     0 /init                       ?
+ 1017  1000  1000 -bash                       pts/2
+ 1253     0     0 /init                       ?
+ 1254     0     0 /init                       ?
+ 1255  1000  1000 -bash                       pts/3
+ 1266     0     0 /init                       ?
+ 1267     0     0 /init                       ?
+ 1268  1000  1000 -bash                       pts/4
+ 1285     0     0 /init                       ?
+ 1286     0     0 /init                       ?
+ 1287  1000  1000 -bash                       pts/5
+ 1385     0     0 /init                       ?
+ 1386     0     0 /init                       ?
+ 1387  1000  1000 -bash                       pts/6
+ 1399     0     0 /init                       ?
+ 1400     0     0 /init                       ?
+ 1401  1000  1000 -bash                       pts/7
+ 1474     0     0 /init                       ?
+ 1475     0     0 /init                       ?
+ 1476  1000  1000 -bash                       pts/8
+ 1856     0     0 /init                       ?
+ 1857     0     0 /init                       ?
+ 1858  1000  1000 -bash                       pts/9
+ 1870  1000  1000 ssh achezzi@10.0.14.23      pts/9
+ 1871     0     0 /init                       ?
+ 1872     0     0 /init                       ?
+ 1873  1000  1000 -bash                       pts/10
+ 1921     0     0 /init                       ?
+ 1922     0     0 /init                       ?
+ 1923  1000  1000 -bash                       pts/11
+ 2062  1000     0 passwd                      pts/11
+ 2063     0     0 /init                       ?
+ 2064     0     0 /init                       ?
+ 2065  1000  1000 -bash                       pts/12
+ 2095  1000  1000 ps -e -o pid=PID,ruid=RUID, pts/12
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ tty
+/dev/pts/12
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ps -e -o pid=PID,ruid=RUID,euid=EUID,cmd=command,tty=
+

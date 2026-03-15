@@ -1,0 +1,275 @@
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ dig esempio.com
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> esempio.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44715
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;esempio.com.                   IN      A
+
+;; ANSWER SECTION:
+esempio.com.            885     IN      A       195.110.124.188
+
+;; Query time: 24 msec
+;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
+;; WHEN: Wed Oct 29 12:27:19 CET 2025
+;; MSG SIZE  rcvd: 45
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ dig google.com
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4062
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;google.com.                    IN      A
+
+;; ANSWER SECTION:
+google.com.             180     IN      A       142.251.140.110
+
+;; Query time: 40 msec
+;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
+;; WHEN: Wed Oct 29 12:29:50 CET 2025
+;; MSG SIZE  rcvd: 55
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ dig wikipedia.org
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> wikipedia.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51524
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;wikipedia.org.                 IN      A
+
+;; ANSWER SECTION:
+wikipedia.org.          30      IN      A       185.15.58.224
+
+;; Query time: 52 msec
+;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
+;; WHEN: Wed Oct 29 12:31:13 CET 2025
+;; MSG SIZE  rcvd: 58
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ dig @8.8.8.8 esempio.com
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> @8.8.8.8 esempio.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30582
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;esempio.com.                   IN      A
+
+;; ANSWER SECTION:
+esempio.com.            900     IN      A       195.110.124.188
+
+;; Query time: 188 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Wed Oct 29 12:35:13 CET 2025
+;; MSG SIZE  rcvd: 56
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ dig @8.8.8.8 google.com
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> @8.8.8.8 google.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 31840
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;google.com.                    IN      A
+
+;; ANSWER SECTION:
+google.com.             263     IN      A       142.250.180.174
+
+;; Query time: 64 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Wed Oct 29 12:35:20 CET 2025
+;; MSG SIZE  rcvd: 55
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ dig ciao
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> ciao
+;; global options: +cmd
+;; connection timed out; no servers could be reached
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ arp -a
+Command 'arp' not found, but can be installed with:
+sudo apt install net-tools
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ sudo apt install net-tools
+[sudo] password for andrea11:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aspell aspell-en dictionaries-common emacsen-common gnustep-base-common gnustep-base-runtime gnustep-common
+  gnustep-gui-common libao-common libao4 libaspell15 libasyncns0 libflac8 libflite1 libgc1 libgfortran5 libgif7
+  libgnustep-base1.28 libgnustep-gui0.29 libicns1 liblapack3 libobjc4 libogg0 libopus0 libpocketsphinx3 libpulse0
+  libsndfile1 libsphinxbase3 libvorbis0a libvorbisenc2 libxslt1.1 pocketsphinx-en-us
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 266 not upgraded.
+Need to get 204 kB of archives.
+After this operation, 819 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 net-tools amd64 1.60+git20181103.0eebece-1ubuntu5.4 [204 kB]
+Fetched 204 kB in 0s (438 kB/s)
+Selecting previously unselected package net-tools.
+(Reading database ... 67208 files and directories currently installed.)
+Preparing to unpack .../net-tools_1.60+git20181103.0eebece-1ubuntu5.4_amd64.deb ...
+Unpacking net-tools (1.60+git20181103.0eebece-1ubuntu5.4) ...
+Setting up net-tools (1.60+git20181103.0eebece-1ubuntu5.4) ...
+Processing triggers for man-db (2.10.2-1) ...
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ arp -a
+DESKTOP-HSTPJN3.mshome.net (172.25.112.1) at 00:15:5d:25:1e:b1 [ether] on eth0
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ping google.com
+PING google.com (142.251.140.110) 56(84) bytes of data.
+64 bytes from pnmila-ag-in-f14.1e100.net (142.251.140.110): icmp_seq=1 ttl=112 time=35.5 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=2 ttl=112 time=48.5 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=3 ttl=112 time=51.2 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=4 ttl=112 time=54.7 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=5 ttl=112 time=54.5 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=6 ttl=112 time=48.2 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=7 ttl=112 time=45.9 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=8 ttl=112 time=68.0 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=9 ttl=112 time=49.4 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=10 ttl=112 time=63.7 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=11 ttl=112 time=41.9 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=12 ttl=112 time=51.8 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=13 ttl=112 time=54.0 ms
+64 bytes from dia02s03-in-f14.1e100.net (142.251.140.110): icmp_seq=14 ttl=112 time=50.8 ms
+^C
+--- google.com ping statistics ---
+14 packets transmitted, 14 received, 0% packet loss, time 13021ms
+rtt min/avg/max/mdev = 35.489/51.293/67.976/7.801 ms
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ping gjyfkugkcvlj.com
+ping: gjyfkugkcvlj.com: Name or service not known
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ping 100.0.9.90
+PING 100.0.9.90 (100.0.9.90) 56(84) bytes of data.
+64 bytes from 100.0.9.90: icmp_seq=1 ttl=45 time=185 ms
+64 bytes from 100.0.9.90: icmp_seq=2 ttl=45 time=207 ms
+64 bytes from 100.0.9.90: icmp_seq=3 ttl=45 time=225 ms
+64 bytes from 100.0.9.90: icmp_seq=4 ttl=45 time=195 ms
+64 bytes from 100.0.9.90: icmp_seq=5 ttl=45 time=171 ms
+^X64 bytes from 100.0.9.90: icmp_seq=6 ttl=45 time=195 ms
+64 bytes from 100.0.9.90: icmp_seq=7 ttl=45 time=222 ms
+^C
+--- 100.0.9.90 ping statistics ---
+7 packets transmitted, 7 received, 0% packet loss, time 6010ms
+rtt min/avg/max/mdev = 171.164/200.046/224.682/17.940 ms
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ping 10.0.9.90
+PING 10.0.9.90 (10.0.9.90) 56(84) bytes of data.
+^C
+--- 10.0.9.90 ping statistics ---
+23 packets transmitted, 0 received, 100% packet loss, time 22517ms
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1420
+        inet 172.25.113.79  netmask 255.255.240.0  broadcast 172.25.127.255
+        inet6 fe80::215:5dff:fedf:eee4  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:df:ee:e4  txqueuelen 1000  (Ethernet)
+        RX packets 2543  bytes 773307 (773.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 195  bytes 14412 (14.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 69  bytes 7845 (7.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 69  bytes 7845 (7.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ traceroute google.com
+Command 'traceroute' not found, but can be installed with:
+sudo apt install inetutils-traceroute  # version 2:2.2-2ubuntu0.1, or
+sudo apt install traceroute            # version 1:2.1.0-2
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ sudo apt install traceroute
+[sudo] password for andrea11:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aspell aspell-en dictionaries-common emacsen-common gnustep-base-common gnustep-base-runtime gnustep-common
+  gnustep-gui-common libao-common libao4 libaspell15 libasyncns0 libflac8 libflite1 libgc1 libgfortran5 libgif7
+  libgnustep-base1.28 libgnustep-gui0.29 libicns1 liblapack3 libobjc4 libogg0 libopus0 libpocketsphinx3 libpulse0
+  libsndfile1 libsphinxbase3 libvorbis0a libvorbisenc2 libxslt1.1 pocketsphinx-en-us
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  traceroute
+0 upgraded, 1 newly installed, 0 to remove and 266 not upgraded.
+Need to get 45.4 kB of archives.
+After this operation, 152 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 traceroute amd64 1:2.1.0-2 [45.4 kB]
+Fetched 45.4 kB in 0s (111 kB/s)
+Selecting previously unselected package traceroute.
+(Reading database ... 67257 files and directories currently installed.)
+Preparing to unpack .../traceroute_1%3a2.1.0-2_amd64.deb ...
+Unpacking traceroute (1:2.1.0-2) ...
+Setting up traceroute (1:2.1.0-2) ...
+update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute (traceroute) in auto mode
+update-alternatives: using /usr/bin/traceroute6.db to provide /usr/bin/traceroute6 (traceroute6) in auto mode
+update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft (lft) in auto mode
+update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto (traceproto) in auto mode
+update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute (tcptraceroute) in auto mode
+Processing triggers for man-db (2.10.2-1) ...
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ traceroute google.com
+traceroute to google.com (142.251.140.110), 30 hops max, 60 byte packets
+ 1  DESKTOP-HSTPJN3.mshome.net (172.25.112.1)  8.224 ms  8.103 ms  7.682 ms
+ 2  10.50.148.184 (10.50.148.184)  5.697 ms  5.232 ms  25.360 ms
+ 3  * * *
+ 4  * * *
+ 5  PAint.to.4600l3fio.unisalento.it (193.204.71.1)  47.436 ms  47.324 ms  47.253 ms
+ 6  172.16.1.2 (172.16.1.2)  48.081 ms  19.397 ms *
+ 7  ru-unile-rl1-le00.le00.garr.net (193.206.137.109)  21.398 ms  13.916 ms  15.630 ms
+ 8  * * *
+ 9  * * *
+10  rs1-rm02-re1-mi02.mi02.garr.net (185.191.181.69)  43.483 ms rs1-bo01-re1-mi02.mi02.garr.net (185.191.180.57)  39.827 ms  37.898 ms
+11  142.250.164.230 (142.250.164.230)  41.154 ms 142.250.174.46 (142.250.174.46)  41.167 ms  41.081 ms
+12  * 192.178.104.103 (192.178.104.103)  49.052 ms *
+13  142.251.235.175 (142.251.235.175)  55.612 ms 142.251.235.178 (142.251.235.178)  33.628 ms 192.178.82.60 (192.178.82.60)  54.606 ms
+14  dia02s03-in-f14.1e100.net (142.251.140.110)  52.460 ms  101.437 ms  44.876 ms
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

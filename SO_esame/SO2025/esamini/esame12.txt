@@ -1,0 +1,25 @@
+Creare nella propria home sulla macchina hplinux2.unile.it una cartella 
+denominata proprionomeaccount.esame12 (es.franco.esame12).
+Svolgere l'esercizio nella cartella.
+Nella cartella si DEVE porre un file di nome leggimi contenente commenti e/o 
+osservazioni.
+Alla fine usare nella propria home i comandi:
+
+tar cvf proprionomeaccount.esame12.tar proprionomeaccount.esame12
+gzip proprionomeaccount.esame12.tar
+
+Esercizio
+
+1) Scrivere uno script bash di nome "script1" che a partire da una
+directory (data come primo parametro) trovi tra tutte le sue
+sottodirectory di qualunque livello quella che contiene il maggior
+numero di elementi (contando solo i  file regolari). Sia A tale
+directory. Nell'ambito dello stesso script creare in essa una directory
+avente come nome una stringa data come secondo parametro e spostare in
+essa tutti i file che sono entries della directory A e che contenengono
+nel loro nome o al loro interno tale stringa.
+
+Per effettuare un test, utilizzare come primo parametro una copia della
+directory /home/franco/esame12 e come secondo parametro la stringa
+"esame".
+

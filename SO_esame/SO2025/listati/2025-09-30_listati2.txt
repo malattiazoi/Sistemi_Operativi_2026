@@ -1,0 +1,1024 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tutti i diritti riservati.
+
+Installa la versione più recente di PowerShell per nuove funzionalità e miglioramenti. https://aka.ms/PSWindows
+
+PS C:\Users\Andrea> ipconfig
+
+Configurazione IP di Windows
+
+
+Scheda Ethernet Ethernet 3:
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda sconosciuta NordLynx:
+
+   Suffisso DNS specifico per connessione:
+   Indirizzo IPv6 locale rispetto al collegamento . : fe80::723e:7ca:789d:a5aa%27
+   Indirizzo IPv4. . . . . . . . . . . . : 10.5.0.2
+   Subnet mask . . . . . . . . . . . . . : 255.255.0.0
+   Gateway predefinito . . . . . . . . . :
+
+Scheda sconosciuta OpenVPN TAP-Windows6:
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda sconosciuta OpenVPN Data Channel Offload:
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda sconosciuta Connessione alla rete locale (LAN):
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda sconosciuta OpenVPN Data Channel Offload for NordVPN:
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda LAN wireless Connessione alla rete locale (LAN)* 1:
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda LAN wireless Connessione alla rete locale (LAN)* 2:
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda LAN wireless Wi-Fi:
+
+   Suffisso DNS specifico per connessione:
+   Indirizzo IPv6 locale rispetto al collegamento . : fe80::5e09:53de:4739:c87f%8
+   Indirizzo IPv4. . . . . . . . . . . . : 10.51.11.22
+   Subnet mask . . . . . . . . . . . . . : 255.255.240.0
+   Gateway predefinito . . . . . . . . . : 10.51.0.1
+
+Scheda Ethernet Connessione di rete Bluetooth:
+
+   Stato supporto. . . . . . . . . . . . : Supporto disconnesso
+   Suffisso DNS specifico per connessione:
+
+Scheda Ethernet vEthernet (WSL (Hyper-V firewall)):
+
+   Suffisso DNS specifico per connessione:
+   Indirizzo IPv6 locale rispetto al collegamento . : fe80::b1a8:de52:8449:8886%53
+   Indirizzo IPv4. . . . . . . . . . . . : 172.25.112.1
+   Subnet mask . . . . . . . . . . . . . : 255.255.240.0
+   Gateway predefinito . . . . . . . . . :
+PS C:\Users\Andrea> ^C
+PS C:\Users\Andrea> ^C
+PS C:\Users\Andrea> ^C
+PS C:\Users\Andrea> wsl
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 12:35:44.345: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:477): WARNING **: 12:35:44.346: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 12:36:13.610: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:575): WARNING **: 12:36:13.610: The directory '~/Templates' doesn't exist, ignoring it
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ firefox
+
+Command '/usr/bin/firefox' requires the firefox snap to be installed.
+Please install it with:
+
+snap install firefox
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ sudo apt install firefox
+[sudo] password for andrea11:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+firefox is already the newest version (1:1snap1-0ubuntu2).
+0 upgraded, 0 newly installed, 0 to remove and 276 not upgraded.
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ firefox
+
+Command '/usr/bin/firefox' requires the firefox snap to be installed.
+Please install it with:
+
+snap install firefox
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ find^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ /usr/bin/firefox
+
+Command '/usr/bin/firefox' requires the firefox snap to be installed.
+Please install it with:
+
+snap install firefox
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^Cap install firefox
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ firefox^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ snap install firefox
+error: cannot communicate with server: Post "http://localhost/v2/snaps/firefox": dial unix /run/snapd.socket: connect: no such file or directory
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 12:39:22.075: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:723): WARNING **: 12:39:22.075: The directory '~/Templates' doesn't exist, ignoring it
+
+
+
+
+
+
+
+
+
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ xdg-open . &
+[1] 738
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 12:43:01.517: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:822): WARNING **: 12:43:01.517: The directory '~/Templates' doesn't exist, ignoring it
+
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ls
+ AppData
+ Apple
+ Contacts
+ Cookies
+'Dati applicazioni'
+ Desktop
+ Documenti
+ Documents
+ Downloads
+ Favorites
+'Impostazioni locali'
+ IntelGraphicsProfiles
+ Links
+'Menu Avvio'
+ Modelli
+ Music
+ NTUSER.DAT
+ NTUSER.DAT{7161da94-e2fd-11ed-abbf-010101010000}.TM.blf
+ NTUSER.DAT{7161da94-e2fd-11ed-abbf-010101010000}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{7161da94-e2fd-11ed-abbf-010101010000}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive
+ OpenVPN
+ Pictures
+ Postman
+ PycharmProjects
+ Recenti
+'Risorse di rete'
+'Risorse di stampa'
+'Saved Games'
+ Searches
+ SendTo
+ Tracing
+ Videos
+ eclipse
+ eclipse-workspace
+ file.zip
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+[1]+  Done                    xdg-open .
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 12:44:27.082: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:923): WARNING **: 12:44:27.082: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ ^C
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ cd /home/andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  b.txt  c.txt  creato_sul_server_arrivato_da_noi.txt  elaborato.txt
+andrea11@DESKTOP-HSTPJN3:~$ mkdir oggi
+andrea11@DESKTOP-HSTPJN3:~$ cd oggi/
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls
+andrea11@DESKTOP-HSTPJN3:~/oggi$ pwd
+/home/andrea11/oggi
+andrea11@DESKTOP-HSTPJN3:~/oggi$ xdg-open . > aaa.txt
+** Message: 12:45:11.228: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:1030): WARNING **: 12:45:11.229: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ cat aaa.txt
+Opening "." with File Manager PCManFM  (inode/directory)
+andrea11@DESKTOP-HSTPJN3:~/oggi$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 12:45:27.801: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:1127): WARNING **: 12:45:27.801: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ xdg-open . > aaa.txt
+** Message: 12:45:46.895: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:1221): WARNING **: 12:45:46.895: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ cat aaa.txt
+Opening "." with File Manager PCManFM  (inode/directory)
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l
+total 4
+-rw-r--r-- 1 andrea11 andrea11 57 Sep 30 12:45 aaa.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l > risultato.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ cat risultato.txt
+total 4
+-rw-r--r-- 1 andrea11 andrea11 57 Sep 30 12:45 aaa.txt
+-rw-r--r-- 1 andrea11 andrea11  0 Sep 30 12:48 risultato.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l
+total 8
+-rw-r--r-- 1 andrea11 andrea11  57 Sep 30 12:45 aaa.txt
+-rw-r--r-- 1 andrea11 andrea11 124 Sep 30 12:48 risultato.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ xdg-open . 2> stderr_di_xdg-open.txt
+Opening "." with File Manager PCManFM  (inode/directory)
+andrea11@DESKTOP-HSTPJN3:~/oggi$ cat stderr_di_xdg-open.txt
+** Message: 12:50:10.121: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:1324): WARNING **: 12:50:10.121: The directory '~/Templates' doesn't exist, ignoring it
+andrea11@DESKTOP-HSTPJN3:~/oggi$ xdg-open . ^C stderr_di_xdg-open.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l
+total 12
+-rw-r--r-- 1 andrea11 andrea11  57 Sep 30 12:45 aaa.txt
+-rw-r--r-- 1 andrea11 andrea11 124 Sep 30 12:48 risultato.txt
+-rw-r--r-- 1 andrea11 andrea11 208 Sep 30 12:50 stderr_di_xdg-open.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l kduahgrd
+ls: cannot access 'kduahgrd': No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l kduahgrd
+ls: cannot access 'kduahgrd': No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/oggi$  2> errori_ls.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l kduahgrd 2> errori_ls.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l kduahgrd
+ls: cannot access 'kduahgrd': No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l kduahgrd 2> errori_ls.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ cat errori_ls.txt
+ls: cannot access 'kduahgrd': No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/oggi$ nano errori_ls.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l kduahgrd &> errori_ls.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ nano errori_ls.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ xdg-open . &> stdout_stderr.txt
+^C
+andrea11@DESKTOP-HSTPJN3:~/oggi$ nano stdout_stderr.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ xdg-open . &> stdout_stderr.txt &
+[1] 1448
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l
+total 20
+-rw-r--r-- 1 andrea11 andrea11  57 Sep 30 12:45 aaa.txt
+-rw-r--r-- 1 andrea11 andrea11  56 Sep 30 12:55 errori_ls.txt
+-rw-r--r-- 1 andrea11 andrea11 124 Sep 30 12:48 risultato.txt
+-rw-r--r-- 1 andrea11 andrea11 208 Sep 30 12:50 stderr_di_xdg-open.txt
+-rw-r--r-- 1 andrea11 andrea11 265 Sep 30 12:58 stdout_stderr.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ mkdir aaaa
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls -l
+total 24
+-rw-r--r-- 1 andrea11 andrea11   57 Sep 30 12:45 aaa.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 aaaa
+-rw-r--r-- 1 andrea11 andrea11   56 Sep 30 12:55 errori_ls.txt
+-rw-r--r-- 1 andrea11 andrea11  124 Sep 30 12:48 risultato.txt
+-rw-r--r-- 1 andrea11 andrea11  208 Sep 30 12:50 stderr_di_xdg-open.txt
+-rw-r--r-- 1 andrea11 andrea11  265 Sep 30 12:58 stdout_stderr.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ rm -r aaaa
+andrea11@DESKTOP-HSTPJN3:~/oggi$ ls
+aaa.txt  errori_ls.txt  risultato.txt  stderr_di_xdg-open.txt  stdout_stderr.txt
+andrea11@DESKTOP-HSTPJN3:~/oggi$ cd /dev
+andrea11@DESKTOP-HSTPJN3:/dev$ ls -l
+total 0
+drwxr-xr-x 2 root root       40 Sep 30 11:01 block
+drwxr-xr-x 2 root root      120 Sep 30 11:01 bsg
+crw------- 1 root root   5,   1 Sep 30 11:01 console
+crw------- 1 root root  10, 123 Sep 30 11:01 cpu_dma_latency
+crw-rw-rw- 1 root root  10, 125 Sep 30 11:01 dxg
+lrwxrwxrwx 1 root root       13 Sep 30 11:01 fd -> /proc/self/fd
+crw-rw-rw- 1 root root   1,   7 Sep 30 11:01 full
+crw-rw-rw- 1 root root  10, 229 Sep 30 11:01 fuse
+crw------- 1 root root  10, 228 Sep 30 11:01 hpet
+crw------- 1 root root 229,   0 Sep 30 11:01 hvc0
+crw------- 1 root root 229,   1 Sep 30 11:29 hvc1
+crw--w---- 1 root tty  229,   2 Sep 30 11:01 hvc2
+crw------- 1 root root 229,   3 Sep 30 11:01 hvc3
+crw------- 1 root root 229,   4 Sep 30 11:01 hvc4
+crw------- 1 root root 229,   5 Sep 30 11:01 hvc5
+crw------- 1 root root 229,   6 Sep 30 11:01 hvc6
+crw------- 1 root root 229,   7 Sep 30 11:01 hvc7
+crw------- 1 root root  10, 183 Sep 30 11:01 hwrng
+crw-r--r-- 1 root root   1,  11 Sep 30 11:01 kmsg
+crw------- 1 root root  10, 237 Sep 30 11:01 loop-control
+brw------- 1 root root   7,   0 Sep 30 11:01 loop0
+brw------- 1 root root   7,   1 Sep 30 11:01 loop1
+brw------- 1 root root   7,   2 Sep 30 11:01 loop2
+brw------- 1 root root   7,   3 Sep 30 11:01 loop3
+brw------- 1 root root   7,   4 Sep 30 11:01 loop4
+brw------- 1 root root   7,   5 Sep 30 11:01 loop5
+brw------- 1 root root   7,   6 Sep 30 11:01 loop6
+brw------- 1 root root   7,   7 Sep 30 11:01 loop7
+drwxr-xr-x 2 root root       60 Sep 30 11:01 mapper
+crw------- 1 root root  10, 227 Sep 30 11:01 mcelog
+crw------- 1 root root   1,   1 Sep 30 11:01 mem
+crw------- 1 root root  10, 220 Sep 30 11:01 mptctl
+drwxr-xr-x 2 root root       60 Sep 30 11:01 net
+crw-rw-rw- 1 root root   1,   3 Sep 30 11:01 null
+crw------- 1 root root 108,   0 Sep 30 11:01 ppp
+crw-rw-rw- 1 root root   5,   2 Sep 30 13:02 ptmx
+crw------- 1 root root 247,   0 Sep 30 11:01 ptp0
+drwxr-xr-x 2 root root        0 Sep 30 11:01 pts
+brw------- 1 root root   1,   0 Sep 30 11:01 ram0
+brw------- 1 root root   1,   1 Sep 30 11:01 ram1
+brw------- 1 root root   1,  10 Sep 30 11:01 ram10
+brw------- 1 root root   1,  11 Sep 30 11:01 ram11
+brw------- 1 root root   1,  12 Sep 30 11:01 ram12
+brw------- 1 root root   1,  13 Sep 30 11:01 ram13
+brw------- 1 root root   1,  14 Sep 30 11:01 ram14
+brw------- 1 root root   1,  15 Sep 30 11:01 ram15
+brw------- 1 root root   1,   2 Sep 30 11:01 ram2
+brw------- 1 root root   1,   3 Sep 30 11:01 ram3
+brw------- 1 root root   1,   4 Sep 30 11:01 ram4
+brw------- 1 root root   1,   5 Sep 30 11:01 ram5
+brw------- 1 root root   1,   6 Sep 30 11:01 ram6
+brw------- 1 root root   1,   7 Sep 30 11:01 ram7
+brw------- 1 root root   1,   8 Sep 30 11:01 ram8
+brw------- 1 root root   1,   9 Sep 30 11:01 ram9
+crw-rw-rw- 1 root root   1,   8 Sep 30 11:01 random
+crw------- 1 root root 249,   0 Sep 30 11:01 rtc0
+brw------- 1 root root   8,   0 Sep 30 11:01 sda
+brw------- 1 root root   8,  16 Sep 30 11:01 sdb
+brw------- 1 root root   8,  32 Sep 30 11:01 sdc
+brw------- 1 root root   8,  48 Sep 30 11:01 sdd
+crw------- 1 root root  21,   0 Sep 30 11:01 sg0
+crw------- 1 root root  21,   1 Sep 30 11:01 sg1
+crw------- 1 root root  21,   2 Sep 30 11:01 sg2
+crw------- 1 root root  21,   3 Sep 30 11:01 sg3
+drwxrwxrwt 2 root root       40 Sep 30 11:01 shm
+crw------- 1 root root  10, 231 Sep 30 11:01 snapshot
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stderr -> /proc/self/fd/2
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stdin -> /proc/self/fd/0
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stdout -> /proc/self/fd/1
+crw-rw-rw- 1 root root   5,   0 Sep 30 12:37 tty
+crw------- 1 root root   4,   0 Sep 30 11:01 tty0
+crw------- 1 root root   4,   1 Sep 30 11:01 tty1
+crw------- 1 root root   4,  10 Sep 30 11:01 tty10
+crw------- 1 root root   4,  11 Sep 30 11:01 tty11
+crw------- 1 root root   4,  12 Sep 30 11:01 tty12
+crw------- 1 root root   4,  13 Sep 30 11:01 tty13
+crw------- 1 root root   4,  14 Sep 30 11:01 tty14
+crw------- 1 root root   4,  15 Sep 30 11:01 tty15
+crw------- 1 root root   4,  16 Sep 30 11:01 tty16
+crw------- 1 root root   4,  17 Sep 30 11:01 tty17
+crw------- 1 root root   4,  18 Sep 30 11:01 tty18
+crw------- 1 root root   4,  19 Sep 30 11:01 tty19
+crw------- 1 root root   4,   2 Sep 30 11:01 tty2
+crw------- 1 root root   4,  20 Sep 30 11:01 tty20
+crw------- 1 root root   4,  21 Sep 30 11:01 tty21
+crw------- 1 root root   4,  22 Sep 30 11:01 tty22
+crw------- 1 root root   4,  23 Sep 30 11:01 tty23
+crw------- 1 root root   4,  24 Sep 30 11:01 tty24
+crw------- 1 root root   4,  25 Sep 30 11:01 tty25
+crw------- 1 root root   4,  26 Sep 30 11:01 tty26
+crw------- 1 root root   4,  27 Sep 30 11:01 tty27
+crw------- 1 root root   4,  28 Sep 30 11:01 tty28
+crw------- 1 root root   4,  29 Sep 30 11:01 tty29
+crw------- 1 root root   4,   3 Sep 30 11:01 tty3
+crw------- 1 root root   4,  30 Sep 30 11:01 tty30
+crw------- 1 root root   4,  31 Sep 30 11:01 tty31
+crw------- 1 root root   4,  32 Sep 30 11:01 tty32
+crw------- 1 root root   4,  33 Sep 30 11:01 tty33
+crw------- 1 root root   4,  34 Sep 30 11:01 tty34
+crw------- 1 root root   4,  35 Sep 30 11:01 tty35
+crw------- 1 root root   4,  36 Sep 30 11:01 tty36
+crw------- 1 root root   4,  37 Sep 30 11:01 tty37
+crw------- 1 root root   4,  38 Sep 30 11:01 tty38
+crw------- 1 root root   4,  39 Sep 30 11:01 tty39
+crw------- 1 root root   4,   4 Sep 30 11:01 tty4
+crw------- 1 root root   4,  40 Sep 30 11:01 tty40
+crw------- 1 root root   4,  41 Sep 30 11:01 tty41
+crw------- 1 root root   4,  42 Sep 30 11:01 tty42
+crw------- 1 root root   4,  43 Sep 30 11:01 tty43
+crw------- 1 root root   4,  44 Sep 30 11:01 tty44
+crw------- 1 root root   4,  45 Sep 30 11:01 tty45
+crw------- 1 root root   4,  46 Sep 30 11:01 tty46
+crw------- 1 root root   4,  47 Sep 30 11:01 tty47
+crw------- 1 root root   4,  48 Sep 30 11:01 tty48
+crw------- 1 root root   4,  49 Sep 30 11:01 tty49
+crw------- 1 root root   4,   5 Sep 30 11:01 tty5
+crw------- 1 root root   4,  50 Sep 30 11:01 tty50
+crw------- 1 root root   4,  51 Sep 30 11:01 tty51
+crw------- 1 root root   4,  52 Sep 30 11:01 tty52
+crw------- 1 root root   4,  53 Sep 30 11:01 tty53
+crw------- 1 root root   4,  54 Sep 30 11:01 tty54
+crw------- 1 root root   4,  55 Sep 30 11:01 tty55
+crw------- 1 root root   4,  56 Sep 30 11:01 tty56
+crw------- 1 root root   4,  57 Sep 30 11:01 tty57
+crw------- 1 root root   4,  58 Sep 30 11:01 tty58
+crw------- 1 root root   4,  59 Sep 30 11:01 tty59
+crw------- 1 root root   4,   6 Sep 30 11:01 tty6
+crw------- 1 root root   4,  60 Sep 30 11:01 tty60
+crw------- 1 root root   4,  61 Sep 30 11:01 tty61
+crw------- 1 root root   4,  62 Sep 30 11:01 tty62
+crw------- 1 root root   4,  63 Sep 30 11:01 tty63
+crw------- 1 root root   4,   7 Sep 30 11:01 tty7
+crw------- 1 root root   4,   8 Sep 30 11:01 tty8
+crw------- 1 root root   4,   9 Sep 30 11:01 tty9
+crw------- 1 root root   4,  64 Sep 30 11:01 ttyS0
+crw------- 1 root root   4,  65 Sep 30 11:01 ttyS1
+crw------- 1 root root   4,  66 Sep 30 11:01 ttyS2
+crw------- 1 root root   4,  67 Sep 30 11:01 ttyS3
+crw------- 1 root root   4,  68 Sep 30 11:01 ttyS4
+crw------- 1 root root   4,  69 Sep 30 11:01 ttyS5
+crw------- 1 root root   4,  70 Sep 30 11:01 ttyS6
+crw------- 1 root root   4,  71 Sep 30 11:01 ttyS7
+crw-rw-rw- 1 root root   1,   9 Sep 30 11:01 urandom
+crw------- 1 root root  10, 126 Sep 30 11:01 userfaultfd
+crw------- 1 root root   7,   0 Sep 30 11:01 vcs
+crw------- 1 root root   7,   1 Sep 30 11:01 vcs1
+crw------- 1 root root   7, 128 Sep 30 11:01 vcsa
+crw------- 1 root root   7, 129 Sep 30 11:01 vcsa1
+crw------- 1 root root   7,  64 Sep 30 11:01 vcsu
+crw------- 1 root root   7,  65 Sep 30 11:01 vcsu1
+crw------- 1 root root  10, 127 Sep 30 11:01 vga_arbiter
+crw------- 1 root root 244,   0 Sep 30 11:01 vport0p0
+crw------- 1 root root 244,   1 Sep 30 11:01 vport0p1
+crw------- 1 root root 244,   2 Sep 30 11:01 vport0p2
+crw------- 1 root root  10, 124 Sep 30 11:01 vsock
+crw-rw-rw- 1 root root   1,   5 Sep 30 11:01 zero
+andrea11@DESKTOP-HSTPJN3:/dev$ ^C
+andrea11@DESKTOP-HSTPJN3:/dev$ ^C
+andrea11@DESKTOP-HSTPJN3:/dev$ ^C
+andrea11@DESKTOP-HSTPJN3:/dev$ echo stampa questo > /dev/stampante^C
+andrea11@DESKTOP-HSTPJN3:/dev$ ^C
+andrea11@DESKTOP-HSTPJN3:/dev$ ^C
+andrea11@DESKTOP-HSTPJN3:/dev$ ^C
+andrea11@DESKTOP-HSTPJN3:/dev$ ^C
+andrea11@DESKTOP-HSTPJN3:/dev$ ls -l
+total 0
+drwxr-xr-x 2 root root       40 Sep 30 11:01 block
+drwxr-xr-x 2 root root      120 Sep 30 11:01 bsg
+crw------- 1 root root   5,   1 Sep 30 11:01 console
+crw------- 1 root root  10, 123 Sep 30 11:01 cpu_dma_latency
+crw-rw-rw- 1 root root  10, 125 Sep 30 11:01 dxg
+lrwxrwxrwx 1 root root       13 Sep 30 11:01 fd -> /proc/self/fd
+crw-rw-rw- 1 root root   1,   7 Sep 30 11:01 full
+crw-rw-rw- 1 root root  10, 229 Sep 30 11:01 fuse
+crw------- 1 root root  10, 228 Sep 30 11:01 hpet
+crw------- 1 root root 229,   0 Sep 30 11:01 hvc0
+crw------- 1 root root 229,   1 Sep 30 11:29 hvc1
+crw--w---- 1 root tty  229,   2 Sep 30 11:01 hvc2
+crw------- 1 root root 229,   3 Sep 30 11:01 hvc3
+crw------- 1 root root 229,   4 Sep 30 11:01 hvc4
+crw------- 1 root root 229,   5 Sep 30 11:01 hvc5
+crw------- 1 root root 229,   6 Sep 30 11:01 hvc6
+crw------- 1 root root 229,   7 Sep 30 11:01 hvc7
+crw------- 1 root root  10, 183 Sep 30 11:01 hwrng
+crw-r--r-- 1 root root   1,  11 Sep 30 11:01 kmsg
+crw------- 1 root root  10, 237 Sep 30 11:01 loop-control
+brw------- 1 root root   7,   0 Sep 30 11:01 loop0
+brw------- 1 root root   7,   1 Sep 30 11:01 loop1
+brw------- 1 root root   7,   2 Sep 30 11:01 loop2
+brw------- 1 root root   7,   3 Sep 30 11:01 loop3
+brw------- 1 root root   7,   4 Sep 30 11:01 loop4
+brw------- 1 root root   7,   5 Sep 30 11:01 loop5
+brw------- 1 root root   7,   6 Sep 30 11:01 loop6
+brw------- 1 root root   7,   7 Sep 30 11:01 loop7
+drwxr-xr-x 2 root root       60 Sep 30 11:01 mapper
+crw------- 1 root root  10, 227 Sep 30 11:01 mcelog
+crw------- 1 root root   1,   1 Sep 30 11:01 mem
+crw------- 1 root root  10, 220 Sep 30 11:01 mptctl
+drwxr-xr-x 2 root root       60 Sep 30 11:01 net
+crw-rw-rw- 1 root root   1,   3 Sep 30 11:01 null
+crw------- 1 root root 108,   0 Sep 30 11:01 ppp
+crw-rw-rw- 1 root root   5,   2 Sep 30 13:10 ptmx
+crw------- 1 root root 247,   0 Sep 30 11:01 ptp0
+drwxr-xr-x 2 root root        0 Sep 30 11:01 pts
+brw------- 1 root root   1,   0 Sep 30 11:01 ram0
+brw------- 1 root root   1,   1 Sep 30 11:01 ram1
+brw------- 1 root root   1,  10 Sep 30 11:01 ram10
+brw------- 1 root root   1,  11 Sep 30 11:01 ram11
+brw------- 1 root root   1,  12 Sep 30 11:01 ram12
+brw------- 1 root root   1,  13 Sep 30 11:01 ram13
+brw------- 1 root root   1,  14 Sep 30 11:01 ram14
+brw------- 1 root root   1,  15 Sep 30 11:01 ram15
+brw------- 1 root root   1,   2 Sep 30 11:01 ram2
+brw------- 1 root root   1,   3 Sep 30 11:01 ram3
+brw------- 1 root root   1,   4 Sep 30 11:01 ram4
+brw------- 1 root root   1,   5 Sep 30 11:01 ram5
+brw------- 1 root root   1,   6 Sep 30 11:01 ram6
+brw------- 1 root root   1,   7 Sep 30 11:01 ram7
+brw------- 1 root root   1,   8 Sep 30 11:01 ram8
+brw------- 1 root root   1,   9 Sep 30 11:01 ram9
+crw-rw-rw- 1 root root   1,   8 Sep 30 11:01 random
+crw------- 1 root root 249,   0 Sep 30 11:01 rtc0
+brw------- 1 root root   8,   0 Sep 30 11:01 sda
+brw------- 1 root root   8,  16 Sep 30 11:01 sdb
+brw------- 1 root root   8,  32 Sep 30 11:01 sdc
+brw------- 1 root root   8,  48 Sep 30 11:01 sdd
+crw------- 1 root root  21,   0 Sep 30 11:01 sg0
+crw------- 1 root root  21,   1 Sep 30 11:01 sg1
+crw------- 1 root root  21,   2 Sep 30 11:01 sg2
+crw------- 1 root root  21,   3 Sep 30 11:01 sg3
+drwxrwxrwt 2 root root       40 Sep 30 11:01 shm
+crw------- 1 root root  10, 231 Sep 30 11:01 snapshot
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stderr -> /proc/self/fd/2
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stdin -> /proc/self/fd/0
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stdout -> /proc/self/fd/1
+crw-rw-rw- 1 root root   5,   0 Sep 30 12:37 tty
+crw------- 1 root root   4,   0 Sep 30 11:01 tty0
+crw------- 1 root root   4,   1 Sep 30 11:01 tty1
+crw------- 1 root root   4,  10 Sep 30 11:01 tty10
+crw------- 1 root root   4,  11 Sep 30 11:01 tty11
+crw------- 1 root root   4,  12 Sep 30 11:01 tty12
+crw------- 1 root root   4,  13 Sep 30 11:01 tty13
+crw------- 1 root root   4,  14 Sep 30 11:01 tty14
+crw------- 1 root root   4,  15 Sep 30 11:01 tty15
+crw------- 1 root root   4,  16 Sep 30 11:01 tty16
+crw------- 1 root root   4,  17 Sep 30 11:01 tty17
+crw------- 1 root root   4,  18 Sep 30 11:01 tty18
+crw------- 1 root root   4,  19 Sep 30 11:01 tty19
+crw------- 1 root root   4,   2 Sep 30 11:01 tty2
+crw------- 1 root root   4,  20 Sep 30 11:01 tty20
+crw------- 1 root root   4,  21 Sep 30 11:01 tty21
+crw------- 1 root root   4,  22 Sep 30 11:01 tty22
+crw------- 1 root root   4,  23 Sep 30 11:01 tty23
+crw------- 1 root root   4,  24 Sep 30 11:01 tty24
+crw------- 1 root root   4,  25 Sep 30 11:01 tty25
+crw------- 1 root root   4,  26 Sep 30 11:01 tty26
+crw------- 1 root root   4,  27 Sep 30 11:01 tty27
+crw------- 1 root root   4,  28 Sep 30 11:01 tty28
+crw------- 1 root root   4,  29 Sep 30 11:01 tty29
+crw------- 1 root root   4,   3 Sep 30 11:01 tty3
+crw------- 1 root root   4,  30 Sep 30 11:01 tty30
+crw------- 1 root root   4,  31 Sep 30 11:01 tty31
+crw------- 1 root root   4,  32 Sep 30 11:01 tty32
+crw------- 1 root root   4,  33 Sep 30 11:01 tty33
+crw------- 1 root root   4,  34 Sep 30 11:01 tty34
+crw------- 1 root root   4,  35 Sep 30 11:01 tty35
+crw------- 1 root root   4,  36 Sep 30 11:01 tty36
+crw------- 1 root root   4,  37 Sep 30 11:01 tty37
+crw------- 1 root root   4,  38 Sep 30 11:01 tty38
+crw------- 1 root root   4,  39 Sep 30 11:01 tty39
+crw------- 1 root root   4,   4 Sep 30 11:01 tty4
+crw------- 1 root root   4,  40 Sep 30 11:01 tty40
+crw------- 1 root root   4,  41 Sep 30 11:01 tty41
+crw------- 1 root root   4,  42 Sep 30 11:01 tty42
+crw------- 1 root root   4,  43 Sep 30 11:01 tty43
+crw------- 1 root root   4,  44 Sep 30 11:01 tty44
+crw------- 1 root root   4,  45 Sep 30 11:01 tty45
+crw------- 1 root root   4,  46 Sep 30 11:01 tty46
+crw------- 1 root root   4,  47 Sep 30 11:01 tty47
+crw------- 1 root root   4,  48 Sep 30 11:01 tty48
+crw------- 1 root root   4,  49 Sep 30 11:01 tty49
+crw------- 1 root root   4,   5 Sep 30 11:01 tty5
+crw------- 1 root root   4,  50 Sep 30 11:01 tty50
+crw------- 1 root root   4,  51 Sep 30 11:01 tty51
+crw------- 1 root root   4,  52 Sep 30 11:01 tty52
+crw------- 1 root root   4,  53 Sep 30 11:01 tty53
+crw------- 1 root root   4,  54 Sep 30 11:01 tty54
+crw------- 1 root root   4,  55 Sep 30 11:01 tty55
+crw------- 1 root root   4,  56 Sep 30 11:01 tty56
+crw------- 1 root root   4,  57 Sep 30 11:01 tty57
+crw------- 1 root root   4,  58 Sep 30 11:01 tty58
+crw------- 1 root root   4,  59 Sep 30 11:01 tty59
+crw------- 1 root root   4,   6 Sep 30 11:01 tty6
+crw------- 1 root root   4,  60 Sep 30 11:01 tty60
+crw------- 1 root root   4,  61 Sep 30 11:01 tty61
+crw------- 1 root root   4,  62 Sep 30 11:01 tty62
+crw------- 1 root root   4,  63 Sep 30 11:01 tty63
+crw------- 1 root root   4,   7 Sep 30 11:01 tty7
+crw------- 1 root root   4,   8 Sep 30 11:01 tty8
+crw------- 1 root root   4,   9 Sep 30 11:01 tty9
+crw------- 1 root root   4,  64 Sep 30 11:01 ttyS0
+crw------- 1 root root   4,  65 Sep 30 11:01 ttyS1
+crw------- 1 root root   4,  66 Sep 30 11:01 ttyS2
+crw------- 1 root root   4,  67 Sep 30 11:01 ttyS3
+crw------- 1 root root   4,  68 Sep 30 11:01 ttyS4
+crw------- 1 root root   4,  69 Sep 30 11:01 ttyS5
+crw------- 1 root root   4,  70 Sep 30 11:01 ttyS6
+crw------- 1 root root   4,  71 Sep 30 11:01 ttyS7
+crw-rw-rw- 1 root root   1,   9 Sep 30 11:01 urandom
+crw------- 1 root root  10, 126 Sep 30 11:01 userfaultfd
+crw------- 1 root root   7,   0 Sep 30 11:01 vcs
+crw------- 1 root root   7,   1 Sep 30 11:01 vcs1
+crw------- 1 root root   7, 128 Sep 30 11:01 vcsa
+crw------- 1 root root   7, 129 Sep 30 11:01 vcsa1
+crw------- 1 root root   7,  64 Sep 30 11:01 vcsu
+crw------- 1 root root   7,  65 Sep 30 11:01 vcsu1
+crw------- 1 root root  10, 127 Sep 30 11:01 vga_arbiter
+crw------- 1 root root 244,   0 Sep 30 11:01 vport0p0
+crw------- 1 root root 244,   1 Sep 30 11:01 vport0p1
+crw------- 1 root root 244,   2 Sep 30 11:01 vport0p2
+crw------- 1 root root  10, 124 Sep 30 11:01 vsock
+crw-rw-rw- 1 root root   1,   5 Sep 30 11:01 zero
+andrea11@DESKTOP-HSTPJN3:/dev$ ls -l | grep null
+crw-rw-rw- 1 root root   1,   3 Sep 30 11:01 null
+andrea11@DESKTOP-HSTPJN3:/dev$ echo ahgrlghruleghalrigbk > /dev/null
+andrea11@DESKTOP-HSTPJN3:/dev$ cat /dev/null
+andrea11@DESKTOP-HSTPJN3:/dev$ cd /home/
+andrea11@DESKTOP-HSTPJN3:/home$ sl
+Command 'sl' not found, but can be installed with:
+sudo apt install sl
+andrea11@DESKTOP-HSTPJN3:/home$ ls
+andrea11
+andrea11@DESKTOP-HSTPJN3:/home$ cd andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ echo qua qua > aaa.txt
+andrea11@DESKTOP-HSTPJN3:~$ cat a
+a.txt    aaa.txt
+andrea11@DESKTOP-HSTPJN3:~$ cat aaa.txt
+qua qua
+andrea11@DESKTOP-HSTPJN3:~$ echo qua qua > /dev/nell
+-bash: /dev/nell: Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ echo qua qua > /dev/null
+andrea11@DESKTOP-HSTPJN3:~$ cat /dev/null
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  aaa.txt  b.txt  c.txt  creato_sul_server_arrivato_da_noi.txt  elaborato.txt  oggi
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &> /dev/null &
+[2] 1586
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &> /dev/null &
+[3] 1674
+[1]   Done                    xdg-open . &> stdout_stderr.txt  (wd: ~/oggi)
+(wd now: ~)
+[2]   Done                    xdg-open . &> /dev/null
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &> /dev/null
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+andrea11@DESKTOP-HSTPJN3:~$ ps -e
+  PID TTY          TIME CMD
+    1 hvc0     00:00:00 init(Ubuntu)
+    5 hvc0     00:00:00 init
+    8 ?        00:00:00 SessionLeader
+    9 ?        00:00:00 Relay(10)
+   10 pts/0    00:00:00 bash
+   43 pts/0    00:00:00 ssh
+   44 ?        00:00:00 SessionLeader
+   45 ?        00:00:00 Relay(46)
+   46 pts/1    00:00:00 bash
+  380 ?        00:00:00 SessionLeader
+  381 ?        00:00:00 Relay(382)
+  382 pts/2    00:00:00 bash
+ 1674 pts/2    00:00:00 xdg-open
+ 1758 pts/2    00:00:00 pcmanfm
+ 1944 pts/2    00:00:00 ps
+andrea11@DESKTOP-HSTPJN3:~$ kill -9 1674
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &> /dev/null
+[3]+  Killed                  xdg-open . &> /dev/null
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &> /dev/null
+andrea11@DESKTOP-HSTPJN3:~$ ps -e
+  PID TTY          TIME CMD
+    1 hvc0     00:00:00 init(Ubuntu)
+    5 hvc0     00:00:00 init
+    8 ?        00:00:00 SessionLeader
+    9 ?        00:00:00 Relay(10)
+   10 pts/0    00:00:00 bash
+   43 pts/0    00:00:00 ssh
+   44 ?        00:00:00 SessionLeader
+   45 ?        00:00:00 Relay(46)
+   46 pts/1    00:00:00 bash
+  380 ?        00:00:00 SessionLeader
+  381 ?        00:00:00 Relay(382)
+  382 pts/2    00:00:00 bash
+ 1758 pts/2    00:00:00 pcmanfm
+ 2120 pts/2    00:00:00 ps
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt  aaa.txt  b.txt  c.txt  creato_sul_server_arrivato_da_noi.txt  elaborato.txt  oggi
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &> /dev/null
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &>^Cdev/null &
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ cat /dev/stdin &
+[1] 2210
+andrea11@DESKTOP-HSTPJN3:~$ fg %1^C
+
+[1]+  Stopped                 cat /dev/stdin
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ps -e
+  PID TTY          TIME CMD
+    1 hvc0     00:00:00 init(Ubuntu)
+    5 hvc0     00:00:00 init
+    8 ?        00:00:00 SessionLeader
+    9 ?        00:00:00 Relay(10)
+   10 pts/0    00:00:00 bash
+   43 pts/0    00:00:00 ssh
+   44 ?        00:00:00 SessionLeader
+   45 ?        00:00:00 Relay(46)
+   46 pts/1    00:00:00 bash
+  380 ?        00:00:00 SessionLeader
+  381 ?        00:00:00 Relay(382)
+  382 pts/2    00:00:00 bash
+ 1758 pts/2    00:00:00 pcmanfm
+ 2210 pts/2    00:00:00 cat
+ 2211 pts/2    00:00:00 ps
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open . &> /dev/null^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt    b.txt  creato_sul_server_arrivato_da_noi.txt  oggi
+aaa.txt  c.txt  elaborato.txt
+andrea11@DESKTOP-HSTPJN3:~$ cat aaa.txt
+qua qua
+andrea11@DESKTOP-HSTPJN3:~$ mv a
+a.txt    aaa.txt
+andrea11@DESKTOP-HSTPJN3:~$ mv aaa.txt /dev/null
+mv: inter-device move failed: 'aaa.txt' to '/dev/null'; unable to remove target: Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ ls -l /dev
+total 0
+drwxr-xr-x 2 root root       40 Sep 30 11:01 block
+drwxr-xr-x 2 root root      120 Sep 30 11:01 bsg
+crw------- 1 root root   5,   1 Sep 30 11:01 console
+crw------- 1 root root  10, 123 Sep 30 11:01 cpu_dma_latency
+crw-rw-rw- 1 root root  10, 125 Sep 30 11:01 dxg
+lrwxrwxrwx 1 root root       13 Sep 30 11:01 fd -> /proc/self/fd
+crw-rw-rw- 1 root root   1,   7 Sep 30 11:01 full
+crw-rw-rw- 1 root root  10, 229 Sep 30 11:01 fuse
+crw------- 1 root root  10, 228 Sep 30 11:01 hpet
+crw------- 1 root root 229,   0 Sep 30 11:01 hvc0
+crw------- 1 root root 229,   1 Sep 30 11:29 hvc1
+crw--w---- 1 root tty  229,   2 Sep 30 11:01 hvc2
+crw------- 1 root root 229,   3 Sep 30 11:01 hvc3
+crw------- 1 root root 229,   4 Sep 30 11:01 hvc4
+crw------- 1 root root 229,   5 Sep 30 11:01 hvc5
+crw------- 1 root root 229,   6 Sep 30 11:01 hvc6
+crw------- 1 root root 229,   7 Sep 30 11:01 hvc7
+crw------- 1 root root  10, 183 Sep 30 11:01 hwrng
+crw-r--r-- 1 root root   1,  11 Sep 30 11:01 kmsg
+crw------- 1 root root  10, 237 Sep 30 11:01 loop-control
+brw------- 1 root root   7,   0 Sep 30 11:01 loop0
+brw------- 1 root root   7,   1 Sep 30 11:01 loop1
+brw------- 1 root root   7,   2 Sep 30 11:01 loop2
+brw------- 1 root root   7,   3 Sep 30 11:01 loop3
+brw------- 1 root root   7,   4 Sep 30 11:01 loop4
+brw------- 1 root root   7,   5 Sep 30 11:01 loop5
+brw------- 1 root root   7,   6 Sep 30 11:01 loop6
+brw------- 1 root root   7,   7 Sep 30 11:01 loop7
+drwxr-xr-x 2 root root       60 Sep 30 11:01 mapper
+crw------- 1 root root  10, 227 Sep 30 11:01 mcelog
+crw------- 1 root root   1,   1 Sep 30 11:01 mem
+crw------- 1 root root  10, 220 Sep 30 11:01 mptctl
+drwxr-xr-x 2 root root       60 Sep 30 11:01 net
+crw-rw-rw- 1 root root   1,   3 Sep 30 11:01 null
+crw------- 1 root root 108,   0 Sep 30 11:01 ppp
+crw-rw-rw- 1 root root   5,   2 Sep 30 13:21 ptmx
+crw------- 1 root root 247,   0 Sep 30 11:01 ptp0
+drwxr-xr-x 2 root root        0 Sep 30 11:01 pts
+brw------- 1 root root   1,   0 Sep 30 11:01 ram0
+brw------- 1 root root   1,   1 Sep 30 11:01 ram1
+brw------- 1 root root   1,  10 Sep 30 11:01 ram10
+brw------- 1 root root   1,  11 Sep 30 11:01 ram11
+brw------- 1 root root   1,  12 Sep 30 11:01 ram12
+brw------- 1 root root   1,  13 Sep 30 11:01 ram13
+brw------- 1 root root   1,  14 Sep 30 11:01 ram14
+brw------- 1 root root   1,  15 Sep 30 11:01 ram15
+brw------- 1 root root   1,   2 Sep 30 11:01 ram2
+brw------- 1 root root   1,   3 Sep 30 11:01 ram3
+brw------- 1 root root   1,   4 Sep 30 11:01 ram4
+brw------- 1 root root   1,   5 Sep 30 11:01 ram5
+brw------- 1 root root   1,   6 Sep 30 11:01 ram6
+brw------- 1 root root   1,   7 Sep 30 11:01 ram7
+brw------- 1 root root   1,   8 Sep 30 11:01 ram8
+brw------- 1 root root   1,   9 Sep 30 11:01 ram9
+crw-rw-rw- 1 root root   1,   8 Sep 30 11:01 random
+crw------- 1 root root 249,   0 Sep 30 11:01 rtc0
+brw------- 1 root root   8,   0 Sep 30 11:01 sda
+brw------- 1 root root   8,  16 Sep 30 11:01 sdb
+brw------- 1 root root   8,  32 Sep 30 11:01 sdc
+brw------- 1 root root   8,  48 Sep 30 11:01 sdd
+crw------- 1 root root  21,   0 Sep 30 11:01 sg0
+crw------- 1 root root  21,   1 Sep 30 11:01 sg1
+crw------- 1 root root  21,   2 Sep 30 11:01 sg2
+crw------- 1 root root  21,   3 Sep 30 11:01 sg3
+drwxrwxrwt 2 root root       40 Sep 30 11:01 shm
+crw------- 1 root root  10, 231 Sep 30 11:01 snapshot
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stderr -> /proc/self/fd/2
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stdin -> /proc/self/fd/0
+lrwxrwxrwx 1 root root       15 Sep 30 11:01 stdout -> /proc/self/fd/1
+crw-rw-rw- 1 root root   5,   0 Sep 30 12:37 tty
+crw------- 1 root root   4,   0 Sep 30 11:01 tty0
+crw------- 1 root root   4,   1 Sep 30 11:01 tty1
+crw------- 1 root root   4,  10 Sep 30 11:01 tty10
+crw------- 1 root root   4,  11 Sep 30 11:01 tty11
+crw------- 1 root root   4,  12 Sep 30 11:01 tty12
+crw------- 1 root root   4,  13 Sep 30 11:01 tty13
+crw------- 1 root root   4,  14 Sep 30 11:01 tty14
+crw------- 1 root root   4,  15 Sep 30 11:01 tty15
+crw------- 1 root root   4,  16 Sep 30 11:01 tty16
+crw------- 1 root root   4,  17 Sep 30 11:01 tty17
+crw------- 1 root root   4,  18 Sep 30 11:01 tty18
+crw------- 1 root root   4,  19 Sep 30 11:01 tty19
+crw------- 1 root root   4,   2 Sep 30 11:01 tty2
+crw------- 1 root root   4,  20 Sep 30 11:01 tty20
+crw------- 1 root root   4,  21 Sep 30 11:01 tty21
+crw------- 1 root root   4,  22 Sep 30 11:01 tty22
+crw------- 1 root root   4,  23 Sep 30 11:01 tty23
+crw------- 1 root root   4,  24 Sep 30 11:01 tty24
+crw------- 1 root root   4,  25 Sep 30 11:01 tty25
+crw------- 1 root root   4,  26 Sep 30 11:01 tty26
+crw------- 1 root root   4,  27 Sep 30 11:01 tty27
+crw------- 1 root root   4,  28 Sep 30 11:01 tty28
+crw------- 1 root root   4,  29 Sep 30 11:01 tty29
+crw------- 1 root root   4,   3 Sep 30 11:01 tty3
+crw------- 1 root root   4,  30 Sep 30 11:01 tty30
+crw------- 1 root root   4,  31 Sep 30 11:01 tty31
+crw------- 1 root root   4,  32 Sep 30 11:01 tty32
+crw------- 1 root root   4,  33 Sep 30 11:01 tty33
+crw------- 1 root root   4,  34 Sep 30 11:01 tty34
+crw------- 1 root root   4,  35 Sep 30 11:01 tty35
+crw------- 1 root root   4,  36 Sep 30 11:01 tty36
+crw------- 1 root root   4,  37 Sep 30 11:01 tty37
+crw------- 1 root root   4,  38 Sep 30 11:01 tty38
+crw------- 1 root root   4,  39 Sep 30 11:01 tty39
+crw------- 1 root root   4,   4 Sep 30 11:01 tty4
+crw------- 1 root root   4,  40 Sep 30 11:01 tty40
+crw------- 1 root root   4,  41 Sep 30 11:01 tty41
+crw------- 1 root root   4,  42 Sep 30 11:01 tty42
+crw------- 1 root root   4,  43 Sep 30 11:01 tty43
+crw------- 1 root root   4,  44 Sep 30 11:01 tty44
+crw------- 1 root root   4,  45 Sep 30 11:01 tty45
+crw------- 1 root root   4,  46 Sep 30 11:01 tty46
+crw------- 1 root root   4,  47 Sep 30 11:01 tty47
+crw------- 1 root root   4,  48 Sep 30 11:01 tty48
+crw------- 1 root root   4,  49 Sep 30 11:01 tty49
+crw------- 1 root root   4,   5 Sep 30 11:01 tty5
+crw------- 1 root root   4,  50 Sep 30 11:01 tty50
+crw------- 1 root root   4,  51 Sep 30 11:01 tty51
+crw------- 1 root root   4,  52 Sep 30 11:01 tty52
+crw------- 1 root root   4,  53 Sep 30 11:01 tty53
+crw------- 1 root root   4,  54 Sep 30 11:01 tty54
+crw------- 1 root root   4,  55 Sep 30 11:01 tty55
+crw------- 1 root root   4,  56 Sep 30 11:01 tty56
+crw------- 1 root root   4,  57 Sep 30 11:01 tty57
+crw------- 1 root root   4,  58 Sep 30 11:01 tty58
+crw------- 1 root root   4,  59 Sep 30 11:01 tty59
+crw------- 1 root root   4,   6 Sep 30 11:01 tty6
+crw------- 1 root root   4,  60 Sep 30 11:01 tty60
+crw------- 1 root root   4,  61 Sep 30 11:01 tty61
+crw------- 1 root root   4,  62 Sep 30 11:01 tty62
+crw------- 1 root root   4,  63 Sep 30 11:01 tty63
+crw------- 1 root root   4,   7 Sep 30 11:01 tty7
+crw------- 1 root root   4,   8 Sep 30 11:01 tty8
+crw------- 1 root root   4,   9 Sep 30 11:01 tty9
+crw------- 1 root root   4,  64 Sep 30 11:01 ttyS0
+crw------- 1 root root   4,  65 Sep 30 11:01 ttyS1
+crw------- 1 root root   4,  66 Sep 30 11:01 ttyS2
+crw------- 1 root root   4,  67 Sep 30 11:01 ttyS3
+crw------- 1 root root   4,  68 Sep 30 11:01 ttyS4
+crw------- 1 root root   4,  69 Sep 30 11:01 ttyS5
+crw------- 1 root root   4,  70 Sep 30 11:01 ttyS6
+crw------- 1 root root   4,  71 Sep 30 11:01 ttyS7
+crw-rw-rw- 1 root root   1,   9 Sep 30 11:01 urandom
+crw------- 1 root root  10, 126 Sep 30 11:01 userfaultfd
+crw------- 1 root root   7,   0 Sep 30 11:01 vcs
+crw------- 1 root root   7,   1 Sep 30 11:01 vcs1
+crw------- 1 root root   7, 128 Sep 30 11:01 vcsa
+crw------- 1 root root   7, 129 Sep 30 11:01 vcsa1
+crw------- 1 root root   7,  64 Sep 30 11:01 vcsu
+crw------- 1 root root   7,  65 Sep 30 11:01 vcsu1
+crw------- 1 root root  10, 127 Sep 30 11:01 vga_arbiter
+crw------- 1 root root 244,   0 Sep 30 11:01 vport0p0
+crw------- 1 root root 244,   1 Sep 30 11:01 vport0p1
+crw------- 1 root root 244,   2 Sep 30 11:01 vport0p2
+crw------- 1 root root  10, 124 Sep 30 11:01 vsock
+crw-rw-rw- 1 root root   1,   5 Sep 30 11:01 zero
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ cat /dev/stdin
+
+
+
+
+
+
+
+
+pappagallo
+pappagallo
+kufhlsigfesghrawhgrluv<hgkuasghewligelfeefwealgrlgelgaalityweailhl
+kufhlsigfesghrawhgrluv<hgkuasghewligelfeefwealgrlgelgaalityweailhl
+sdhth
+sdhth
+^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ cat /dev/stdin
+
+
+
+
+
+
+
+
+jzlgdgn
+jzlgdgn
+zdjfskj
+zdjfskj
+
+
+^C
+andrea11@DESKTOP-HSTPJN3:~$ cat /dev/stdin
+lihygarlitwiyweithaerily4
+lihygarlitwiyweithaerily4
+sdjshgaerhethj
+sdjshgaerhethj
+eatjeat
+eatjeat
+jaetj
+jaetj
+eaj
+eaj
+ea
+ea
+t
+t
+^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ls
+a.txt    b.txt  creato_sul_server_arrivato_da_noi.txt  oggi
+aaa.txt  c.txt  elaborato.txt
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$

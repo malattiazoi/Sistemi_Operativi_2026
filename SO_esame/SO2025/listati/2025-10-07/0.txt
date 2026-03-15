@@ -1,0 +1,309 @@
+andrea11@DESKTOP-HSTPJN3:/mnt/c/Users/Andrea$ cd /home
+andrea11@DESKTOP-HSTPJN3:/home$ cd andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ mkdir test
+andrea11@DESKTOP-HSTPJN3:~$ ls -l test
+total 0
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 64
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  1 12:44 GNUstep
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  2 15:29 a
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 a.txt
+-rw-r--r-- 1 andrea11 andrea11    8 Sep 30 13:13 aaa.txt
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:08 bbb
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:03 byte_casuali.byte
+-rw-r--r-- 1 andrea11 andrea11  102 Oct  2 16:04 byte_casuali2.byte
+-rw-r--r-- 1 andrea11 andrea11    2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11  557 Oct  2 15:26 cartella_compressa.zip
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  2 15:16 compito
+-rw-r--r-- 1 andrea11 andrea11   30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Sep 30 11:23 elaborato.txt
+-rw-r--r-- 1 andrea11 andrea11    5 Oct  1 12:25 miofile.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 oggi
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  7 10:56 test
+andrea11@DESKTOP-HSTPJN3:~$ chmod 000 test
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 64
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  1 12:44 GNUstep
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  2 15:29 a
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 a.txt
+-rw-r--r-- 1 andrea11 andrea11    8 Sep 30 13:13 aaa.txt
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:08 bbb
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:03 byte_casuali.byte
+-rw-r--r-- 1 andrea11 andrea11  102 Oct  2 16:04 byte_casuali2.byte
+-rw-r--r-- 1 andrea11 andrea11    2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11  557 Oct  2 15:26 cartella_compressa.zip
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  2 15:16 compito
+-rw-r--r-- 1 andrea11 andrea11   30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Sep 30 11:23 elaborato.txt
+-rw-r--r-- 1 andrea11 andrea11    5 Oct  1 12:25 miofile.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 oggi
+d--------- 2 andrea11 andrea11 4096 Oct  7 10:56 test
+andrea11@DESKTOP-HSTPJN3:~$ cd test
+-bash: cd: test: Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ chmod u=+rwx test
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 64
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  1 12:44 GNUstep
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  2 15:29 a
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 a.txt
+-rw-r--r-- 1 andrea11 andrea11    8 Sep 30 13:13 aaa.txt
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:08 bbb
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:03 byte_casuali.byte
+-rw-r--r-- 1 andrea11 andrea11  102 Oct  2 16:04 byte_casuali2.byte
+-rw-r--r-- 1 andrea11 andrea11    2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11  557 Oct  2 15:26 cartella_compressa.zip
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  2 15:16 compito
+-rw-r--r-- 1 andrea11 andrea11   30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Sep 30 11:23 elaborato.txt
+-rw-r--r-- 1 andrea11 andrea11    5 Oct  1 12:25 miofile.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 oggi
+drwx------ 2 andrea11 andrea11 4096 Oct  7 10:56 test
+andrea11@DESKTOP-HSTPJN3:~$ chmod u=+rwx test
+andrea11@DESKTOP-HSTPJN3:~$ chmod u=+x,g=r test
+andrea11@DESKTOP-HSTPJN3:~$ stat test
+  File: test
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (0140/d--xr-----)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 10:56:53.957788655 +0200
+Modify: 2025-10-07 10:56:47.537781108 +0200
+Change: 2025-10-07 11:04:16.969781264 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~$ chmod 555 test
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 64
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  1 12:44 GNUstep
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  2 15:29 a
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 a.txt
+-rw-r--r-- 1 andrea11 andrea11    8 Sep 30 13:13 aaa.txt
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:08 bbb
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:03 byte_casuali.byte
+-rw-r--r-- 1 andrea11 andrea11  102 Oct  2 16:04 byte_casuali2.byte
+-rw-r--r-- 1 andrea11 andrea11    2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11  557 Oct  2 15:26 cartella_compressa.zip
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  2 15:16 compito
+-rw-r--r-- 1 andrea11 andrea11   30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Sep 30 11:23 elaborato.txt
+-rw-r--r-- 1 andrea11 andrea11    5 Oct  1 12:25 miofile.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 oggi
+dr-xr-xr-x 2 andrea11 andrea11 4096 Oct  7 10:56 test
+andrea11@DESKTOP-HSTPJN3:~$ chmod 222 test
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 64
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  1 12:44 GNUstep
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  2 15:29 a
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 a.txt
+-rw-r--r-- 1 andrea11 andrea11    8 Sep 30 13:13 aaa.txt
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:08 bbb
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:03 byte_casuali.byte
+-rw-r--r-- 1 andrea11 andrea11  102 Oct  2 16:04 byte_casuali2.byte
+-rw-r--r-- 1 andrea11 andrea11    2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11  557 Oct  2 15:26 cartella_compressa.zip
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  2 15:16 compito
+-rw-r--r-- 1 andrea11 andrea11   30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Sep 30 11:23 elaborato.txt
+-rw-r--r-- 1 andrea11 andrea11    5 Oct  1 12:25 miofile.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 oggi
+d-w--w--w- 2 andrea11 andrea11 4096 Oct  7 10:56 test
+andrea11@DESKTOP-HSTPJN3:~$ ls test
+ls: cannot open directory 'test': Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ chmod 333 test
+andrea11@DESKTOP-HSTPJN3:~$ stat test
+  File: test
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (0333/d-wx-wx-wx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 10:56:53.957788655 +0200
+Modify: 2025-10-07 10:56:47.537781108 +0200
+Change: 2025-10-07 11:07:04.909779578 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~$ ls -l test
+ls: cannot open directory 'test': Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ cd test
+andrea11@DESKTOP-HSTPJN3:~/test$ touch file1.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ touch file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ ls
+ls: cannot open directory '.': Permission denied
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ ls
+ls: cannot open directory '.': Permission denied
+andrea11@DESKTOP-HSTPJN3:~/test$ stat tes
+stat: cannot statx 'tes': No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt^C
+andrea11@DESKTOP-HSTPJN3:~/test$ ^C
+andrea11@DESKTOP-HSTPJN3:~/test$ stat .
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (0333/d-wx-wx-wx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 10:56:53.957788655 +0200
+Modify: 2025-10-07 11:16:57.633813897 +0200
+Change: 2025-10-07 11:16:57.633813897 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~/test$ chmod 111 .
+andrea11@DESKTOP-HSTPJN3:~/test$ stat .
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (0111/d--x--x--x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 10:56:53.957788655 +0200
+Modify: 2025-10-07 11:16:57.633813897 +0200
+Change: 2025-10-07 11:17:41.729778133 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ cp file2.txt ff.txt
+cp: cannot create regular file 'ff.txt': Permission denied
+andrea11@DESKTOP-HSTPJN3:~/test$ nano file2.txt^C
+andrea11@DESKTOP-HSTPJN3:~/test$ ^C
+andrea11@DESKTOP-HSTPJN3:~/test$ chmod 777 .
+andrea11@DESKTOP-HSTPJN3:~/test$ ls
+file1.txt  file2.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ stat .
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 11:21:58.141786353 +0200
+Modify: 2025-10-07 11:16:57.633813897 +0200
+Change: 2025-10-07 11:21:57.353786356 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~/test$ chmod 111 .
+andrea11@DESKTOP-HSTPJN3:~/test$ stat .
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (0111/d--x--x--x)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 11:21:58.141786353 +0200
+Modify: 2025-10-07 11:16:57.633813897 +0200
+Change: 2025-10-07 11:24:36.401779052 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~/test$ cp file1.txt ../ff.txt
+andrea11@DESKTOP-HSTPJN3:~/test$ ls
+ls: cannot open directory '.': Permission denied
+andrea11@DESKTOP-HSTPJN3:~/test$ ls
+ls: cannot open directory '.': Permission denied
+andrea11@DESKTOP-HSTPJN3:~/test$ open-xdg .
+open-xdg: command not found
+andrea11@DESKTOP-HSTPJN3:~/test$ xdg-open .
+xdg-open: no permission to read file '.'
+andrea11@DESKTOP-HSTPJN3:~/test$ xdg-open ..
+Opening ".." with File Manager PCManFM  (inode/directory)
+** Message: 11:27:37.170: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:1671): WARNING **: 11:27:37.170: The directory '~/Templates' doesn't exist, ignoring it
+^X^X^C
+andrea11@DESKTOP-HSTPJN3:~/test$ ^C
+andrea11@DESKTOP-HSTPJN3:~/test$ ^C
+andrea11@DESKTOP-HSTPJN3:~/test$ chmod 222 .
+andrea11@DESKTOP-HSTPJN3:~/test$ xdg-open ..
+xdg-open: file '..' does not exist
+andrea11@DESKTOP-HSTPJN3:~/test$ cd ..
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open test
+xdg-open: no permission to read file 'test'
+andrea11@DESKTOP-HSTPJN3:~$ xdg-open .
+Opening "." with File Manager PCManFM  (inode/directory)
+** Message: 11:31:10.612: x-terminal-emulator has very limited support, consider choosing another terminal
+
+** (pcmanfm:1802): WARNING **: 11:31:10.612: The directory '~/Templates' doesn't exist, ignoring it
+^C
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ cd test/
+-bash: cd: test/: Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ chmod 333 .
+andrea11@DESKTOP-HSTPJN3:~$ cd test/
+-bash: cd: test/: Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ ls
+ls: cannot open directory '.': Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ chmod 655 .
+andrea11@DESKTOP-HSTPJN3:~$ chmod 333 test
+chmod: cannot access 'test': Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ ls
+ls: cannot open directory '.': Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ chmod 777 .
+chmod: cannot access '.': Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ cd ..
+andrea11@DESKTOP-HSTPJN3:/home$ ls -l
+total 4
+drw-r-xr-x 14 andrea11 andrea11 4096 Oct  7 11:25 andrea11
+andrea11@DESKTOP-HSTPJN3:/home$ chmod 755 andrea11/
+andrea11@DESKTOP-HSTPJN3:/home$ cd andrea11/
+andrea11@DESKTOP-HSTPJN3:~$ ls
+GNUstep  aaa.txt  byte_casuali.byte   cartella_compressa.zip                 elaborato.txt  oggi
+a        b.txt    byte_casuali2.byte  compito                                ff.txt         test
+a.txt    bbb      c.txt               creato_sul_server_arrivato_da_noi.txt  miofile.txt
+andrea11@DESKTOP-HSTPJN3:~$ ls -l
+total 64
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  1 12:44 GNUstep
+drwxr-xr-x 3 andrea11 andrea11 4096 Oct  2 15:29 a
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 a.txt
+-rw-r--r-- 1 andrea11 andrea11    8 Sep 30 13:13 aaa.txt
+-rw-r--r-- 2 andrea11 andrea11   13 Sep 30 10:54 b.txt
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:08 bbb
+-rw-r--r-- 1 andrea11 andrea11   50 Oct  2 16:03 byte_casuali.byte
+-rw-r--r-- 1 andrea11 andrea11  102 Oct  2 16:04 byte_casuali2.byte
+-rw-r--r-- 1 andrea11 andrea11    2 Sep 25 16:29 c.txt
+-rw-r--r-- 1 andrea11 andrea11  557 Oct  2 15:26 cartella_compressa.zip
+drwxr-xr-x 2 andrea11 andrea11 4096 Oct  2 15:16 compito
+-rw-r--r-- 1 andrea11 andrea11   30 Sep 30 11:51 creato_sul_server_arrivato_da_noi.txt
+-rw-r--r-- 1 andrea11 andrea11   34 Sep 30 11:23 elaborato.txt
+-rw-r--r-- 1 andrea11 andrea11    0 Oct  7 11:25 ff.txt
+-rw-r--r-- 1 andrea11 andrea11    5 Oct  1 12:25 miofile.txt
+drwxr-xr-x 2 andrea11 andrea11 4096 Sep 30 13:02 oggi
+d-w--w--w- 2 andrea11 andrea11 4096 Oct  7 11:16 test
+andrea11@DESKTOP-HSTPJN3:~$ stat ff.txt
+  File: ff.txt
+  Size: 0               Blocks: 0          IO Block: 4096   regular empty file
+Device: 830h/2096d      Inode: 36580       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 11:25:25.433777552 +0200
+Modify: 2025-10-07 11:25:25.433777552 +0200
+Change: 2025-10-07 11:25:25.433777552 +0200
+ Birth: 2025-10-07 11:25:25.433777552 +0200
+andrea11@DESKTOP-HSTPJN3:~$ chmod ^C7
+andrea11@DESKTOP-HSTPJN3:~$ ^C
+andrea11@DESKTOP-HSTPJN3:~$ ls
+GNUstep  b.txt               c.txt                                  elaborato.txt  test
+a        bbb                 cartella_compressa.zip                 ff.txt
+a.txt    byte_casuali.byte   compito                                miofile.txt
+aaa.txt  byte_casuali2.byte  creato_sul_server_arrivato_da_noi.txt  oggi
+andrea11@DESKTOP-HSTPJN3:~$ cd test/
+-bash: cd: test/: Permission denied
+andrea11@DESKTOP-HSTPJN3:~$ chmod 777 test/
+andrea11@DESKTOP-HSTPJN3:~$ cd test/
+andrea11@DESKTOP-HSTPJN3:~/test$ stat .
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 11:21:58.141786353 +0200
+Modify: 2025-10-07 11:16:57.633813897 +0200
+Change: 2025-10-07 11:46:11.621802657 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~/test$ chmod 4777 test/
+chmod: cannot access 'test/': No such file or directory
+andrea11@DESKTOP-HSTPJN3:~/test$ chmod 4777 .
+andrea11@DESKTOP-HSTPJN3:~/test$ stat .
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 830h/2096d      Inode: 36544       Links: 2
+Access: (4777/drwsrwxrwx)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-10-07 11:21:58.141786353 +0200
+Modify: 2025-10-07 11:16:57.633813897 +0200
+Change: 2025-10-07 11:46:53.761801551 +0200
+ Birth: 2025-10-07 10:56:47.537781108 +0200
+andrea11@DESKTOP-HSTPJN3:~/test$ who
+andrea11@DESKTOP-HSTPJN3:~/test$ w
+ 11:48:42 up  6:08,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+andrea11@DESKTOP-HSTPJN3:~/test$ id
+uid=1000(andrea11) gid=1000(andrea11) groups=1000(andrea11),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),116(netdev),117(docker)
+andrea11@DESKTOP-HSTPJN3:~/test$

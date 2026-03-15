@@ -1,0 +1,137 @@
+================================================================================
+DIFFERENZE BASH 3.2 (macOS) vs BASH 5.x (LINUX) & SOLUZIONI DI PORTABILITÀ
+================================================================================
+
+1. GLI ARRAY ASSOCIATIVI (MAPPE/DICTIONARIES)
+--------------------------------------------------------------------------------
+- macOS (3.2): NON supportati.
+- Linux (4+): Supportati con 'declare -A'.
+- SOLUZIONE: Se devi essere portabile, usa array normali e simula le chiavi,
+  oppure usa 'awk' per gestire strutture dati complesse.
+  Esempio Linux: declare -A mappa; mappa[chiave]="valore"
+  Esempio Mac:   NON FUNZIONA.
+
+2. LA VARIABILE $MAPFILE / COMANDO 'readarray'
+--------------------------------------------------------------------------------
+- macOS (3.2): Il comando 'readarray' o 'mapfile' non esiste.
+- Linux: Usato per leggere un file riga per riga in un array velocemente.
+- SOLUZIONE: Usa un ciclo while classico:
+  while IFS= read -r line; do array+=("$line"); done < file.txt
+
+3. ESPANSIONE DI SEQUENZE CON VARIABILI {1..$N}
+--------------------------------------------------------------------------------
+- macOS (3.2): L'espansione {1..$N} non funziona se N è una variabile.
+- Linux (4+): Funziona correttamente.
+- SOLUZIONE: Usa il comando 'seq' o un ciclo for C-style:
+  for ((i=1; i<=N; i++)); do ... done
+
+4. REDIREZIONE DI ERRORE E OUTPUT |&
+--------------------------------------------------------------------------------
+- macOS (3.2): La sintassi 'comando |&' (abbreviazione di 2>&1 |) non esiste.
+- Linux: Supportata.
+- SOLUZIONE: Usa la forma estesa esplicita: comando 2>&1 | comando2
+
+5. CO-PROCESSI (coproc)
+--------------------------------------------------------------------------------
+- macOS (3.2): Il comando 'coproc' non esiste.
+- Linux: Permette di gestire processi in background comunicanti.
+- SOLUZIONE: Usa le FIFO (named pipes) con 'mkfifo' per compatibilità UNIX.
+
+================================================================================
+DIFFERENZE NELLE UTILITY DI SISTEMA (BSD vs GNU)
+================================================================================
+
+6. SED - MODIFICA IN PLACE (-i)
+--------------------------------------------------------------------------------
+- macOS (BSD): Richiede obbligatoriamente un'estensione per il backup (anche vuota).
+  Soluzione Mac:   sed -i '' 's/old/new/g' file
+- Linux (GNU): L'estensione è opzionale.
+  Soluzione Linux: sed -i 's/old/new/g' file
+- SOLUZIONE PORTABILE:
+  sed 's/old/new/g' file > file.tmp && mv file.tmp file
+
+7. DATE - FORMATTAZIONE E CALCOLI
+--------------------------------------------------------------------------------
+- macOS (BSD): date -v-1d (per ieri).
+- Linux (GNU): date --date="yesterday".
+- SOLUZIONE PORTABILE: Usa Python o Perl per calcoli sulle date, poiché sono
+  installati su entrambi e hanno sintassi identica.
+
+8. STAT - INFORMAZIONI SUI FILE
+--------------------------------------------------------------------------------
+- macOS (BSD): stat -f "%z" file (per la dimensione).
+- Linux (GNU): stat -c "%s" file (per la dimensione).
+- SOLUZIONE PORTABILE: wc -c < file (anche se conta i byte, spesso coincide).
+
+9. READLINK / REALPATH
+--------------------------------------------------------------------------------
+- macOS: 'readlink -f' non esiste.
+- Linux: 'readlink -f' è il modo standard per trovare il percorso assoluto.
+- SOLUZIONE PORTABILE:
+  TARGET_FILE=$0
+  cd "$(dirname "$TARGET_FILE")"
+  TARGET_FILE=$(basename "$TARGET_FILE")
+  # Ciclo per seguire i link simbolici
+  while [ -L "$TARGET_FILE" ]; do
+      TARGET_FILE=$(readlink "$TARGET_FILE")
+      cd "$(dirname "$TARGET_FILE")"
+      TARGET_FILE=$(basename "$TARGET_FILE")
+  done
+  PHYS_DIR="$(pwd -P)"
+
+================================================================================
+CONSIGLIO PER L'ESAME:
+Se nello script usi #!/bin/sh invece di #!/bin/bash, forzi lo script a usare
+la sintassi POSIX standard, che è la più portabile in assoluto tra sistemi
+Unix-like, ma rinunci alle comodità (come [[ ]] o array).
+================================================================================
+
+ricordati:
+1. Usa la sintassi di test universale
+Evita le doppie parentesi quadre [[ ]] (tipiche di Bash moderno) e usa la singola parentesi [ ].
+
+No: if [[ $var == "test" ]]
+
+Sì: if [ "$var" = "test" ] (Nota: usa = non == per le stringhe in POSIX).
+
+2. Calcoli matematici
+Non usare let o expr. Usa la sintassi $((...)).
+
+Esempio: CONTATORE=$((CONTATORE + 1))
+
+3. Evita le estensioni di Bash (Bashismi)
+Molte funzioni comode della Bash 5.x non esistono sulla 3.2 del Mac.
+
+Array Associativi: Non usarli. Se devi mappare dati, usa piccoli file temporanei o stringhe con delimitatori.
+
+Sequenze: Non usare {1..10} se il limite è una variabile. Usa seq.
+
+Esempio: for i in $(seq 1 $FINE); do ... done
+
+4. Gestione dei comandi esterni (I "Big Three")
+I comandi sed, find e grep sono quelli che creano più problemi tra Mac (BSD) e Linux (GNU).
+
+SED: Mai usare sed -i direttamente. La soluzione più sicura è: sed 's/vecchio/nuovo/g' file > file.tmp && mv file.tmp file
+
+FIND: Non usare opzioni avanzate come -iname o -printf (tipiche di Linux). Resta su quelle base: -name, -type, -exec.
+
+DATE: Non usare calcoli sulle date (es. "yesterday"). Se lo script richiede la data, usa solo il formato standard: date +%Y%m%d.
+
+5. Percorsi e File
+Shebang: Usa sempre #!/bin/bash. Anche se /bin/sh è più "puro", la traccia specifica Bash e su entrambi i sistemi /bin/bash è presente.
+
+Percorsi: Non usare mai percorsi assoluti come /Users/mattia/... o /home/mattia/.... Usa sempre variabili d'ambiente come $HOME o percorsi relativi ./.
+
+6. Quotation (Le virgolette sono vitali)
+Su Mac, la gestione degli spazi nei nomi dei file è più frequente. Proteggi sempre le variabili.
+
+Sì: cp "$FILE_ORIGINE" "$DESTINAZIONE"
+
+No: cp $FILE_ORIGINE $DESTINAZIONE
+
+7. Comando read
+Per leggere un file riga per riga usa sempre un while IFS
+
+while IFS= read -r riga; do
+    echo "Sto leggendo: $riga"
+done < "file.txt"

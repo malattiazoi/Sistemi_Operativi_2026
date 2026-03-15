@@ -1,0 +1,29 @@
+Creare nella propria home di hplinux2.unile.it una directory 
+denominata proprioaccount.esame23 (es.franco.esame23).
+Svolgere gli esercizi in tale directory (oppure svolgerli in una directory con lo stesso nome
+nella propria home Mac OS X e poi trasferirla nella propria home su hplinux2.unile.it).
+Nella directory si DEVE anche creare un file di nome "leggimi" contenente commenti e o osservazioni.
+Si fa presente che la presenza di tale file aiuta a comprendere cose talvolta incomprensibili 
+e, di conseguenza, non valutate o valutate negativamente.
+
+Alla fine usare i comandi:
+
+cd
+tar cvf proprioaccount.esame23.tar proprioaccount.esame23
+gzip proprioaccount.esame23.tar
+
+Esercizio1
+
+Creare uno script chiamato "containodes" che conta il numero di inodes utilizzati dal file system
+nel quale è stato salvato.
+
+Esercizio2
+
+Creare uno script bash, chiamato "cifra", che applichi ad uno o più file di testo passati 
+come argomento la cifratura consistente nel trasformare:
+1) le lettere dalla A alla M in lettere dalla N alla Z e viceversa; 
+2) le lettere dalla a alla m in lettere dalla n alla z e viceversa.
+
+
+
+

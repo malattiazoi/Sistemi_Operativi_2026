@@ -1,0 +1,12 @@
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting> wsl
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -2 7071     
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -2 7071
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -2 7071
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -2 7071
+andrea11@DESKTOP-HSTPJN3:~/scripting$ kill -9 7071     
+andrea11@DESKTOP-HSTPJN3:~/scripting$ 
+
+
+
+
+

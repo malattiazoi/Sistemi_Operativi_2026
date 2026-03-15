@@ -1,0 +1,9 @@
+Scrivere uno script analizza_dir.sh che:
+
+Prenda come argomento una directory.
+
+Per ogni file regolare al suo interno (solo livello della directory selezione, no sottodirectory):
+
+Stampi il nome del file, il numero di righe (solo se è un file di testo leggibile), la dimensione in byte.
+
+Alla fine stampa il numero totale di file analizzati.

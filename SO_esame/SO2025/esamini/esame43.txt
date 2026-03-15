@@ -1,0 +1,23 @@
+Creare nella propria home di hplinux2.unile.it una directory denominata proprioaccount.esame43 
+(es.franco.esame43) oppure creare una directory con lo stesso nome nella propria home
+Mac OS X e alla fine della prova trasferirla nella propria home su hplinux2.unile.it.
+Svolgere gli esercizi in tale directory.
+A meno di differente indicazione, gli script creati devono essere eseguibili sia su Mac OS X 
+che su Linux.
+Nella directory si DEVE anche creare un file di nome "leggimi" contenente commenti e/o osservazioni.
+Si fa presente che il contenuto di tale file aiuta a comprendere parti della prova talvolta 
+incomprensibili e, di conseguenza, va a tutto vantaggio di la sostiene.
+
+Alla fine usare nel proprio account Linux la linea di comando:
+
+cd; tar cvfz $USER.esame43.tgz $USER.esame43
+
+[ATTENZIONE: dare il comando qui sopra nello shell eseguito sulla macchina Linux, DOPO che la 
+cartella proprioaccount.esame43 è stata trasferita sulla propria home su hplinux2.unile.it e 
+non mentre è ancora nella propria home su Mac OS X (se in essa si è lavorato)]
+
+Esercizio1
+
+Scrivere uno script bash che cerchi tutti i files il cui nome contiene caratteri diversi da lettere o 
+cifre e, per ciascun file trovato, proponga all'utente la sostituzione di ciascuno di tali caratteri 
+con un carattere proposto dall'utente.

@@ -1,0 +1,605 @@
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu\home\andrea11\scripting\sim> wsl
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ chmod 700 script35_.sh 
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ./script35_.sh 10
+../vade/comandi_rete.sh 3141 000000003141-comandi_rete.sh
+../vade/bre_ere.sh 3835 000000003835-bre_ere.sh
+../vade/sintassi_parametri.sh 6071 000000006071-sintassi_parametri.sh
+../mongolfiera2.jpg 21918 000000021918-mongolfiera2.jpg
+../mongolfiera.jpg 22270 000000022270-mongolfiera.jpg
+../out.jpg 22270 000000022270-out.jpg
+../rotta.txt 29612 000000029612-rotta.txt
+../mongolfiera.txt 30087 000000030087-mongolfiera.txt
+../vade/signals.png 90693 000000090693-signals.png
+../vade/fifo_digest_crittografia.pptx 975505 000000975505-fifo_digest_crittografia.pptx
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ./script35_.sh 10 ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find .
+.
+./script35.sh
+./script35_.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find ..
+..
+../chatB.sh
+../a.bmp
+../t3.txt
+../sim
+../sim/script35.sh
+../sim/script35_.sh
+../logging_comando.txt
+../script4.1.sh
+../chatA.sh
+../script.sh
+../script2.sh
+../script5.sh
+../fileb.txt
+../logging2.txt
+../rotta.txt
+../vuoto.txt
+../vade
+../vade/sintassi_funzioni.sh
+../vade/builtin_getopts_select.sh
+../vade/comando_set.sh
+../vade/sintassi_if.sh
+../vade/signals.png
+../vade/comando_openssl.sh
+../vade/comandi_du_df.sh
+../vade/printf_encoding.sh
+../vade/script35.sh
+../vade/comando_time.sh
+../vade/comando_trap.sh
+../vade/sintassi_for.sh
+../vade/weak_vs_strong_quoting.sh
+../vade/comando_grep.sh
+../vade/bre_ere.sh
+../vade/sintassi_parametri.sh
+../vade/comandi_rete.sh
+../vade/sintassi_variabili.sh
+../vade/~$fifo_digest_crittografia.pptx
+../vade/comando_readarray.sh
+../vade/comando_date.sh
+../vade/fifo_digest_crittografia.pptx
+../vade/comando_netcat.sh
+../vade/script35.sh:Zone.Identifier
+../vade/sintassi_while.sh
+../vade/comando_base64.sh
+../vade/comando_read.sh
+../arit.sh
+../f1.txt
+../script6.sh
+../testo_nascosto.txt
+../t2.txt
+../mongolfiera.jpg
+../f2.txt
+../test.sh
+../script8.sh
+../filea.txt
+../t.txt
+../mongolfiera.txt
+../out.jpg
+../x.txt
+../script9.sh
+../pipe_AtoB
+../pipe_nc
+../mongolfiera2.jpg
+../script7.sh
+../script3.sh
+../pipe_BtoA
+../script4.sh
+../singolo-carattere.txt
+../a.sh
+../testo.txt
+../altroscript.sh
+../soluzione_compitino1.sh
+../elenco.csv
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find ..
+..
+../chatB.sh
+../a.bmp
+../t3.txt
+../sim
+../sim/script35.sh
+../sim/script35_.sh
+../logging_comando.txt
+../script4.1.sh
+../chatA.sh
+../script.sh
+../script2.sh
+../script5.sh
+../fileb.txt
+../logging2.txt
+../rotta.txt
+../vuoto.txt
+../vade
+../vade/sintassi_funzioni.sh
+../vade/builtin_getopts_select.sh
+../vade/comando_set.sh
+../vade/sintassi_if.sh
+../vade/signals.png
+../vade/comando_openssl.sh
+../vade/comandi_du_df.sh
+../vade/printf_encoding.sh
+../vade/script35.sh
+../vade/comando_time.sh
+../vade/comando_trap.sh
+../vade/sintassi_for.sh
+../vade/weak_vs_strong_quoting.sh
+../vade/comando_grep.sh
+../vade/bre_ere.sh
+../vade/sintassi_parametri.sh
+../vade/comandi_rete.sh
+../vade/sintassi_variabili.sh
+../vade/~$fifo_digest_crittografia.pptx
+../vade/comando_readarray.sh
+../vade/comando_date.sh
+../vade/fifo_digest_crittografia.pptx
+../vade/comando_netcat.sh
+../vade/script35.sh:Zone.Identifier
+../vade/sintassi_while.sh
+../vade/comando_base64.sh
+../vade/comando_read.sh
+../arit.sh
+../f1.txt
+../script6.sh
+../testo_nascosto.txt
+../t2.txt
+../mongolfiera.jpg
+../f2.txt
+../test.sh
+../script8.sh
+../filea.txt
+../t.txt
+../mongolfiera.txt
+../out.jpg
+../x.txt
+../script9.sh
+../pipe_AtoB
+../pipe_nc
+../mongolfiera2.jpg
+../script7.sh
+../script3.sh
+../pipe_BtoA
+../script4.sh
+../singolo-carattere.txt
+../a.sh
+../testo.txt
+../altroscript.sh
+../soluzione_compitino1.sh
+../elenco.csv
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find .. -type f
+../chatB.sh
+../a.bmp
+../t3.txt
+../sim/script35.sh
+../sim/script35_.sh
+../logging_comando.txt
+../script4.1.sh
+../chatA.sh
+../script.sh
+../script2.sh
+../script5.sh
+../fileb.txt
+../logging2.txt
+../rotta.txt
+../vuoto.txt
+../vade/sintassi_funzioni.sh
+../vade/builtin_getopts_select.sh
+../vade/comando_set.sh
+../vade/sintassi_if.sh
+../vade/signals.png
+../vade/comando_openssl.sh
+../vade/comandi_du_df.sh
+../vade/printf_encoding.sh
+../vade/script35.sh
+../vade/comando_time.sh
+../vade/comando_trap.sh
+../vade/sintassi_for.sh
+../vade/weak_vs_strong_quoting.sh
+../vade/comando_grep.sh
+../vade/bre_ere.sh
+../vade/sintassi_parametri.sh
+../vade/comandi_rete.sh
+../vade/sintassi_variabili.sh
+../vade/~$fifo_digest_crittografia.pptx
+../vade/comando_readarray.sh
+../vade/comando_date.sh
+../vade/fifo_digest_crittografia.pptx
+../vade/comando_netcat.sh
+../vade/script35.sh:Zone.Identifier
+../vade/sintassi_while.sh
+../vade/comando_base64.sh
+../vade/comando_read.sh
+../arit.sh
+../f1.txt
+../script6.sh
+../testo_nascosto.txt
+../t2.txt
+../mongolfiera.jpg
+../f2.txt
+../test.sh
+../script8.sh
+../filea.txt
+../t.txt
+../mongolfiera.txt
+../out.jpg
+../x.txt
+../script9.sh
+../mongolfiera2.jpg
+../script7.sh
+../script3.sh
+../script4.sh
+../singolo-carattere.txt
+../a.sh
+../testo.txt
+../altroscript.sh
+../soluzione_compitino1.sh
+../elenco.csv
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find .. -type f -print0
+../chatB.sh../a.bmp../t3.txt../sim/script35.sh../sim/script35_.sh../logging_comando.txt../script4.1.sh../chatA.sh../script.sh../script2.sh../script5.sh../fileb.txt../logging2.txt../rotta.txt../vuoto.txt../vade/sintassi_funzioni.sh../vade/builtin_getopts_select.sh../vade/comando_set.sh../vade/sintassi_if.sh../vade/signals.png../vade/comando_openssl.sh../vade/comandi_du_df.sh../vade/printf_encoding.sh../vade/script35.sh../vade/comando_time.sh../vade/comando_trap.sh../vade/sintassi_for.sh../vade/weak_vs_strong_quoting.sh../vade/comando_grep.sh../vade/bre_ere.sh../vade/sintassi_parametri.sh../vade/comandi_rete.sh../vade/sintassi_variabili.sh../vade/~$fifo_digest_crittografia.pptx../vade/comando_readarray.sh../vade/comando_date.sh../vade/fifo_digest_crittografia.pptx../vade/comando_netcat.sh../vade/script35.sh:Zone.Identifier../vade/sintassi_while.sh../vade/comando_base64.sh../vade/comando_read.sh../arit.sh../f1.txt../script6.sh../testo_nascosto.txt../t2.txt../mongolfiera.jpg../f2.txt../test.sh../script8.sh../filea.txt../t.txt../mongolfiera.txt../out.jpg../x.txt../script9.sh../mongolfiera2.jpg../script7.sh../script3.sh../script4.sh../singolo-carattere.txt../a.sh../testo.txt../altroscript.sh../soluzione_compitino1.sh../elenco.csvandrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find .. -type f
+../chatB.sh
+../a.bmp
+../t3.txt
+../sim/script35.sh
+../sim/script35_.sh
+../logging_comando.txt
+../script4.1.sh
+../chatA.sh
+../script.sh
+../script2.sh
+../script5.sh
+../fileb.txt
+../logging2.txt
+../rotta.txt
+../vuoto.txt
+../vade/sintassi_funzioni.sh
+../vade/builtin_getopts_select.sh
+../vade/comando_set.sh
+../vade/sintassi_if.sh
+../vade/signals.png
+../vade/comando_openssl.sh
+../vade/comandi_du_df.sh
+../vade/printf_encoding.sh
+../vade/script35.sh
+../vade/comando_time.sh
+../vade/comando_trap.sh
+../vade/sintassi_for.sh
+../vade/weak_vs_strong_quoting.sh
+../vade/comando_grep.sh
+../vade/bre_ere.sh
+../vade/sintassi_parametri.sh
+../vade/comandi_rete.sh
+../vade/sintassi_variabili.sh
+../vade/~$fifo_digest_crittografia.pptx
+../vade/comando_readarray.sh
+../vade/comando_date.sh
+../vade/fifo_digest_crittografia.pptx
+../vade/comando_netcat.sh
+../vade/script35.sh:Zone.Identifier
+../vade/sintassi_while.sh
+../vade/comando_base64.sh
+../vade/comando_read.sh
+../arit.sh
+../f1.txt
+../script6.sh
+../testo_nascosto.txt
+../t2.txt
+../mongolfiera.jpg
+../f2.txt
+../test.sh
+../script8.sh
+../filea.txt
+../t.txt
+../mongolfiera.txt
+../out.jpg
+../x.txt
+../script9.sh
+../mongolfiera2.jpg
+../script7.sh
+../script3.sh
+../script4.sh
+../singolo-carattere.txt
+../a.sh
+../testo.txt
+../altroscript.sh
+../soluzione_compitino1.sh
+../elenco.csv
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find .. -type f -print0
+../chatB.sh../a.bmp../t3.txt../sim/script35.sh../sim/script3e/comando_trap.sh../vade/sintassi_for.sh../vade/weak_vs_strong_quoting.sh../vade/comando_grep.sh../vade/bre_ere.sh../vade/sintassi_parametri.sh../vade/comandi_rete.sh../vade/sintassi_variabili.sh../vade/~$fifo_digest_crittografia.pptx../vade/comando_readarray.sh../vade/comando_date.sh../vade/fifo_digest_crittografia.pptx../vade/comando_netcat.sh../vade/script35.sh:Zone.Identifier../vade/sintassi_while.sh../vade/comando_base64.sh../vade/comando_read.sh../arit.sh../f1.txt../script6.sh../testo_nascosto.txt../t2.txt../mongolfiera.jpg../f2.txt../test.sh../script8.sh../filea.txt../t.txt../mongolfiera.txt../out.jpg../x.txt../sc/a.sh../testo.txt../altroscript.sh../soluzione_compitino1.sh../elenc/a.sh../testo.txt../altroscript.sh../soluzione_compitino1.sh../e/a.sh../testo.txt../altroscript.sh../soluzione_compitino1.sh../elenco.csvandrea11@DESKTOP-andrea11@DESKTOP-HSTPJN3:~/scrandrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e \x00
+x00
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e "\x00"
+
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e "\x00"
+
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00"
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00"
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00"
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00"
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00"
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00"
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00"
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo -e -n "\x00" | xxd
+00000000: 00                                       .
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ascii -d
+Command 'ascii' not found, but can be installed with:
+sudo apt install ascii
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ sudo apt install ascii
+[sudo] password for andrea11: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aspell aspell-en dictionaries-common emacsen-common gnustep-base-common
+  gnustep-base-runtime gnustep-common gnustep-gui-common libao-common libao4      
+0 upgraded, 1 newly installed, 0 to remove and 87 not upgraded.
+Need to get 16.3 kB of archives.
+After this operation, 81.9 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 ascii amd64 3.18-5 [16.3 kB]
+Fetched 16.3 kB in 1s (27.5 kB/s)
+Selecting previously unselected package ascii.
+(Reading database ... 70188 files and directories currently installed.)
+Preparing to unpack .../ascii_3.18-5_amd64.deb ...
+Unpacking ascii (3.18-5) ...
+Setting up ascii (3.18-5) ...
+Processing triggers for man-db (2.10.2-1) ...
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ascii -d
+    0 NUL    16 DLE    32      48 0    64 @    80 P    96 `   112 p 
+    1 SOH    17 DC1    33 !    49 1    65 A    81 Q    97 a   113 q 
+    2 STX    18 DC2    34 "    50 2    66 B    82 R    98 b   114 r
+    3 ETX    19 DC3    35 #    51 3    67 C    83 S    99 c   115 s
+    4 EOT    20 DC4    36 $    52 4    68 D    84 T   100 d   116 t
+    5 ENQ    21 NAK    37 %    53 5    69 E    85 U   101 e   117 u
+    6 ACK    22 SYN    38 &    54 6    70 F    86 V   102 f   118 v
+    7 BEL    23 ETB    39 '    55 7    71 G    87 W   103 g   119 w
+    8 BS     24 CAN    40 (    56 8    72 H    88 X   104 h   120 x
+    9 HT     25 EM     41 )    57 9    73 I    89 Y   105 i   121 y
+    5 ENQ    21 NAK    37 %    53 5    69 E    85 U   101 e   117 u
+    6 ACK    22 SYN    38 &    54 6    70 F    86 V   102 f   118 v
+    7 BEL    23 ETB    39 '    55 7    71 G    87 W   103 g   119 w
+    8 BS     24 CAN    40 (    56 8    72 H    88 X   104 h   120 x
+    9 HT     25 EM     41 )    57 9    73 I    89 Y   105 i   121 y
+    6 ACK    22 SYN    38 &    54 6    70 F    86 V   102 f   118 v
+    7 BEL    23 ETB    39 '    55 7    71 G    87 W   103 g   119 w
+    8 BS     24 CAN    40 (    56 8    72 H    88 X   104 h   120 x
+    9 HT     25 EM     41 )    57 9    73 I    89 Y   105 i   121 y
+    7 BEL    23 ETB    39 '    55 7    71 G    87 W   103 g   119 w
+    8 BS     24 CAN    40 (    56 8    72 H    88 X   104 h   120 x
+    9 HT     25 EM     41 )    57 9    73 I    89 Y   105 i   121 y
+    8 BS     24 CAN    40 (    56 8    72 H    88 X   104 h   120 x
+    9 HT     25 EM     41 )    57 9    73 I    89 Y   105 i   121 y
+    9 HT     25 EM     41 )    57 9    73 I    89 Y   105 i   121 y
+   10 LF     26 SUB    42 *    58 :    74 J    90 Z   106 j   122 z
+   11 VT     27 ESC    43 +    59 ;    75 K    91 [   107 k   123 {
+   12 FF     28 FS     44 ,    60 <    76 L    92 \   108 l   124 |
+   13 CR     29 GS     45 -    61 =    77 M    93 ]   109 m   125 }
+   14 SO     30 RS     46 .    62 >    78 N    94 ^   110 n   126 ~
+   15 SI     31 US     47 /    63 ?    79 O    95 _   111 o   127 DEL
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ echo | xxd
+00000000: 0a                                       .
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ascii -d^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find .. -type f | xarg -I {} echo questo
+ è il file {}
+Command 'xarg' not found, did you mean:
+  command 'sarg' from deb sarg (2.4.0-1ubuntu4)
+  command 'xargs' from deb findutils (4.8.0-1ubuntu3)
+  command 'warg' from deb clonalorigin (1.0-6build1)
+Try: sudo apt install <deb name>
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find .. -type f | xargs -I {} echo quest
+o è il file {}
+questo è il file ../chatB.sh
+questo è il file ../a.bmp
+questo è il file ../t3.txt
+questo è il file ../sim/script35.sh
+questo è il file ../sim/script35_.sh
+questo è il file ../logging_comando.txt
+questo è il file ../script4.1.sh
+questo è il file ../chatA.sh
+questo è il file ../script.sh
+questo è il file ../script2.sh
+questo è il file ../script5.sh
+questo è il file ../fileb.txt
+questo è il file ../logging2.txt
+questo è il file ../rotta.txt
+questo è il file ../vuoto.txt
+questo è il file ../vade/sintassi_funzioni.sh
+questo è il file ../vade/builtin_getopts_select.sh
+questo è il file ../vade/comando_set.sh
+questo è il file ../vade/sintassi_if.sh
+questo è il file ../vade/signals.png
+questo è il file ../vade/comando_openssl.sh
+questo è il file ../vade/comandi_du_df.sh
+questo è il file ../vade/printf_encoding.sh
+questo è il file ../vade/script35.sh
+questo è il file ../vade/comando_time.sh
+questo è il file ../vade/comando_trap.sh
+questo è il file ../vade/sintassi_for.sh
+questo è il file ../vade/weak_vs_strong_quoting.sh
+questo è il file ../vade/comando_grep.sh
+questo è il file ../vade/bre_ere.sh
+questo è il file ../vade/sintassi_parametri.sh
+questo è il file ../vade/comandi_rete.sh
+questo è il file ../vade/sintassi_variabili.sh
+questo è il file ../vade/~$fifo_digest_crittografia.pptx
+questo è il file ../vade/comando_readarray.sh
+questo è il file ../vade/comando_date.sh
+questo è il file ../vade/fifo_digest_crittografia.pptx
+questo è il file ../vade/comando_netcat.sh
+questo è il file ../vade/script35.sh:Zone.Identifier
+questo è il file ../vade/sintassi_while.sh
+questo è il file ../vade/comando_base64.sh
+questo è il file ../vade/comando_read.sh
+questo è il file ../arit.sh
+questo è il file ../f1.txt
+questo è il file ../script6.sh
+questo è il file ../testo_nascosto.txt
+questo è il file ../t2.txt
+questo è il file ../mongolfiera.jpg
+questo è il file ../f2.txt
+questo è il file ../test.sh
+questo è il file ../script8.sh
+questo è il file ../filea.txt
+questo è il file ../t.txt
+questo è il file ../mongolfiera.txt
+questo è il file ../out.jpg
+questo è il file ../x.txt
+questo è il file ../script9.sh
+questo è il file ../mongolfiera2.jpg
+questo è il file ../script3.sh
+questo è il file ../script4.sh
+questo è il file ../singolo-carattere.txt
+questo è il file ../a.sh
+questo è il file ../testo.txt
+questo è il file ../altroscript.sh
+questo è il file ../soluzione_compitino1.sh
+questo è il file ../elenco.csv
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} echo questo è il file {}
+questo è il file ./script35.sh
+questo è il file ./script35_.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} echo questo è il file {} caa
+questo è il file ./script35.sh caa
+questo è il file ./script35_.sh caa
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} echo questo è il file {} fine.
+questo è il file ./script35.sh fine.
+questo è il file ./script35_.sh fine.
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} stat {}    
+  File: ./script35.sh
+  Size: 1377            Blocks: 8          IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 15353       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} echo questo è il file {} fine.
+questo è il file ./script35.sh fine.
+questo è il file ./script35_.sh fine.
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} stat {}    
+  File: ./script35.sh
+  Size: 1377            Blocks: 8          IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 15353       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+ è il file {} fine.
+questo è il file ./script35.sh fine.
+questo è il file ./script35_.sh fine.
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} stat {}    
+  File: ./script35.sh
+  Size: 1377            Blocks: 8          IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 15353       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} stat {}    
+  File: ./script35.sh
+  Size: 1377            Blocks: 8          IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 15353       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+  File: ./script35.sh
+  Size: 1377            Blocks: 8          IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 15353       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+  Size: 1377            Blocks: 8          IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 15353       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Device: 830h/2096d      Inode: 15353       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-11-18 10:41:30.531626485 +0100
+Modify: 2025-11-18 10:41:30.505626484 +0100
+Change: 2025-11-18 10:41:30.505626484 +0100
+Access: (0644/-rw-r--r--)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-11-18 10:41:30.531626485 +0100
+Modify: 2025-11-18 10:41:30.505626484 +0100
+Change: 2025-11-18 10:41:30.505626484 +0100
+ Birth: 2025-11-18 10:41:01.324193668 +0100
+Access: 2025-11-18 10:41:30.531626485 +0100
+Modify: 2025-11-18 10:41:30.505626484 +0100
+Change: 2025-11-18 10:41:30.505626484 +0100
+ Birth: 2025-11-18 10:41:01.324193668 +0100
+Modify: 2025-11-18 10:41:30.505626484 +0100
+Change: 2025-11-18 10:41:30.505626484 +0100
+ Birth: 2025-11-18 10:41:01.324193668 +0100
+ Birth: 2025-11-18 10:41:01.324193668 +0100
+  File: ./script35_.sh
+  File: ./script35_.sh
+  Size: 1729            Blocks: 8          IO Block: 4096   regular file
+Device: 830h/2096d      Inode: 15446       Links: 1
+Access: (0700/-rwx------)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-11-18 13:04:23.346281569 +0100
+Modify: 2025-11-18 10:40:12.882736300 +0100
+Access: (0700/-rwx------)  Uid: ( 1000/andrea11)   Gid: ( 1000/andrea11)
+Access: 2025-11-18 13:04:23.346281569 +0100
+Modify: 2025-11-18 10:40:12.882736300 +0100
+Access: 2025-11-18 13:04:23.346281569 +0100
+Modify: 2025-11-18 10:40:12.882736300 +0100
+Modify: 2025-11-18 10:40:12.882736300 +0100
+Change: 2025-11-18 13:04:20.590281431 +0100
+ Birth: 2025-11-18 10:41:08.886625956 +0100
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f
+./script35.sh
+./script35_.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ find . -type f | xargs -I {} stat {}^C  
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ./script35_.sh 10
+../vade/comandi_rete.sh 3141 000000003141-comandi_rete.sh
+../vade/bre_ere.sh 3835 000000003835-bre_ere.sh
+../vade/sintassi_parametri.sh 6071 000000006071-sintassi_parametri.sh
+../mongolfiera2.jpg 21918 000000021918-mongolfiera2.jpg
+../mongolfiera.jpg 22270 000000022270-mongolfiera.jpg
+../out.jpg 22270 000000022270-out.jpg
+../rotta.txt 29612 000000029612-rotta.txt
+../mongolfiera.txt 30087 000000030087-mongolfiera.txt
+../vade/signals.png 90693 000000090693-signals.png
+../vade/fifo_digest_crittografia.pptx 975505 000000975505-fifo_digest_crittografia.pptx
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ du -b ../a.bmp 
+938     ../a.bmp
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ du -b ../a.bmp | cut -f1
+938
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ du -b ../a.bmp | cut -f2
+../a.bmp
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%012d" "78"
+000000000078andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%012d\n" "78"       
+000000000078
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%d\n" "78"
+78
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%012d\n" "78"
+000000000078
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%x12d\n" "78"
+4e12d
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%y12d\n" "78"
+-bash: printf: `y': invalid format character
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%\y12d\n" "78"
+-bash: printf: `\': invalid format character
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%x12s\n" "78"
+4e12s
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%x12c\n" "78"
+4e12c
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%112d\n" "78"
+                                                                                  
+                            78
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%012d\n" "78"
+000000000078
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%1 12d\n" "78"
+-bash: printf: ` ': invalid format character
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ printf "%x12c\n" "78^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ^C
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ./script35_.sh 10
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$ ls -l
+total 8
+lrwxrwxrwx 1 andrea11 andrea11   23 Nov 18 13:30 000000003141-comandi_rete.sh -> ../vade/comandi_rete.sh
+./mongolfiera.jpg
+lrwxrwxrwx 1 andrea11 andrea11   10 Nov 18 13:30 000000022270-out.jpg -> ../out.jpg
+lrwxrwxrwx 1 andrea11 andrea11   12 Nov 18 13:30 000000029612-rotta.txt -> ../rotta.txt
+lrwxrwxrwx 1 andrea11 andrea11   18 Nov 18 13:30 000000030087-mongolfiera.txt -> ../mongolfiera.txt
+lrwxrwxrwx 1 andrea11 andrea11   19 Nov 18 13:30 000000090693-signals.png -> ../vade/signals.png
+lrwxrwxrwx 1 andrea11 andrea11   37 Nov 18 13:30 000000975505-fifo_digest_crittografia.pptx -> ../vade/fifo_digest_crittografia.pptx
+-rw-r--r-- 1 andrea11 andrea11 1377 Nov 18 10:41 script35.sh
+-rwx------ 1 andrea11 andrea11 1728 Nov 18 13:29 script35_.sh
+andrea11@DESKTOP-HSTPJN3:~/scripting/sim$
